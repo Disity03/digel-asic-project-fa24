@@ -62,7 +62,7 @@ module testbench;
 		#1 $display("%b", leds);
 	end
 
-	icebreaker #(
+	digel_soc #(
 		// We limit the amount of memory in simulation
 		// in order to avoid reduce simulation time
 		// required for intialization of RAM
