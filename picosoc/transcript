@@ -1,0 +1,30 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -voptargs="+acc" testbench "+firmware=firmware.hex" 
+# Start time: 13:27:47 on Oct 05,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading work.testbench(fast)
+# Loading work.digel_soc(fast)
+# Loading work.picosoc(fast)
+# Loading work.picorv32(fast)
+# Loading work.picorv32_pcpi_fast_mul(fast)
+# Loading work.picosoc_regs(fast)
+# Loading work.spimemio(fast)
+# Loading work.spimemio_xfer(fast)
+# Loading work.simpleuart(fast)
+# Loading work.sram22_256x32m4w8(fast)
+# Loading work.spiflash(fast)
+# End time: 13:28:13 on Oct 05,2025, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 0

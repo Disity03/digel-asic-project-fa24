@@ -1,0 +1,469 @@
+m255
+K4
+z2
+!s12c _opt1
+Z0 !s99 nomlopt
+!s12c _opt
+R0
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/urosdeljanin/digel-asic-project-fa24/picosoc
+T_opt
+!s110 1759662443
+VNc0l1Sj2Dl`TZQF^W1_Sa1
+Z2 04 9 4 work testbench fast 0
+=1-000ae431a4f1-68e2516b-44617-5fc8
+R0
+Z3 !s12b OEM100
+Z4 !s124 OEM10U11 
+Z5 o-quiet -auto_acc_if_foreign -work work +acc
+Z6 tCvgOpt 0
+n@_opt
+Z7 OL;O;2023.3;77
+R1
+T_opt1
+!s110 1759663619
+VhUXA9HT<];Z?Q0iAYlI4:0
+R2
+=1-000ae431a4f1-68e25603-36f07-641f
+R0
+R3
+R4
+R5
+R6
+n@_opt1
+R7
+R1
+vdigel_soc
+Z8 2digel_soc.v|digel_soc_tb.v|simpleuart.v|/home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.v|spimemio.v|picosoc.v|../picorv32.v|spiflash.v
+Z9 !s110 1759663661
+!i10b 1
+!s100 gnd1klIdLC3mG36lh]3S41
+IPi[Z:o?I;g9gZgk_3S]h:1
+R1
+w1759660827
+8digel_soc.v
+Fdigel_soc.v
+!i122 6
+L0 26 132
+Z10 VDg1SIo80bB@j0V0VzS_@n1
+Z11 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z12 !s108 1759663661.000000
+!s107 spiflash.v|../picorv32.v|picosoc.v|spimemio.v|/home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.v|simpleuart.v|digel_soc_tb.v|digel_soc.v|
+Z13 !s90 digel_soc.v|digel_soc_tb.v|simpleuart.v|/home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.v|spimemio.v|picosoc.v|../picorv32.v|spiflash.v|
+!i113 0
+Z14 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R6
+vpicorv32
+R8
+R9
+!i10b 1
+!s100 SGJNYam_L=L>XWhCS;FXM0
+IlDJ`^lR10[4^FRCYSz32;1
+R1
+Z15 w1759590215
+Z16 8../picorv32.v
+Z17 F../picorv32.v
+!i122 6
+L0 62 2106
+R10
+R11
+r1
+!s85 0
+31
+R12
+Z18 !s107 spiflash.v|../picorv32.v|picosoc.v|spimemio.v|/home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.v|simpleuart.v|digel_soc_tb.v|digel_soc.v|
+R13
+!i113 0
+R14
+R6
+vpicorv32_axi
+R8
+R9
+!i10b 1
+!s100 2i9MVQ=WL934R_7DMKSfk1
+IBgZXPB]H`2a?4>_04_Ph:1
+R1
+R15
+R16
+R17
+!i122 6
+L0 2517 208
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vpicorv32_axi_adapter
+R8
+R9
+!i10b 1
+!s100 Q:9Wb[@G0BmTC0VHQXUF70
+ITO9:GQJVHVRT0ehBE;=[J1
+R1
+R15
+R16
+R17
+!i122 6
+L0 2731 78
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vpicorv32_pcpi_div
+R8
+R9
+!i10b 1
+!s100 ;4hImOdRc1;`LN@OJP9:V2
+IS]<6;OQFe78Z?=]^3]X9K1
+R1
+R15
+R16
+R17
+!i122 6
+L0 2420 91
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vpicorv32_pcpi_fast_mul
+R8
+R9
+!i10b 1
+!s100 Kg4S^HQclF[Jd7P`Hc1Je1
+IFP:z51j5@IBQ9c7W[EMJE2
+R1
+R15
+R16
+R17
+!i122 6
+L0 2318 96
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vpicorv32_pcpi_mul
+R8
+R9
+!i10b 1
+!s100 lOlL9BlHWd`FER>E:;9?I0
+I9]^aianMmRQ=?23FIf:3:2
+R1
+R15
+R16
+R17
+!i122 6
+L0 2197 120
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vpicorv32_regs
+R8
+R9
+!i10b 1
+!s100 LUe=7Mh8_]II<N60mg8Af2
+IfzCGgdDoA3N^6=F9X2@H>1
+R1
+R15
+R16
+R17
+!i122 6
+L0 2174 17
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vpicorv32_wb
+R8
+R9
+!i10b 1
+!s100 3lM>Z03PH6I]3RBU[bDT40
+IQd3iRS@[gD[WbGCo95Ld@3
+R1
+R15
+R16
+R17
+!i122 6
+L0 2815 235
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vpicosoc
+R8
+R9
+!i10b 1
+!s100 CR5_okNE=_hMe1W?gUo@@3
+I3838K>BVDe[@e3fJN>[[<2
+R1
+Z19 w1759663648
+Z20 8picosoc.v
+Z21 Fpicosoc.v
+Z22 8digel_soc_tb.v
+Z23 Fdigel_soc_tb.v
+!i122 6
+L0 36 185
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vpicosoc_mem
+R8
+R9
+!i10b 1
+!s100 8Kk@]fHnbB;g4YAP1mZ^k3
+InnIcS8LVL_^ELg]2h<kjW0
+R1
+R19
+R20
+R21
+R22
+R23
+!i122 6
+L0 243 19
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vpicosoc_regs
+R8
+R9
+!i10b 1
+!s100 ]l36a90M0REab=AkXjda12
+IXDkndoV];EY6aLJ]16A960
+R1
+R19
+R20
+R21
+R22
+R23
+!i122 6
+L0 225 17
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vsimpleuart
+R8
+R9
+!i10b 1
+!s100 8U0^lae8MD1kKd`g1>9WT1
+IfliW_lXXjS;9zI6lzM^6K1
+R1
+Z24 w1759591377
+8simpleuart.v
+Fsimpleuart.v
+R22
+R23
+!i122 6
+L0 20 118
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vspiflash
+R8
+R9
+!i10b 1
+!s100 SKciNBNmQ0GQWlJM`c^aK3
+IOTjgDJ87<:_8k3oZbazL43
+R1
+R15
+8spiflash.v
+Fspiflash.v
+!i122 6
+L0 39 371
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vspimemio
+R8
+R9
+!i10b 1
+!s100 le>L=V3CROIVBIZmda<F62
+Iz^e<hKHbRY:h8b[>fZTK[0
+R1
+R24
+Z25 8spimemio.v
+Z26 Fspimemio.v
+R22
+R23
+!i122 6
+L0 20 357
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vspimemio_xfer
+R8
+R9
+!i10b 1
+!s100 ><aV2MBfHlA1dB@cMA1:Z2
+I4Uf?H`jFejg^P4DUk@lC[1
+R1
+R24
+R25
+R26
+R22
+R23
+!i122 6
+L0 378 202
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vsram22_256x32m4w8
+R8
+R9
+!i10b 1
+!s100 <_aN8<]i9TQc]F]m0Mg>b2
+IdBLEJdH0MnUKYE<R^n5@L0
+R1
+R24
+8/home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.v
+F/home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.v
+R22
+R23
+!i122 6
+L0 6 68
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
+vtestbench
+R8
+R9
+!i10b 1
+!s100 DFkH71`al6A_93m`JRjR:0
+Ied?hB[izD9OM5Igaa4dCd1
+R1
+R24
+R22
+R23
+!i122 6
+L0 22 101
+R10
+R11
+r1
+!s85 0
+31
+R12
+R18
+R13
+!i113 0
+R14
+R6
