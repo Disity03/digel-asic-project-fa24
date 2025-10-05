@@ -208,15 +208,15 @@ module picosoc (
 	always @(posedge clk)
 		ram_ready <= mem_valid && !mem_ready && mem_addr < 4*MEM_WORDS;
 
-	`PICOSOC_MEM #(
-		.WORDS(MEM_WORDS)
-	) memory (
+	
+	`PICOSOC_MEM memory (
 		.clk(clk),
-		.wen((mem_valid && !mem_ready && mem_addr < 4*MEM_WORDS) ? mem_wstrb : 4'b0),
-		.addr(mem_addr[23:2]),
-		.wdata(mem_wdata),
-		.rdata(ram_rdata)
-	);
+		.we(mem_valid && !mem_ready && mem_addr < 4*MEM_WORDS),
+		.wmask(mem_wstrb),
+		.addr(mem_addr[9:2]),
+		.din(mem_wdata),
+		.dout(ram_rdata)
+    );
 endmodule
 
 // Implementation note:

@@ -21,7 +21,7 @@
 `error "digel_soc.v must be read before picosoc.v!"
 `endif
 
-`define PICOSOC_MEM ice40up5k_spram
+`define PICOSOC_MEM sram22_256x32m4w8
 
 module digel_soc (
 	input clk,
