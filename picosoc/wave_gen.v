@@ -1,12 +1,10 @@
 module wave_gen (
-	input         resetn,
 	input         clk,
-	input   [2:0] mode,
-	input  [31:0] param1,
-	input  [31:0] param2,
+	input  [31:0] addr,
+	input  [31:0] wdata,
 	output reg [31:0] wave
 );
-
+	// Prametri moda
 	localparam OFF    = 3'd0;
 	localparam TOGGLE = 3'd1;
 	localparam PWM    = 3'd2;
@@ -16,71 +14,74 @@ module wave_gen (
 	localparam SAW    = 3'd6;
 	localparam SINE   = 3'd7;
 
-
-    reg [2:0] mode_reg;
-
-    // Toggle/PWM/PRN регистри
+	// Parametri kontrole toka
+	localparam MODE   = 2'b00;
+	localparam PARAM1 = 2'b01;
+	localparam PARAM2 = 2'b10;	
+	localparam OUTP   = 2'b11;
+	
+	// Registar moda
+    reg [2:0] mode;
+	reg [2:0] prev_mode;
+    reg mode_changed; 
+    
+    // Jednobitni signali
     reg [31:0] toggle_len, pwm_high, pwm_low, w, prn_mask;
     reg [31:0] counter;
     reg [31:0] lfsr;
 
-    // Вишебитни сигнали
+    // Visebitni signali
     reg [31:0] rect_amp, rect_period;
     reg [31:0] tri_amp, tri_step, saw_amp, saw_step;
     reg [31:0] sine_amp, sine_period;
-    reg [31:0] multi_cnt; // општи бројач за више-битне сигнале
+    reg [31:0] multi_cnt;
 
 	
-	
-    // Конфигурација регистара
+	always @(posedge clk) begin
+        prev_mode <= mode;
+        mode_changed <= (mode != prev_mode);
+    end
+    
+    // Konfiguracija registara
     always @(posedge clk) begin
-        if (resetn) begin
-            mode_reg <= mode;
-            case(mode)
-                TOGGLE: begin
-                	toggle_len <= param1;
-                end 
-                PWM: begin
-                	pwm_high <= param1;
-                	pwm_low <= param2;
-                end
-                PRN: begin
-                	if (param1 > 31) begin
-                		w <= 31;
-                	end else if (param1 < 2) begin
-                		w <= 2;
-                	end
-                	prn_mask <= param2;
-                end
-                RECT : begin
-                	rect_amp <= param1;
-                	rect_period <= param2;
-                end
-                TRI : begin
-                	tri_amp <= param1;
-                	tri_step <= param2;
-                end
-                SAW : begin
-                	saw_amp <= param1;
-                	saw_step <= param2;
-                end
-                SINE : begin
-                	sine_amp <= param1;
-                	sine_period <= param2;
-                end
-            endcase
+			case (addr[3:2]) begin
+				MODE: mode <= wdata[2:0];
+				
+				PARAM1: begin
+					case (mode) begin
+						TOGGLE: toggle_len <= wdata;
+				        PWM: pwm_high <= wdata;
+				        PRN: w <= (wdata > 31) ? 31 : (wdata < 2) ? 2 : wdata;
+				        RECT : rect_amp <= wdata;
+				        TRI : tri_amp <= wdata;
+				        SAW : saw_amp <= wdata;
+				        SINE : sine_amp <= wdata;
+					endcase
+				end
+				
+				PARAM2: begin
+					case (mode) begin
+				        PWM: pwm_low <= wdata;
+				        PRN: prn_mask <= wdata;
+				        RECT : rect_period <= wdata;
+				        TRI : tri_step <= wdata;
+				        SAW : saw_step <= wdata;
+				        SINE : sine_period <= wdata;
+					endcase
+				end
+			endcase
         end
     end
 
-    // Основни генератор
-    always @(posedge clk or negedge resetn) begin
-        if (!resetn) begin
+    // Osnovni generator
+    always @(posedge clk) begin
+        if (mode_changed) begin
             wave <= 0;
             counter <= 0;
             lfsr <= 32'hACE1;
             multi_cnt <= 0;
         end else begin
-            case(mode_reg)
+            case(mode)
                 OFF: wave <= 0;
 
                 TOGGLE: begin

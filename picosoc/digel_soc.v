@@ -96,18 +96,43 @@ module digel_soc (
 	reg [31:0] gpio;
 	assign leds = gpio;
 
+	// Wave Generator registri
+	reg [31:0] wave_gen_input;
+	wire [31:0] wave_gen_output;
+
+	// Wave Generator instanca
+	wave_gen wave_gen_inst (
+		.clk(clk),
+		.addr(iomem_addr),
+		.wdata(iomem_wdata),
+		.wave(wave_gen_output)
+	);
+
 	always @(posedge clk) begin
 		if (!resetn) begin
 			gpio <= 0;
+			wave_gen_input <= 0;
 		end else begin
 			iomem_ready <= 0;
-			if (iomem_valid && !iomem_ready && iomem_addr[31:24] == 8'h 03) begin
-				iomem_ready <= 1;
-				iomem_rdata <= gpio;
-				if (iomem_wstrb[0]) gpio[ 7: 0] <= iomem_wdata[ 7: 0];
-				if (iomem_wstrb[1]) gpio[15: 8] <= iomem_wdata[15: 8];
-				if (iomem_wstrb[2]) gpio[23:16] <= iomem_wdata[23:16];
-				if (iomem_wstrb[3]) gpio[31:24] <= iomem_wdata[31:24];
+			
+			if (iomem_valid && !iomem_ready) begin
+				case (iomem_addr[31:24])
+					// GPIO
+					8'h03: begin
+						iomem_ready <= 1;
+						iomem_rdata <= gpio;
+						if (iomem_wstrb[0]) gpio[ 7: 0] <= iomem_wdata[ 7: 0];
+						if (iomem_wstrb[1]) gpio[15: 8] <= iomem_wdata[15: 8];
+						if (iomem_wstrb[2]) gpio[23:16] <= iomem_wdata[23:16];
+						if (iomem_wstrb[3]) gpio[31:24] <= iomem_wdata[31:24];
+					end
+					
+					// Wave Generator Control
+					8'h04: begin
+						iomem_ready <= 1;
+						iomem_rdata <= wave_gen_output;
+					end
+				endcase
 			end
 		end
 	end
