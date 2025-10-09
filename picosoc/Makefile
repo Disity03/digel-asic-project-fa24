@@ -82,22 +82,22 @@ icebprog: icebreaker.bin icebreaker_fw.bin
 icebprog_fw: icebreaker_fw.bin
 	iceprog -o 1M icebreaker_fw.bin
 
-icebreaker_sections.lds: sections.lds
+digel_soc.lds: sections.lds
 	$(CROSS)cpp -P -DICEBREAKER -o $@ $^
 
-icebreaker_fw.elf: icebreaker_sections.lds start.s firmware.c
-	$(CROSS)gcc $(CFLAGS) -DICEBREAKER -mabi=ilp32 -march=rv32ic -Wl,-Bstatic,-T,icebreaker_sections.lds,--strip-debug -ffreestanding -nostdlib -o icebreaker_fw.elf start.s firmware.c
+digel_soc.elf: digel_soc.lds start.s firmware.c
+	$(CROSS)gcc $(CFLAGS) -DICEBREAKER -mabi=ilp32 -march=rv32ic -Wl,-Bstatic,-T, digel_soc.lds,--strip-debug -ffreestanding -nostdlib -o digel_soc.elf start.s digel_soc.c
 
-icebreaker_fw.hex: icebreaker_fw.elf
+digel_soc.hex: digel_soc.elf
 	$(CROSS)objcopy -O verilog icebreaker_fw.elf icebreaker_fw.hex
 
-icebreaker_fw.bin: icebreaker_fw.elf
-	$(CROSS)objcopy -O binary icebreaker_fw.elf icebreaker_fw.bin
+digel_soc.bin: digel_soc.elf
+	$(CROSS)objcopy -O binary digel_soc.elf digel_soc.bin
 
 # ---- Testbench for SPI Flash Model ----
 
-spiflash_tb: spiflash_tb.vvp icebreaker_fw.hex
-	vvp -N $< +firmware=icebreaker_fw.hex
+spiflash_tb: spiflash_tb.vvp digel_soc.hex
+	vvp -N $< +firmware=digel_soc.hex
 
 spiflash_tb.vvp: spiflash.v spiflash_tb.v
 	iverilog -s testbench -o $@ $^
@@ -112,7 +112,7 @@ cmos.log: spimemio.v simpleuart.v picosoc.v ../picorv32.v
 clean:
 	rm -f testbench.vvp testbench.vcd spiflash_tb.vvp spiflash_tb.vcd
 	rm -f hx8kdemo_fw.elf hx8kdemo_fw.hex hx8kdemo_fw.bin cmos.log
-	rm -f icebreaker_fw.elf icebreaker_fw.hex icebreaker_fw.bin
+	rm -f digel_soc.elf digel_soc.hex digel_soc.bin
 	rm -f hx8kdemo.json hx8kdemo.log hx8kdemo.asc hx8kdemo.rpt hx8kdemo.bin
 	rm -f hx8kdemo_syn.v hx8kdemo_syn_tb.vvp hx8kdemo_tb.vvp
 	rm -f icebreaker.json icebreaker.log icebreaker.asc icebreaker.rpt icebreaker.bin

@@ -1,5 +1,6 @@
 module wave_gen (
 	input         clk,
+	input   [3:0] wstrb,
 	input  [31:0] addr,
 	input  [31:0] wdata,
 	output reg [31:0] wave
@@ -21,61 +22,63 @@ module wave_gen (
 	localparam OUTP   = 2'b11;
 	
 	// Registar moda
-    reg [2:0] mode;
-	reg [2:0] prev_mode;
-    reg mode_changed; 
-    
-    // Jednobitni signali
-    reg [31:0] toggle_len, pwm_high, pwm_low, w, prn_mask;
-    reg [31:0] counter;
-    reg [31:0] lfsr;
+	reg [2:0] mode;
+	reg [2:0] prev_wdata;
+	reg changed; 
+	    
+	// Jednobitni signali
+	reg [31:0] toggle_len, pwm_high, pwm_low, w, prn_mask;
+	reg [31:0] counter;
+	reg [31:0] lfsr;
 
-    // Visebitni signali
-    reg [31:0] rect_amp, rect_period;
-    reg [31:0] tri_amp, tri_step, saw_amp, saw_step;
-    reg [31:0] sine_amp, sine_period;
-    reg [31:0] multi_cnt;
+	// Visebitni signali
+	reg [31:0] rect_amp, rect_period;
+	reg [31:0] tri_amp, tri_step, saw_amp, saw_step;
+	reg [31:0] sine_amp, sine_period;
+	reg [31:0] multi_cnt;
 
 	
 	always @(posedge clk) begin
-        prev_mode <= mode;
-        mode_changed <= (mode != prev_mode);
+        prev_wdata <= wdata;
+        changed <= (wdata != prev_wdata) && |wstrb;
     end
     
     // Konfiguracija registara
     always @(posedge clk) begin
-			case (addr[3:2]) begin
-				MODE: mode <= wdata[2:0];
-				
-				PARAM1: begin
-					case (mode) begin
-						TOGGLE: toggle_len <= wdata;
-				        PWM: pwm_high <= wdata;
-				        PRN: w <= (wdata > 31) ? 31 : (wdata < 2) ? 2 : wdata;
-				        RECT : rect_amp <= wdata;
-				        TRI : tri_amp <= wdata;
-				        SAW : saw_amp <= wdata;
-				        SINE : sine_amp <= wdata;
-					endcase
-				end
-				
-				PARAM2: begin
-					case (mode) begin
-				        PWM: pwm_low <= wdata;
-				        PRN: prn_mask <= wdata;
-				        RECT : rect_period <= wdata;
-				        TRI : tri_step <= wdata;
-				        SAW : saw_step <= wdata;
-				        SINE : sine_period <= wdata;
-					endcase
-				end
-			endcase
+    		if(|wstrb) begin
+				case (addr[3:2]) begin
+					MODE: mode <= wdata[2:0];
+					
+					PARAM1: begin
+						case (mode) begin
+							TOGGLE: toggle_len <= wdata;
+						    PWM: pwm_high <= wdata;
+						    PRN: w <= (wdata > 31) ? 31 : (wdata < 2) ? 2 : wdata;
+						    RECT : rect_amp <= wdata;
+						    TRI : tri_amp <= wdata;
+						    SAW : saw_amp <= wdata;
+						    SINE : sine_amp <= wdata;
+						endcase
+					end
+					
+					PARAM2: begin
+						case (mode) begin
+						    PWM: pwm_low <= wdata;
+						    PRN: prn_mask <= wdata;
+						    RECT : rect_period <= wdata;
+						    TRI : tri_step <= wdata;
+						    SAW : saw_step <= wdata;
+						    SINE : sine_period <= wdata;
+						endcase
+					end
+				endcase
+			end
         end
     end
 
     // Osnovni generator
     always @(posedge clk) begin
-        if (mode_changed) begin
+        if (changed) begin
             wave <= 0;
             counter <= 0;
             lfsr <= 32'hACE1;

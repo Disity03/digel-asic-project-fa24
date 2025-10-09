@@ -103,6 +103,7 @@ module digel_soc (
 	// Wave Generator instanca
 	wave_gen wave_gen_inst (
 		.clk(clk),
+		.wstrb(iomem_wstrb),
 		.addr(iomem_addr),
 		.wdata(iomem_wdata),
 		.wave(wave_gen_output)

@@ -122,32 +122,6 @@ uint32_t wave_gen_get_output()
     return WAVE_OUTPUT;
 }
 
-void wave_gen_print_current_mode()
-{
-    uint32_t current_mode = WAVE_MODE;
-    uint32_t current_output = wave_gen_get_output();
-    
-    print("Current mode: ");
-    print_dec(current_mode);
-    print(" (");
-    
-    switch(current_mode) {
-        case WAVE_OFF:    print("OFF"); break;
-        case WAVE_TOGGLE: print("TOGGLE"); break;
-        case WAVE_PWM:    print("PWM"); break;
-        case WAVE_PRN:    print("PRN"); break;
-        case WAVE_RECT:   print("RECTANGULAR"); break;
-        case WAVE_TRI:    print("TRIANGULAR"); break;
-        case WAVE_SAW:    print("SAWTOOTH"); break;
-        case WAVE_SINE:   print("SINE"); break;
-        default:          print("UNKNOWN"); break;
-    }
-    
-    print("), Output: 0x");
-    print_hex(current_output, 8);
-    print("\n");
-}
-
 void wave_gen_save_to_file(const char* filename, uint32_t num_samples)
 {
     print("\n=== Saving ");
@@ -182,15 +156,24 @@ void wave_gen_save_to_file(const char* filename, uint32_t num_samples)
     print("\n");
 }
 
-void wave_gen_demonstrate_mode(uint32_t mode, const char* mode_name, uint32_t param1, uint32_t param2, const char* filename, uint32_t num_samples)
+void wave_gen_demonstrate_mode(uint32_t mode, uint32_t param1, uint32_t param2, const char* filename, uint32_t num_samples)
 {
     print("\n=== Testing ");
-    print(mode_name);
+    switch(mode) {
+        case WAVE_OFF:    print("OFF"); break;
+        case WAVE_TOGGLE: print("TOGGLE"); break;
+        case WAVE_PWM:    print("PWM"); break;
+        case WAVE_PRN:    print("PRN"); break;
+        case WAVE_RECT:   print("RECTANGULAR"); break;
+        case WAVE_TRI:    print("TRIANGULAR"); break;
+        case WAVE_SAW:    print("SAWTOOTH"); break;
+        case WAVE_SINE:   print("SINE"); break;
+        default:          print("UNKNOWN"); break;
+    }
     print(" mode ===\n");
     
     // Postavi mod
     wave_gen_set_mode(mode);
-    wave_gen_print_current_mode();
     
     // Postavi parametre ako nisu OFF
     if (mode != WAVE_OFF) {
@@ -209,42 +192,42 @@ void wave_gen_demonstrate_mode(uint32_t mode, const char* mode_name, uint32_t pa
 
 void test_wave_off()
 {
-    wave_gen_demonstrate_mode(WAVE_OFF, "WAVE_OFF", 0, 0, "waveforms/wave_off.txt", 50);
+    wave_gen_demonstrate_mode(WAVE_OFF, 0, 0, "waveforms/wave_off.txt", 50);
 }
 
 void test_wave_toggle()
 {
-    wave_gen_demonstrate_mode(WAVE_TOGGLE, "WAVE_TOGGLE", 10, 0, "waveforms/wave_toggle.txt", 100);
+    wave_gen_demonstrate_mode(WAVE_TOGGLE, 10, 0, "waveforms/wave_toggle.txt", 100);
 }
 
 void test_wave_pwm()
 {
-    wave_gen_demonstrate_mode(WAVE_PWM, "WAVE_PWM", 30, 20, "waveforms/wave_pwm.txt", 100);
+    wave_gen_demonstrate_mode(WAVE_PWM, 30, 20, "waveforms/wave_pwm.txt", 100);
 }
 
 void test_wave_prn()
 {
-    wave_gen_demonstrate_mode(WAVE_PRN, "WAVE_PRN", 16, 0xB400, "waveforms/wave_prn.txt", 100);
+    wave_gen_demonstrate_mode(WAVE_PRN, 16, 0xB400, "waveforms/wave_prn.txt", 100);
 }
 
 void test_wave_rect()
 {
-    wave_gen_demonstrate_mode(WAVE_RECT, "WAVE_RECT", 1000, 2000, "waveforms/wave_rect.txt", 200);
+    wave_gen_demonstrate_mode(WAVE_RECT, 1000, 2000, "waveforms/wave_rect.txt", 200);
 }
 
 void test_wave_tri()
 {
-    wave_gen_demonstrate_mode(WAVE_TRI, "WAVE_TRI", 1000, 10, "waveforms/wave_tri.txt", 200);
+    wave_gen_demonstrate_mode(WAVE_TRI, 1000, 10, "waveforms/wave_tri.txt", 200);
 }
 
 void test_wave_saw()
 {
-    wave_gen_demonstrate_mode(WAVE_SAW, "WAVE_SAW", 1000, 10, "waveforms/wave_saw.txt", 200);
+    wave_gen_demonstrate_mode(WAVE_SAW, 1000, 10, "waveforms/wave_saw.txt", 200);
 }
 
 void test_wave_sine()
 {
-    wave_gen_demonstrate_mode(WAVE_SINE, "WAVE_SINE", 1000, 2000, "waveforms/wave_sine.txt", 200);
+    wave_gen_demonstrate_mode(WAVE_SINE, 1000, 2000, "waveforms/wave_sine.txt", 200);
 }
 
 void main()
@@ -268,13 +251,4 @@ void main()
     print("Waveforms saved to text files in 'waveforms/' directory\n");
     print("Use Python script 'plot_waveforms.py' to visualize the waveforms\n");
     print("Example: python3 plot_waveforms.py\n");
-
-    // Beskonačna petlja
-    while (1) {
-        // Demonstriraj trenutni režim rada
-        wave_gen_print_current_mode();
-        
-        // Pauza pre sledećeg ispisa
-        for (volatile int i = 0; i < 10000000; i++);
-    }
 }
