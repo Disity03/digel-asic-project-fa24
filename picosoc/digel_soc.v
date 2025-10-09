@@ -34,6 +34,8 @@ module digel_soc (
 	output led3,
 	output led4,
 	output led5,
+	
+	output [31:0] wave,
 
 	output ledr_n,
 	output ledg_n,
@@ -108,7 +110,9 @@ module digel_soc (
 		.wdata(iomem_wdata),
 		.wave(wave_gen_output)
 	);
-
+	
+	assign wave = wave_gen_output;
+	
 	always @(posedge clk) begin
 		if (!resetn) begin
 			gpio <= 0;

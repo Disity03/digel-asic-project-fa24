@@ -85,11 +85,11 @@ icebprog_fw: icebreaker_fw.bin
 digel_soc.lds: sections.lds
 	$(CROSS)cpp -P -DICEBREAKER -o $@ $^
 
-digel_soc.elf: digel_soc.lds start.s firmware.c
-	$(CROSS)gcc $(CFLAGS) -DICEBREAKER -mabi=ilp32 -march=rv32ic -Wl,-Bstatic,-T, digel_soc.lds,--strip-debug -ffreestanding -nostdlib -o digel_soc.elf start.s digel_soc.c
+digel_soc.elf: digel_soc.lds start.s digel_soc.c
+	$(CROSS)gcc $(CFLAGS) -DICEBREAKER -mabi=ilp32 -march=rv32ic -Wl,-Bstatic,-T,digel_soc.lds,--strip-debug -ffreestanding -nostdlib -o digel_soc.elf start.s digel_soc.c
 
 digel_soc.hex: digel_soc.elf
-	$(CROSS)objcopy -O verilog icebreaker_fw.elf icebreaker_fw.hex
+	$(CROSS)objcopy -O verilog digel_soc.elf digel_soc.hex
 
 digel_soc.bin: digel_soc.elf
 	$(CROSS)objcopy -O binary digel_soc.elf digel_soc.bin

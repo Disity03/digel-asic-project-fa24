@@ -45,6 +45,8 @@ module testbench;
 
 	wire led1, led2, led3, led4, led5;
 	wire ledr_n, ledg_n;
+	
+	wire [31:0] wave;
 
 	wire [6:0] leds = {!ledg_n, !ledr_n, led5, led4, led3, led2, led1};
 
@@ -74,6 +76,7 @@ module testbench;
 		.led3     (led3     ),
 		.led4     (led4     ),
 		.led5     (led5     ),
+		.wave(wave),
 		.ledr_n   (ledr_n   ),
 		.ledg_n   (ledg_n   ),
 		.ser_rx   (ser_rx   ),

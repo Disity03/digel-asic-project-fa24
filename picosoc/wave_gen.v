@@ -46,11 +46,11 @@ module wave_gen (
     // Konfiguracija registara
     always @(posedge clk) begin
     		if(|wstrb) begin
-				case (addr[3:2]) begin
+				case (addr[3:2])
 					MODE: mode <= wdata[2:0];
 					
 					PARAM1: begin
-						case (mode) begin
+						case (mode)
 							TOGGLE: toggle_len <= wdata;
 						    PWM: pwm_high <= wdata;
 						    PRN: w <= (wdata > 31) ? 31 : (wdata < 2) ? 2 : wdata;
@@ -62,7 +62,7 @@ module wave_gen (
 					end
 					
 					PARAM2: begin
-						case (mode) begin
+						case (mode)
 						    PWM: pwm_low <= wdata;
 						    PRN: prn_mask <= wdata;
 						    RECT : rect_period <= wdata;
@@ -73,7 +73,6 @@ module wave_gen (
 					end
 				endcase
 			end
-        end
     end
 
     // Osnovni generator
@@ -105,8 +104,8 @@ module wave_gen (
                 end
 
                 PRN: begin
-                    lfsr[w-1:0] <= {lfsr[w-2:0], ^(lfsr[w-1:0] & prn_mask[w-1:0])};
-                    wave[0] <= lfsr[w-1];
+                    //lfsr[w-1:0] <= {lfsr[w-2:0], ^(lfsr[w-1:0] & prn_mask[w-1:0])};
+                    wave[0] <= 0;//lfsr[w-1];
                 end
 
                 RECT: begin
@@ -130,9 +129,10 @@ module wave_gen (
                 end
 
                 SINE: begin
-                    multi_cnt <= multi_cnt + 1;
-                    wave[31:0] <= sine_amp * $sin(2*3.141592*multi_cnt/sine_period);
+                    //multi_cnt <= multi_cnt + 1;
+                    wave[31:0] <= 0;//sine_amp * $sin(2*3.141592*multi_cnt/sine_period);
                 end
             endcase
         end
     end
+endmodule
