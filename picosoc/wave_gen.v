@@ -36,7 +36,9 @@ module wave_gen (
 	reg [31:0] tri_amp, tri_step, saw_amp, saw_step;
 	reg [31:0] sine_amp, sine_period;
 	reg [31:0] multi_cnt;
-
+	reg [31:0] mask_lower;
+	reg        feedback;
+	
 	
 	always @(posedge clk) begin
         prev_wdata <= wdata;
@@ -104,8 +106,10 @@ module wave_gen (
                 end
 
                 PRN: begin
-                    //lfsr[w-1:0] <= {lfsr[w-2:0], ^(lfsr[w-1:0] & prn_mask[w-1:0])};
-                    wave[0] <= 0;//lfsr[w-1];
+					mask_lower = 32'hFFFF_FFFF >> (32 - w);
+					feedback = ^((lfsr & mask_lower) & (prn_mask & mask_lower));
+					lfsr <= ((lfsr << 1) | feedback) & mask_lower;
+					wave[0] <= (lfsr >> (w-1)) & 1'b1;
                 end
 
                 RECT: begin
