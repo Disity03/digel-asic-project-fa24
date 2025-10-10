@@ -3,6 +3,7 @@ module wave_gen (
 	input   [3:0] wstrb,
 	input  [31:0] addr,
 	input  [31:0] wdata,
+	output [31:0] rdata,
 	output reg [31:0] wave
 );
 	// Prametri moda
@@ -23,9 +24,9 @@ module wave_gen (
 	
 	// Registar moda
 	reg [2:0] mode;
-	reg [2:0] prev_wdata;
 	reg changed; 
-	    
+	assign rdata ={29'b0, mode};
+	
 	// Jednobitni signali
 	reg [31:0] toggle_len, pwm_high, pwm_low, w, prn_mask;
 	reg [31:0] counter;
@@ -39,17 +40,16 @@ module wave_gen (
 	reg [31:0] mask_lower;
 	reg        feedback;
 	
-	
-	always @(posedge clk) begin
-        prev_wdata <= wdata;
-        changed <= (wdata != prev_wdata) && |wstrb;
-    end
+
     
     // Konfiguracija registara
     always @(posedge clk) begin
     		if(|wstrb) begin
 				case (addr[3:2])
-					MODE: mode <= wdata[2:0];
+					MODE: begin
+						mode <= wdata[2:0];
+						changed <= 1;
+					end
 					
 					PARAM1: begin
 						case (mode)
@@ -70,8 +70,9 @@ module wave_gen (
 						    RECT : rect_period <= wdata;
 						    TRI : tri_step <= wdata;
 						    SAW : saw_step <= wdata;
-						    SINE : sine_period <= wdata;
+						    SINE : sine_period <= |wdata ? wdata : 1;
 						endcase
+						changed <= 0;
 					end
 				endcase
 			end
@@ -133,8 +134,8 @@ module wave_gen (
                 end
 
                 SINE: begin
-                    //multi_cnt <= multi_cnt + 1;
-                    wave[31:0] <= 0;//sine_amp * $sin(2*3.141592*multi_cnt/sine_period);
+                    multi_cnt <= multi_cnt + 1;
+                    wave[31:0] <= sine_amp * $sin(2*3.141592*multi_cnt/sine_period) + sine_amp;
                 end
             endcase
         end

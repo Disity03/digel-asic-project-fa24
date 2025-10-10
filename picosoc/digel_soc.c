@@ -7,17 +7,6 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-#ifdef ICEBREAKER
-#  define MEM_TOTAL 0x20000 /* 128 KB */
-#elif HX8KDEMO
-#  define MEM_TOTAL 0x200 /* 2 KB */
-#else
-#  error "Set -DICEBREAKER or -DHX8KDEMO when compiling digel_soc.c"
-#endif
-
-// a pointer to this is a null pointer, but the compiler does not
-// know that because "sram" is a linker symbol from sections.lds.
-extern uint32_t sram;
 
 // Memorijsko mapiranje 
 #define reg_spictrl (*(volatile uint32_t*)0x02000000)
@@ -126,43 +115,9 @@ uint32_t wave_gen_get_output()
     return WAVE_OUTPUT;
 }
 
-void wave_gen_save_to_file(const char* filename, uint32_t num_samples)
+void wave_gen_demonstrate_mode(uint32_t mode, uint32_t param1, uint32_t param2)
 {
-/*    print("\n=== Saving ");
-    print_dec(num_samples);
-    print(" samples to ");
-    print(filename);
-    print(" ===\n");
-    
-    // Pošaljemo header za Python skriptu da parsira
-    print("FILE_START:");
-    print(filename);
-    print("\n");
-    
-    // Pošaljemo broj uzoraka
-    print("SAMPLES:");
-    print_dec(num_samples);
-    print("\n");*/
-  
-    // Pošaljemo podatke u formatu "1 linija - 1 vrednost"
-    for (uint32_t i = 0; i < num_samples; i++) {
-        uint32_t sample = wave_gen_get_output();
-        print_hex(sample, 8);  // Hexadecimal format
-        print("\n");
-        
-        // Pauza da se signal stabilizuje i promeni
-        //for (volatile int j = 0; j < 20; j++);
-    }
-    /*
-    // Pošaljemo footer
-    print("FILE_END:");
-    print(filename);
-    print("\n");*/
-}
-
-void wave_gen_demonstrate_mode(uint32_t mode, uint32_t param1, uint32_t param2, const char* filename, uint32_t num_samples)
-{
-    print("\n=== Testing ");
+    print("MODE: ");
     switch(mode) {
         case WAVE_OFF:    print("OFF"); break;
         case WAVE_TOGGLE: print("TOGGLE"); break;
@@ -174,73 +129,26 @@ void wave_gen_demonstrate_mode(uint32_t mode, uint32_t param1, uint32_t param2, 
         case WAVE_SINE:   print("SINE"); break;
         default:          print("UNKNOWN"); break;
     }
-    print(" mode ===\n");
-    
     // Postavi mod
     wave_gen_set_mode(mode);
+    wave_gen_set_param1(param1);
+    wave_gen_set_param2(param2);
     
-    // Postavi parametre ako nisu OFF
-    if (mode != WAVE_OFF) {
-        wave_gen_set_param1(param1);
-        wave_gen_set_param2(param2);
+    for(int i=0; i < 100; i++){
+    	
     }
-    
-    // Sačuvaj talasne oblike u fajl
-    wave_gen_save_to_file(filename, num_samples);
-}
-
-void test_wave_off()
-{
-    wave_gen_demonstrate_mode(WAVE_OFF, 0, 0, "waveforms/wave_off.txt", 10);
-}
-
-void test_wave_toggle()
-{
-    wave_gen_demonstrate_mode(WAVE_TOGGLE, 2, 0, "waveforms/wave_toggle.txt", 10);
-}
-
-void test_wave_pwm()
-{
-    wave_gen_demonstrate_mode(WAVE_PWM, 5, 2, "waveforms/wave_pwm.txt", 10);
-}
-
-void test_wave_prn()
-{
-    wave_gen_demonstrate_mode(WAVE_PRN, 16, 0xB400, "waveforms/wave_prn.txt", 20);
-}
-
-void test_wave_rect()
-{
-    wave_gen_demonstrate_mode(WAVE_RECT, 1000, 2000, "waveforms/wave_rect.txt", 20);
-}
-
-void test_wave_tri()
-{
-    wave_gen_demonstrate_mode(WAVE_TRI, 1000, 10, "waveforms/wave_tri.txt", 20);
-}
-
-void test_wave_saw()
-{
-    wave_gen_demonstrate_mode(WAVE_SAW, 1000, 10, "waveforms/wave_saw.txt", 20);
-}
-
-void test_wave_sine()
-{
-    wave_gen_demonstrate_mode(WAVE_SINE, 1000, 2000, "waveforms/wave_sine.txt", 20);
 }
 
 void main()
 {
-    reg_uart_clkdiv = 104; // brzina UART komunikacije
-//    print("Testing all wave generator modes:\n");
-
-    // Test svih modova i čuvanje u fajlove
-    test_wave_off();
-    test_wave_toggle();
-    test_wave_pwm();
-    test_wave_prn();
-    test_wave_rect();
-    test_wave_tri();
-    test_wave_saw();
-    test_wave_sine();
+    reg_uart_clkdiv = 104;
+    
+    wave_gen_demonstrate_mode(WAVE_OFF, 0, 0);
+    wave_gen_demonstrate_mode(WAVE_TOGGLE, 2, 0);
+    wave_gen_demonstrate_mode(WAVE_PWM, 5, 2);
+    wave_gen_demonstrate_mode(WAVE_PRN, 16, 0xB400);
+    wave_gen_demonstrate_mode(WAVE_RECT, 100, 30);
+    wave_gen_demonstrate_mode(WAVE_TRI, 100, 2);
+    wave_gen_demonstrate_mode(WAVE_SAW, 100, 2);
+    wave_gen_demonstrate_mode(WAVE_SINE, 100, 20);
 }

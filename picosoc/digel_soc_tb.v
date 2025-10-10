@@ -47,6 +47,7 @@ module testbench;
 	wire ledr_n, ledg_n;
 	
 	wire [31:0] wave;
+	wire [2:0] mode;
 
 	wire [6:0] leds = {!ledg_n, !ledr_n, led5, led4, led3, led2, led1};
 
@@ -63,7 +64,84 @@ module testbench;
 	always @(leds) begin
 		#1 $display("%b", leds);
 	end
+/*
+	integer wave_fd;
+	reg [1023:0] wavefile_prefix;
+	integer samples_per_mode;
+	reg [2:0] current_mode;
+	reg [2:0] prev_mode;
+	reg [31:0] mode_sample_count;
+	reg mode_changed;
+	reg [1023:0] current_filename;
+	integer startup_delay;
+	reg [31:0] delay_counter;
+	reg sampling_enabled;
 
+	initial begin
+		if (!$value$plusargs("wavefile_prefix=%s", wavefile_prefix)) wavefile_prefix = "picosoc/waves/wave";
+		samples_per_mode = 150;
+		startup_delay = 1582;
+		current_mode = 0;
+		prev_mode = 0;
+		mode_sample_count = 0;
+		mode_changed = 0;
+		wave_fd = 0;
+		delay_counter = 0;
+		sampling_enabled = 0;
+	end
+
+	// Detekcija promene moda i snimanje
+	always @(posedge clk) begin
+		current_mode = mode;
+		mode_changed = (current_mode != prev_mode);
+		prev_mode = current_mode;
+		
+		// Detekcija promene moda
+		if (mode_changed) begin
+			if (wave_fd != 0) begin
+				$fclose(wave_fd);
+			end
+			
+			case (current_mode)
+				3'd0: $sformat(current_filename, "%s_off.txt", wavefile_prefix);
+				3'd1: $sformat(current_filename, "%s_toggle.txt", wavefile_prefix);
+				3'd2: $sformat(current_filename, "%s_pwm.txt", wavefile_prefix);
+				3'd3: $sformat(current_filename, "%s_prn.txt", wavefile_prefix);
+				3'd4: $sformat(current_filename, "%s_rect.txt", wavefile_prefix);
+				3'd5: $sformat(current_filename, "%s_tri.txt", wavefile_prefix);
+				3'd6: $sformat(current_filename, "%s_saw.txt", wavefile_prefix);
+				3'd7: $sformat(current_filename, "%s_sine.txt", wavefile_prefix);
+				default: $sformat(current_filename, "%s_unknown.txt", wavefile_prefix);
+			endcase
+			
+			wave_fd = $fopen(current_filename, "w");
+			if (wave_fd == 0) $fatal(1, "Cannot open wavefile: %s", current_filename);
+			mode_sample_count = 0;
+			delay_counter = 0;
+			sampling_enabled = 0;
+		end
+		
+		// Delay
+		if (mode_changed || delay_counter > 0) begin
+			if (delay_counter < startup_delay) begin
+				delay_counter = delay_counter + 1;
+				sampling_enabled = 0;
+			end else begin
+				sampling_enabled = 1;
+			end
+		end
+		
+		// Snimanje
+		if (wave_fd != 0 && sampling_enabled && mode_sample_count < samples_per_mode) begin
+			$fdisplay(wave_fd, "%d", wave);
+			mode_sample_count = mode_sample_count + 1;
+		end else if (mode_sample_count >= samples_per_mode && wave_fd != 0) begin
+			$fclose(wave_fd);
+			wave_fd = 0;
+			sampling_enabled = 0;
+		end
+	end
+*/
 	digel_soc #(
 		// We limit the amount of memory in simulation
 		// in order to avoid reduce simulation time
@@ -76,7 +154,8 @@ module testbench;
 		.led3     (led3     ),
 		.led4     (led4     ),
 		.led5     (led5     ),
-		.wave(wave),
+		.wave	  (wave     ),
+		.mode     (mode     ),
 		.ledr_n   (ledr_n   ),
 		.ledg_n   (ledg_n   ),
 		.ser_rx   (ser_rx   ),

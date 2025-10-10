@@ -35,6 +35,7 @@ module digel_soc (
 	output led5,
 	
 	output [31:0] wave,
+	output [2:0] mode,
 
 	output ledr_n,
 	output ledg_n,
@@ -96,17 +97,20 @@ module digel_soc (
 
 	reg [31:0] gpio;
 	assign leds = gpio;
-
+	
 	// Wave Generator registri
 	reg [31:0] wave_gen_input;
 	wire [31:0] wave_gen_output;
-
+	wire [31:0] wave_gen_rdata;
+	assign mode = wave_gen_rdata[2:0];
+	
 	// Wave Generator instanca
 	wave_gen wave_gen_inst (
 		.clk(clk),
 		.wstrb(iomem_wstrb),
 		.addr(iomem_addr),
 		.wdata(iomem_wdata),
+		.rdata(wave_gen_rdata),
 		.wave(wave_gen_output)
 	);
 	

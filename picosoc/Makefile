@@ -93,6 +93,9 @@ digel_soc.hex: digel_soc.elf
 
 digel_soc.bin: digel_soc.elf
 	$(CROSS)objcopy -O binary digel_soc.elf digel_soc.bin
+	
+digel_soc_sim:  digel_soc.hex
+	vsim -do "vlog ~/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.v wave_gen.v digel_soc.v digel_soc_tb.v simpleuart.v spimemio.v picosoc.v ../picorv32.v; vsim testbench -voptargs=+acc +firmware=digel_soc.hex; add wave *; run -all;"
 
 # ---- Testbench for SPI Flash Model ----
 
