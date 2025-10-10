@@ -64,9 +64,9 @@ module testbench;
 	always @(leds) begin
 		#1 $display("%b", leds);
 	end
-/*
+	
+
 	integer wave_fd;
-	reg [1023:0] wavefile_prefix;
 	integer samples_per_mode;
 	reg [2:0] current_mode;
 	reg [2:0] prev_mode;
@@ -78,7 +78,6 @@ module testbench;
 	reg sampling_enabled;
 
 	initial begin
-		if (!$value$plusargs("wavefile_prefix=%s", wavefile_prefix)) wavefile_prefix = "picosoc/waves/wave";
 		samples_per_mode = 150;
 		startup_delay = 1582;
 		current_mode = 0;
@@ -103,17 +102,18 @@ module testbench;
 			end
 			
 			case (current_mode)
-				3'd0: $sformat(current_filename, "%s_off.txt", wavefile_prefix);
-				3'd1: $sformat(current_filename, "%s_toggle.txt", wavefile_prefix);
-				3'd2: $sformat(current_filename, "%s_pwm.txt", wavefile_prefix);
-				3'd3: $sformat(current_filename, "%s_prn.txt", wavefile_prefix);
-				3'd4: $sformat(current_filename, "%s_rect.txt", wavefile_prefix);
-				3'd5: $sformat(current_filename, "%s_tri.txt", wavefile_prefix);
-				3'd6: $sformat(current_filename, "%s_saw.txt", wavefile_prefix);
-				3'd7: $sformat(current_filename, "%s_sine.txt", wavefile_prefix);
-				default: $sformat(current_filename, "%s_unknown.txt", wavefile_prefix);
+				3'd0: current_filename = "waves/wave_off.txt";
+				3'd1: current_filename = "waves/wave_toggle.txt";
+				3'd2: current_filename = "waves/wave_pwm.txt";
+				3'd3: current_filename = "waves/wave_prn.txt";
+				3'd4: current_filename = "waves/wave_rect.txt";
+				3'd5: current_filename = "waves/wave_tri.txt";
+				3'd6: current_filename = "waves/wave_saw.txt";
+				3'd7: current_filename = "waves/wave_sine.txt";
+				default: current_filename = "waves/wave_unknown.txt";
 			endcase
 			
+			$display("Trying to open file: '%s'", current_filename);
 			wave_fd = $fopen(current_filename, "w");
 			if (wave_fd == 0) $fatal(1, "Cannot open wavefile: %s", current_filename);
 			mode_sample_count = 0;
@@ -141,7 +141,7 @@ module testbench;
 			sampling_enabled = 0;
 		end
 	end
-*/
+
 	digel_soc #(
 		// We limit the amount of memory in simulation
 		// in order to avoid reduce simulation time
