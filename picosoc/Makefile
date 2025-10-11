@@ -210,9 +210,11 @@ MAKE = make
 #########################################################################################
 
 .PHONY: sim-rtl
-sim-rtl: $(HAMMER_D_MK)
+sim-rtl: $(HAMMER_D_MK) digel_soc.hex
 	cp --update $(pdk_dir)/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v $(OBJ_DIR)/tech-sky130-cache/primitives.v
 	cp --update $(hammer_dir)/e2e/tech-sky130-cache/sky130_fd_sc_hd.v $(OBJ_DIR)/tech-sky130-cache/sky130_fd_sc_hd.v
+	cp $(vlsi_dir)/digel_soc.hex $(OBJ_DIR)/sim-rundir/firmware.hex
+	mkdir $(OBJ_DIR)/sim-rundir/waves
 	$(HAMMER_EXEC) -p $(TECH_CONF) -p $(SIM_RTL_CONF) --obj_dir $(OBJ_DIR) sim
 
 #########################################################################################
