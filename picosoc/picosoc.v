@@ -218,14 +218,14 @@ module picosoc (
 		.rdata(ram_rdata)
 	);
 	
-	//sram22_256x32m4w8 memory (
-	//	.clk(clk),
-	//	.we(mem_valid && !mem_ready && mem_addr < 4*MEM_WORDS),
-	//	.wmask(mem_wstrb),
-	//	.addr(mem_addr[9:2]),
-	//	.din(mem_wdata),
-	//	.dout(ram_rdata)
-	//);
+	/*sram22_256x32m4w8 memory (
+		.clk(clk),
+		.we(mem_valid && !mem_ready && mem_addr < 4*MEM_WORDS),
+		.wmask(mem_wstrb),
+		.addr(mem_addr[9:2]),
+		.din(mem_wdata),
+		.dout(ram_rdata)
+	);*/
 endmodule
 
 // Implementation note:

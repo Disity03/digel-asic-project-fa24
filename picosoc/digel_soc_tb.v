@@ -30,7 +30,7 @@ module testbench;
 		$dumpfile("testbench.vcd");
 		$dumpvars(0, testbench);
 
-		repeat (50) begin
+		repeat (15) begin
 			repeat (50000) @(posedge clk);
 			$display("+50000 cycles");
 		end
@@ -78,7 +78,7 @@ module testbench;
 	reg sampling_enabled;
 
 	initial begin
-		samples_per_mode = 150;
+		samples_per_mode = 200;
 		startup_delay = 1582;
 		current_mode = 0;
 		prev_mode = 0;
@@ -99,6 +99,7 @@ module testbench;
 		if (mode_changed) begin
 			if (wave_fd != 0) begin
 				$fclose(wave_fd);
+				$display("File closed.");
 			end
 			
 			case (current_mode)
@@ -137,6 +138,7 @@ module testbench;
 			mode_sample_count = mode_sample_count + 1;
 		end else if (mode_sample_count >= samples_per_mode && wave_fd != 0) begin
 			$fclose(wave_fd);
+			$display("File closed.");
 			wave_fd = 0;
 			sampling_enabled = 0;
 		end
