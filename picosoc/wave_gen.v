@@ -134,8 +134,9 @@ module wave_gen (
                 end
 
                 SINE: begin
-                    multi_cnt <= multi_cnt + 1;
-                    wave[31:0] <= sine_amp * $sin(2*3.141592*multi_cnt/sine_period) + sine_amp;
+                    /*multi_cnt <= multi_cnt + 1;
+                    wave[31:0] <= sine_amp * $sin(2*3.141592*multi_cnt/sine_period) + sine_amp;*/
+                    wave[31:0] <= 0;
                 end
             endcase
         end

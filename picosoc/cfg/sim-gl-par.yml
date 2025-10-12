@@ -1,0 +1,15 @@
+# Post-PAR Gate-Level Simulation Variables
+sim.inputs:
+  input_files:
+    - "digel_soc_tb.v"
+  input_files_meta: append
+  level: "par"
+  timing_annotated: true
+  timescale: "1ns/10ps"
+  top_module: "digel_soc"
+  tb_name: "testbench"
+  tb_dut: "uut"
+  sdf_corner: "max"
+  defines: 
+    - "CLOCK_PERIOD=20.00"
+
