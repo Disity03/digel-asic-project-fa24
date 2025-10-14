@@ -24,13 +24,23 @@ vlsi.inputs.placement_constraints:
     type: "toplevel"
     x: 0
     y: 0
-    width: 300
-    height: 300
+    width: 1500
+    height: 1500
     margins:
-      left: 10
-      right: 10
-      top: 10
-      bottom: 10
+      left: 2
+      right: 2
+      top: 2
+      bottom: 2
+    
+  - path: "digel_soc/soc/memory"
+    type: hardmacro
+    x: 20
+    y: 460
+    width: 292.37
+    height: 358.29
+    orientation: my90
+    top_layer: met3
+    
 
 # Pin placement constraints
 vlsi.inputs.pin_mode: generated
@@ -38,3 +48,9 @@ vlsi.inputs.pin.generate_mode: semi_auto
 vlsi.inputs.pin.assignments: [
   {pins: "*", layers: ["met2", "met4"], side: "bottom"}
 ]
+
+# Number of routing iterations
+vlsi.route.iter: 3
+
+# Do not use FILLER cells which cause li1 Metal Spacing errors
+vlsi.inputs.use_fillers: 0

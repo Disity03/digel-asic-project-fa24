@@ -208,7 +208,7 @@ module picosoc (
 	always @(posedge clk)
 		ram_ready <= mem_valid && !mem_ready && mem_addr < 4*MEM_WORDS;
 
-	picosoc_mem #(
+	/*picosoc_mem #(
 		.WORDS(MEM_WORDS)
 	) memory (
 		.clk(clk),
@@ -216,16 +216,16 @@ module picosoc (
 		.addr(mem_addr[23:2]),
 		.wdata(mem_wdata),
 		.rdata(ram_rdata)
-	);
+	);*/
 	
-	/*sram22_256x32m4w8 memory (
+	sram22_256x32m4w8 memory (
 		.clk(clk),
-		.we(mem_valid && !mem_ready && mem_addr < 4*MEM_WORDS),
+		.we(mem_valid && !mem_ready && mem_addr < 4*MEM_WORDS && (|mem_wstrb)),
 		.wmask(mem_wstrb),
 		.addr(mem_addr[9:2]),
 		.din(mem_wdata),
 		.dout(ram_rdata)
-	);*/
+	);
 endmodule
 
 // Implementation note:

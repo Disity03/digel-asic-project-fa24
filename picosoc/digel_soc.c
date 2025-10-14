@@ -150,5 +150,5 @@ void main()
     wave_gen_demonstrate_mode(WAVE_RECT, 100, 30);
     wave_gen_demonstrate_mode(WAVE_TRI, 120, 15);
     wave_gen_demonstrate_mode(WAVE_SAW, 120, 15);
-    wave_gen_demonstrate_mode(WAVE_SINE, 100, 20);
+    wave_gen_demonstrate_mode(WAVE_SINE, 100, 50);
 }

@@ -136,7 +136,7 @@ clean:
 base_dir=$(abspath ..)
 vlsi_dir=$(abspath .)
 sim_dir=$(abspath .)
-hammer_dir=HAMMER_PATH
+hammer_dir=~/DigEl/digel/lab/hammer
 pdk_dir=$(HOME)/share/pdk
 
 #########################################################################################
@@ -213,8 +213,9 @@ MAKE = make
 sim-rtl: $(HAMMER_D_MK) digel_soc.hex
 	cp --update $(pdk_dir)/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v $(OBJ_DIR)/tech-sky130-cache/primitives.v
 	cp --update $(hammer_dir)/e2e/tech-sky130-cache/sky130_fd_sc_hd.v $(OBJ_DIR)/tech-sky130-cache/sky130_fd_sc_hd.v
+	mkdir -p $(OBJ_DIR)/sim-rundir
 	cp $(vlsi_dir)/digel_soc.hex $(OBJ_DIR)/sim-rundir/firmware.hex
-	mkdir $(OBJ_DIR)/sim-rundir/waves
+	mkdir -p $(OBJ_DIR)/sim-rundir/waves
 	$(HAMMER_EXEC) -p $(TECH_CONF) -p $(SIM_RTL_CONF) --obj_dir $(OBJ_DIR) sim
 
 #########################################################################################
