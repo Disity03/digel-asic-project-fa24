@@ -27,23 +27,16 @@ module wave_gen (
 	reg changed; 
 	assign rdata ={29'b0, mode};
 	
-	// Jednobitni signali
-	reg [31:0] toggle_len, pwm_high, pwm_low, w, prn_mask;
+	// Registri signala
+	reg [31:0] param1, param2, lfsr;
 	reg [31:0] counter;
-	reg [31:0] lfsr;
-
-	// Visebitni signali
-	reg [31:0] rect_amp, rect_period;
-	reg [31:0] tri_amp, tri_step, saw_amp, saw_step;
-	reg [31:0] sine_amp, sine_period;
 	wire[31:0] sine_phase;
-	reg [31:0] multi_cnt;
 	reg [31:0] mask_lower;
 	reg        feedback;
 	
 	reg pp;
 	wire[11:0] rom_output;
-	assign sine_phase = multi_cnt * 255 / (sine_period) ;
+	assign sine_phase = counter * 255 / param2 ;
 	sine_rom rom (
 		.addr(sine_phase[6:0]),
 		.dout(rom_output)
@@ -59,26 +52,14 @@ module wave_gen (
 					end
 					
 					PARAM1: begin
-						case (mode)
-							TOGGLE: toggle_len <= wdata;
-						    PWM: pwm_high <= wdata;
-						    PRN: w <= (wdata > 31) ? 31 : (wdata < 2) ? 2 : wdata;
-						    RECT : rect_amp <= wdata;
-						    TRI : tri_amp <= wdata;
-						    SAW : saw_amp <= wdata;
-						    SINE : sine_amp <= wdata;
-						endcase
+						if(mode == PWM) begin
+							param1 <= (wdata > 31) ? 31 : (wdata < 2) ? 2 : wdata;
+						end
+						else param1 <= wdata;
 					end
 					
 					PARAM2: begin
-						case (mode)
-						    PWM: pwm_low <= wdata;
-						    PRN: prn_mask <= wdata;
-						    RECT : rect_period <= wdata;
-						    TRI : tri_step <= wdata;
-						    SAW : saw_step <= wdata;
-						    SINE : sine_period <= |wdata ? wdata : 1;
-						endcase
+						param2 <= |wdata ? wdata : 1;
 						changed <= 0;
 					end
 				endcase
@@ -91,65 +72,64 @@ module wave_gen (
             wave <= 0;
             counter <= 0;
             lfsr <= 32'hACE1;
-            multi_cnt <= 0;
             pp <= 0;
         end else begin
             case(mode)
                 OFF: wave <= 0;
 
                 TOGGLE: begin
-                    if (counter == toggle_len-1) begin
+                    if (counter == param1-1) begin
                         wave[0] <= ~wave[0];
                         counter <= 0;
                     end else counter <= counter + 1;
                 end
 
                 PWM: begin
-                    if (wave[0] && counter == pwm_high-1) begin
+                    if (wave[0] && counter == param1-1) begin
                         wave[0] <= 0;
                         counter <= 0;
-                    end else if (!wave[0] && counter == pwm_low-1) begin
+                    end else if (!wave[0] && counter == param2-1) begin
                         wave[0] <= 1;
                         counter <= 0;
                     end else counter <= counter + 1;
                 end
 
                 PRN: begin
-					mask_lower = 32'hFFFF_FFFF >> (32 - w);
-					feedback = ^((lfsr & mask_lower) & (prn_mask & mask_lower));
+					mask_lower = 32'hFFFF_FFFF >> (32 - param1);
+					feedback = ^((lfsr & mask_lower) & (param2 & mask_lower));
 					lfsr <= ((lfsr << 1) | feedback) & mask_lower;
-					wave[0] <= (lfsr >> (w-1)) & 1'b1;
+					wave[0] <= (lfsr >> (param1-1)) & 1'b1;
                 end
 
                 RECT: begin
-                    multi_cnt <= multi_cnt + 1;
-                    wave[31:0] <= (multi_cnt < rect_period/2) ? rect_amp : 0;
-                    if (multi_cnt == rect_period-1) multi_cnt <= 0;
+                    counter <= counter + 1;
+                    wave[31:0] <= (counter < param2/2) ? param1 : 0;
+                    if (counter == param2-1) counter <= 0;
                 end
 
                 TRI: begin
-                    multi_cnt <= multi_cnt + 1;
-                    if (multi_cnt < (tri_amp/tri_step)) 
-                        wave[31:0] <= multi_cnt * tri_step;
+                    counter <= counter + 1;
+                    if (counter < (param1/param2)) 
+                        wave[31:0] <= counter * param2;
                     else
-                        wave[31:0] <= tri_amp - ((multi_cnt-(tri_amp/tri_step))*tri_step);
-                    if (multi_cnt == 2*(tri_amp/tri_step)-1) multi_cnt <= 0;
+                        wave[31:0] <= param1 - ((counter-(param1/param2))*param2);
+                    if (counter == 2*(param1/param2)-1) counter <= 0;
                 end
 
                 SAW: begin
-                    multi_cnt <= multi_cnt + 1;
-                    wave[31:0] <= (multi_cnt * saw_step) % saw_amp;
+                    counter <= counter + 1;
+                    wave[31:0] <= (counter * param2) % param1;
                 end
 
                 SINE: begin
                 	if(~pp) begin
-		                multi_cnt <= multi_cnt + 1;
-		                if(multi_cnt >= (sine_period/2)-1) pp <= ~pp;
-		                wave[31:0] <= (rom_output * sine_amp) / 2048;
+		                counter <= counter + 1;
+		                if(counter >= (param2/2)-1) pp <= ~pp;
+		                wave[31:0] <= (rom_output * param1) / 2048;
 		            end else begin
-		            	multi_cnt <= multi_cnt - 1;
-		            	if(multi_cnt <= 1) pp <= ~pp;
-		            	wave[31:0] <= (2*sine_amp) - (rom_output * sine_amp) / 2048;
+		            	counter <= counter - 1;
+		            	if(counter <= 1) pp <= ~pp;
+		            	wave[31:0] <= (2*param1) - (rom_output * param1) / 2048;
 		            end
                 end
             endcase
