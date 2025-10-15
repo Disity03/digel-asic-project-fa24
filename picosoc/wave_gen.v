@@ -28,10 +28,10 @@ module wave_gen (
 	assign rdata ={29'b0, mode};
 	
 	// Registri signala
-	reg [31:0] param1, param2, lfsr;
+	reg [11:0] param1, param2;
+	reg [11:0] tmp;
 	reg [31:0] counter;
 	wire[31:0] sine_phase;
-	reg [31:0] mask_lower;
 	reg        feedback;
 	
 	reg pp;
@@ -53,14 +53,15 @@ module wave_gen (
 					
 					PARAM1: begin
 						if(mode == PWM) begin
-							param1 <= (wdata > 31) ? 31 : (wdata < 2) ? 2 : wdata;
+							param1 <= (wdata > 31) ? 31 : (wdata < 2) ? 12'd2 : wdata[11:0];
 						end
-						else param1 <= wdata;
+						else param1 <= wdata[11:0];
 					end
 					
 					PARAM2: begin
-						param2 <= |wdata ? wdata : 1;
+						param2 <= |wdata ? wdata[11:0] : 1;
 						changed <= 0;
+						tmp <= param1 / wdata[11:0];
 					end
 				endcase
 			end
@@ -71,7 +72,6 @@ module wave_gen (
         if (changed) begin
             wave <= 0;
             counter <= 0;
-            lfsr <= 32'hACE1;
             pp <= 0;
         end else begin
             case(mode)
@@ -95,41 +95,40 @@ module wave_gen (
                 end
 
                 PRN: begin
-					mask_lower = 32'hFFFF_FFFF >> (32 - param1);
-					feedback = ^((lfsr & mask_lower) & (param2 & mask_lower));
-					lfsr <= ((lfsr << 1) | feedback) & mask_lower;
-					wave[0] <= (lfsr >> (param1-1)) & 1'b1;
+					feedback = ^(param2 & param1);
+					param1 <= {param1[10:0], feedback};
+					wave[0] <= param1[0];
                 end
 
                 RECT: begin
                     counter <= counter + 1;
-                    wave[31:0] <= (counter < param2/2) ? param1 : 0;
+                    wave[31:0] <= (counter < (param2>>1)) ? param1 : 0;
                     if (counter == param2-1) counter <= 0;
                 end
 
                 TRI: begin
                     counter <= counter + 1;
-                    if (counter < (param1/param2)) 
+                    if (counter < tmp) 
                         wave[31:0] <= counter * param2;
                     else
-                        wave[31:0] <= param1 - ((counter-(param1/param2))*param2);
-                    if (counter == 2*(param1/param2)-1) counter <= 0;
+                        wave[31:0] <= param1 - ((counter-tmp)*param2);
+                    if (counter == (tmp<<1)-1) counter <= 0;
                 end
 
                 SAW: begin
-                    counter <= counter + 1;
-                    wave[31:0] <= (counter * param2) % param1;
+                    counter <= (counter==tmp) ? 0 : counter + 1;
+                    wave[31:0] <= (counter * param2);
                 end
 
                 SINE: begin
                 	if(~pp) begin
 		                counter <= counter + 1;
-		                if(counter >= (param2/2)-1) pp <= ~pp;
+		                if(counter >= (param2>>1)-1) pp <= ~pp;
 		                wave[31:0] <= (rom_output * param1) / 2048;
 		            end else begin
 		            	counter <= counter - 1;
 		            	if(counter <= 1) pp <= ~pp;
-		            	wave[31:0] <= (2*param1) - (rom_output * param1) / 2048;
+		            	wave[31:0] <= (param1<<1) - (rom_output * param1) / 2048;
 		            end
                 end
             endcase
