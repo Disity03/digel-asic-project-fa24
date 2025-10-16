@@ -136,7 +136,7 @@ clean:
 base_dir=$(abspath ..)
 vlsi_dir=$(abspath .)
 sim_dir=$(abspath .)
-hammer_dir=~/DigEl/digel/lab/hammer
+hammer_dir=HAMMER_PATH
 pdk_dir=$(HOME)/share/pdk
 
 #########################################################################################

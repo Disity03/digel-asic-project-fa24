@@ -218,6 +218,8 @@ module picosoc (
 		.rdata(ram_rdata)
 	);*/
 	
+	
+	// Instanca sram memorije	
 	sram22_256x32m4w8 memory (
 		.clk(clk),
 		.we(mem_valid && !mem_ready && mem_addr < 4*MEM_WORDS && (|mem_wstrb)),

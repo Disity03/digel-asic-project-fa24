@@ -72,19 +72,17 @@ module digel_soc (
 	wire flash_io2_oe, flash_io2_do, flash_io2_di;
 	wire flash_io3_oe, flash_io3_do, flash_io3_di;
 
-	// flash_io0
+	
+	// Poludvosmerni trostaticki bafer
 	assign flash_io0 = flash_io0_oe ? flash_io0_do : 1'bz;
 	assign flash_io0_di = flash_io0;
 
-	// flash_io1
 	assign flash_io1 = flash_io1_oe ? flash_io1_do : 1'bz;
 	assign flash_io1_di = flash_io1;
 
-	// flash_io2
 	assign flash_io2 = flash_io2_oe ? flash_io2_do : 1'bz;
 	assign flash_io2_di = flash_io2;
 
-	// flash_io3
 	assign flash_io3 = flash_io3_oe ? flash_io3_do : 1'bz;
 	assign flash_io3_di = flash_io3;
 
@@ -135,7 +133,7 @@ module digel_soc (
 						if (iomem_wstrb[3]) gpio[31:24] <= iomem_wdata[31:24];
 					end
 					
-					// Wave Generator Control
+					// Wave Generator
 					8'h04: begin
 						iomem_ready <= 1;
 						iomem_rdata <= wave_gen_output;
