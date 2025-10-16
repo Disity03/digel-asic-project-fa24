@@ -65,7 +65,7 @@ module testbench;
 		#1 $display("%b", leds);
 	end
 	
-
+	// Registri za snimanje ispisa
 	integer wave_fd;
 	integer samples_per_mode;
 	reg [2:0] current_mode;

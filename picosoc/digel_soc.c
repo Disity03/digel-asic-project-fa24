@@ -94,27 +94,31 @@ void print_dec(uint32_t v)
 	else putchar('0');
 }
 
-// Wave Generator funkcije
+// Postavljanje moda
 void wave_gen_set_mode(uint32_t mode)
 {
     WAVE_MODE = mode;
 }
 
+// Postavljanje prvog parametra
 void wave_gen_set_param1(uint32_t param)
 {
     WAVE_PARAM1 = param;
 }
 
+// Postavljanje drugog parametra
 void wave_gen_set_param2(uint32_t param)
 {
     WAVE_PARAM2 = param;
 }
 
+// Citanje ispisa
 uint32_t wave_gen_get_output()
 {
     return WAVE_OUTPUT;
 }
 
+// Testiranje moda
 void wave_gen_demonstrate_mode(uint32_t mode, uint32_t param1, uint32_t param2)
 {
     print("MODE: ");
@@ -134,6 +138,7 @@ void wave_gen_demonstrate_mode(uint32_t mode, uint32_t param1, uint32_t param2)
     wave_gen_set_param1(param1);
     wave_gen_set_param2(param2);
     
+    // Cekanje
     for(int i=0; i < 100; i++){
     	
     }
@@ -143,10 +148,11 @@ void main()
 {
     reg_uart_clkdiv = 104;
     
+    // Testiranje svih modova
     wave_gen_demonstrate_mode(WAVE_OFF, 0, 0);
     wave_gen_demonstrate_mode(WAVE_TOGGLE, 2, 0);
     wave_gen_demonstrate_mode(WAVE_PWM, 5, 2);
-    wave_gen_demonstrate_mode(WAVE_PRN, 16, 0xB400);
+    wave_gen_demonstrate_mode(WAVE_PRN, 8, 0xACE);
     wave_gen_demonstrate_mode(WAVE_RECT, 100, 30);
     wave_gen_demonstrate_mode(WAVE_TRI, 120, 15);
     wave_gen_demonstrate_mode(WAVE_SAW, 120, 15);

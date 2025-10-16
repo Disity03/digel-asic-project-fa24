@@ -133,7 +133,7 @@ module digel_soc (
 						if (iomem_wstrb[3]) gpio[31:24] <= iomem_wdata[31:24];
 					end
 					
-					// Wave Generator
+					// Wave Generator kontrola
 					8'h04: begin
 						iomem_ready <= 1;
 						iomem_rdata <= wave_gen_output;
