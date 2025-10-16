@@ -2,6 +2,7 @@
 sim.inputs:
   input_files:
     - "digel_soc_tb.v"
+    - "spiflash.v"
   input_files_meta: append
   level: "par"
   timing_annotated: true
