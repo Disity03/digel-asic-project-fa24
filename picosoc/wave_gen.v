@@ -37,7 +37,9 @@ module wave_gen (
 	wire[11:0] rom_output;
 	wire[31:0] mul;
 	assign mul = rom_output * param1;
-	assign sine_phase = (counter << 8) / param2 ;
+	assign sine_phase = (counter << 8) / param2 ; // Mana modula, visebitsko deljenje
+	
+	// Instanca rom memorije za LUT sinusa
 	sine_rom rom (
 		.clk(clk),
 		.addr(sine_phase[6:0]),
@@ -76,16 +78,16 @@ module wave_gen (
             pp <= 0;
         end else begin
             case(mode)
-                OFF: wave <= 0;
+                OFF: wave <= 0; // Iskljucen
 
-                TOGGLE: begin
+                TOGGLE: begin // Naizmenicni signal
                     if (counter == param1-1) begin
                         wave[0] <= ~wave[0];
                         counter <= 0;
                     end else counter <= counter + 1;
                 end
 
-                PWM: begin
+                PWM: begin // PWM signal
                     if (wave[0] && counter == param1-1) begin
                         wave[0] <= 0;
                         counter <= 0;
@@ -95,19 +97,19 @@ module wave_gen (
                     end else counter <= counter + 1;
                 end
 
-                PRN: begin
+                PRN: begin // Pseudo-nasumicni signal
 					feedback = ^(param2 & param1);
 					param1 <= {param1[10:0], feedback};
 					wave[0] <= param1[0];
                 end
 
-                RECT: begin
+                RECT: begin // Pravougaoni signal
                     counter <= counter + 1;
                     wave[31:0] <= (counter < (param2>>1)) ? param1 : 0;
                     if (counter == param2-1) counter <= 0;
                 end
 
-                TRI: begin
+                TRI: begin // Trouglasti signal
                     if (~pp) begin
                         counter <= counter + param2;
                         if((counter + param2) > param1) pp <= ~pp;
@@ -118,12 +120,12 @@ module wave_gen (
                     wave[31:0] <= counter;
                 end
 
-                SAW: begin
+                SAW: begin // Testerasti signal
                     counter <= ((counter + param2) > param1) ? 0 : counter + param2;
                     wave[31:0] <= counter;
                 end
 
-                SINE: begin
+                SINE: begin // Sinusni signal
                 	if(~pp) begin
 		                counter <= counter + 1;
 		                if(counter >= (param2>>1)-1) pp <= ~pp;
@@ -139,7 +141,7 @@ module wave_gen (
     end
 endmodule
 
-
+// ROM memorija za LUT sinusa
 module sine_rom (
     input  wire clk,    
     input  wire [6:0] addr,   
