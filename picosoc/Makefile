@@ -215,6 +215,7 @@ sim-rtl: $(HAMMER_D_MK) digel_soc.hex
 	cp --update $(hammer_dir)/e2e/tech-sky130-cache/sky130_fd_sc_hd.v $(OBJ_DIR)/tech-sky130-cache/sky130_fd_sc_hd.v
 	mkdir -p $(OBJ_DIR)/sim-rundir
 	cp $(vlsi_dir)/digel_soc.hex $(OBJ_DIR)/sim-rundir/firmware.hex
+	cp $(vlsi_dir)/python_graphs.py $(OBJ_DIR)/sim-rundir/python_graphs.py
 	mkdir -p $(OBJ_DIR)/sim-rundir/waves
 	$(HAMMER_EXEC) -p $(TECH_CONF) -p $(SIM_RTL_CONF) --obj_dir $(OBJ_DIR) sim
 

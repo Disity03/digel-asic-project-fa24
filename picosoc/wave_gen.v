@@ -32,16 +32,16 @@ module wave_gen (
 	reg [31:0] counter;
 	wire[31:0] sine_phase;
 	reg        feedback;
+	reg sign;
 	
 	reg pp;
 	wire[11:0] rom_output;
 	wire[31:0] mul;
 	assign mul = rom_output * param1;
-	assign sine_phase = (counter << 8) / param2 ; // Mana modula, visebitsko deljenje
+	assign sine_phase = (counter << 7) >> param2;
 	
 	// Instanca rom memorije za LUT sinusa
 	sine_rom rom (
-		.clk(clk),
 		.addr(sine_phase[6:0]),
 		.dout(rom_output)
 	);
@@ -63,8 +63,15 @@ module wave_gen (
 					end
 					
 					PARAM2: begin
-						param2 <= |wdata ? wdata[11:0] : 1;
+						if(mode == SAW && wdata[11]) begin
+							sign <= 1;
+							param2 <= ~wdata[11:0] + 1;
+						end else begin
+							sign <= 0;
+							param2 <= |wdata ? wdata[11:0] : 1;
+						end
 						changed <= 0;
+						
 					end
 				endcase
 			end
@@ -115,24 +122,29 @@ module wave_gen (
                         if((counter + param2) > param1) pp <= ~pp;
                     end else begin
                         counter <= counter - param2;
-                        if(counter - param2 < 0) pp <= ~pp;
+                        if(counter - param2 <= 0 || counter[31] == 1) pp <= ~pp;
                     end
                     wave[31:0] <= counter;
                 end
 
                 SAW: begin // Testerasti signal
-                    counter <= ((counter + param2) > param1) ? 0 : counter + param2;
-                    wave[31:0] <= counter;
+                	if(~sign) begin
+		                counter <= ((counter + param2) > param1) ? 0 : counter + param2;
+		            end
+		            else begin
+		            	counter <= (counter == 0 || (counter - param2) > param1) ? param1 : counter - param2;
+		            end
+		            wave[31:0] <= counter;
                 end
 
                 SINE: begin // Sinusni signal
                 	if(~pp) begin
-		                counter <= counter + 1;
-		                if(counter >= (param2>>1)-1) pp <= ~pp;
+		                counter <= counter + 2;
+		                if(counter >= (1<<(param2))-2) pp <= ~pp;
 		                wave[31:0] <= {11'b0,mul[31:11]};
 		            end else begin
-		            	counter <= counter - 1;
-		            	if(counter <= 1) pp <= ~pp;
+		            	counter <= counter - 2;
+		            	if(counter <= 2) pp <= ~pp;
 		            	wave[31:0] <= (param1<<1) - mul[23:11];
 		            end
                 end
@@ -143,146 +155,141 @@ endmodule
 
 // ROM memorija za LUT sinusa
 module sine_rom (
-    input  wire clk,    
-    input  wire [6:0] addr,   
-    output reg  [11:0] dout    
+    input  wire [6:0] addr,
+    output reg  [11:0] dout
 );
 
-    reg [11:0] rom [0:127];    
-
-    initial begin
-        rom[0]   = 12'd2048;
-        rom[1]   = 12'd2098;
-        rom[2]   = 12'd2148;
-        rom[3]   = 12'd2198;
-        rom[4]   = 12'd2248;
-        rom[5]   = 12'd2298;
-        rom[6]   = 12'd2348;
-        rom[7]   = 12'd2398;
-        rom[8]   = 12'd2447;
-        rom[9]   = 12'd2496;
-        rom[10]  = 12'd2545;
-        rom[11]  = 12'd2594;
-        rom[12]  = 12'd2642;
-        rom[13]  = 12'd2690;
-        rom[14]  = 12'd2737;
-        rom[15]  = 12'd2784;
-        rom[16]  = 12'd2831;
-        rom[17]  = 12'd2877;
-        rom[18]  = 12'd2923;
-        rom[19]  = 12'd2968;
-        rom[20]  = 12'd3013;
-        rom[21]  = 12'd3057;
-        rom[22]  = 12'd3100;
-        rom[23]  = 12'd3143;
-        rom[24]  = 12'd3185;
-        rom[25]  = 12'd3226;
-        rom[26]  = 12'd3267;
-        rom[27]  = 12'd3307;
-        rom[28]  = 12'd3346;
-        rom[29]  = 12'd3385;
-        rom[30]  = 12'd3423;
-        rom[31]  = 12'd3459;
-        rom[32]  = 12'd3495;
-        rom[33]  = 12'd3530;
-        rom[34]  = 12'd3565;
-        rom[35]  = 12'd3598;
-        rom[36]  = 12'd3630;
-        rom[37]  = 12'd3662;
-        rom[38]  = 12'd3692;
-        rom[39]  = 12'd3722;
-        rom[40]  = 12'd3750;
-        rom[41]  = 12'd3777;
-        rom[42]  = 12'd3804;
-        rom[43]  = 12'd3829;
-        rom[44]  = 12'd3853;
-        rom[45]  = 12'd3876;
-        rom[46]  = 12'd3898;
-        rom[47]  = 12'd3919;
-        rom[48]  = 12'd3939;
-        rom[49]  = 12'd3958;
-        rom[50]  = 12'd3975;
-        rom[51]  = 12'd3992;
-        rom[52]  = 12'd4007;
-        rom[53]  = 12'd4021;
-        rom[54]  = 12'd4034;
-        rom[55]  = 12'd4045;
-        rom[56]  = 12'd4056;
-        rom[57]  = 12'd4065;
-        rom[58]  = 12'd4073;
-        rom[59]  = 12'd4080;
-        rom[60]  = 12'd4085;
-        rom[61]  = 12'd4089;
-        rom[62]  = 12'd4093;
-        rom[63]  = 12'd4094;
-        rom[64]  = 12'd4095;
-        rom[65]  = 12'd4094;
-        rom[66]  = 12'd4093;
-        rom[67]  = 12'd4089;
-        rom[68]  = 12'd4085;
-        rom[69]  = 12'd4080;
-        rom[70]  = 12'd4073;
-        rom[71]  = 12'd4065;
-        rom[72]  = 12'd4056;
-        rom[73]  = 12'd4045;
-        rom[74]  = 12'd4034;
-        rom[75]  = 12'd4021;
-        rom[76]  = 12'd4007;
-        rom[77]  = 12'd3992;
-        rom[78]  = 12'd3975;
-        rom[79]  = 12'd3958;
-        rom[80]  = 12'd3939;
-        rom[81]  = 12'd3919;
-        rom[82]  = 12'd3898;
-        rom[83]  = 12'd3876;
-        rom[84]  = 12'd3853;
-        rom[85]  = 12'd3829;
-        rom[86]  = 12'd3804;
-        rom[87]  = 12'd3777;
-        rom[88]  = 12'd3750;
-        rom[89]  = 12'd3722;
-        rom[90]  = 12'd3692;
-        rom[91]  = 12'd3662;
-        rom[92]  = 12'd3630;
-        rom[93]  = 12'd3598;
-        rom[94]  = 12'd3565;
-        rom[95]  = 12'd3530;
-        rom[96]  = 12'd3495;
-        rom[97]  = 12'd3459;
-        rom[98]  = 12'd3423;
-        rom[99]  = 12'd3385;
-        rom[100] = 12'd3346;
-        rom[101] = 12'd3307;
-        rom[102] = 12'd3267;
-        rom[103] = 12'd3226;
-        rom[104] = 12'd3185;
-        rom[105] = 12'd3143;
-        rom[106] = 12'd3100;
-        rom[107] = 12'd3057;
-        rom[108] = 12'd3013;
-        rom[109] = 12'd2968;
-        rom[110] = 12'd2923;
-        rom[111] = 12'd2877;
-        rom[112] = 12'd2831;
-        rom[113] = 12'd2784;
-        rom[114] = 12'd2737;
-        rom[115] = 12'd2690;
-        rom[116] = 12'd2642;
-        rom[117] = 12'd2594;
-        rom[118] = 12'd2545;
-        rom[119] = 12'd2496;
-        rom[120] = 12'd2447;
-        rom[121] = 12'd2398;
-        rom[122] = 12'd2348;
-        rom[123] = 12'd2298;
-        rom[124] = 12'd2248;
-        rom[125] = 12'd2198;
-        rom[126] = 12'd2148;
-        rom[127] = 12'd2098;
+    always @(*) begin
+        case (addr)
+            7'd0: dout = 12'd2048;
+            7'd1: dout = 12'd2098;
+            7'd2: dout = 12'd2148;
+            7'd3: dout = 12'd2198;
+            7'd4: dout = 12'd2248;
+            7'd5: dout = 12'd2298;
+            7'd6: dout = 12'd2348;
+            7'd7: dout = 12'd2398;
+            7'd8: dout = 12'd2447;
+            7'd9: dout = 12'd2496;
+            7'd10: dout = 12'd2545;
+            7'd11: dout = 12'd2594;
+            7'd12: dout = 12'd2642;
+            7'd13: dout = 12'd2690;
+            7'd14: dout = 12'd2737;
+            7'd15: dout = 12'd2784;
+            7'd16: dout = 12'd2831;
+            7'd17: dout = 12'd2877;
+            7'd18: dout = 12'd2923;
+            7'd19: dout = 12'd2968;
+            7'd20: dout = 12'd3013;
+            7'd21: dout = 12'd3057;
+            7'd22: dout = 12'd3100;
+            7'd23: dout = 12'd3143;
+            7'd24: dout = 12'd3185;
+            7'd25: dout = 12'd3226;
+            7'd26: dout = 12'd3267;
+            7'd27: dout = 12'd3307;
+            7'd28: dout = 12'd3346;
+            7'd29: dout = 12'd3385;
+            7'd30: dout = 12'd3423;
+            7'd31: dout = 12'd3459;
+            7'd32: dout = 12'd3495;
+            7'd33: dout = 12'd3530;
+            7'd34: dout = 12'd3565;
+            7'd35: dout = 12'd3598;
+            7'd36: dout = 12'd3630;
+            7'd37: dout = 12'd3662;
+            7'd38: dout = 12'd3692;
+            7'd39: dout = 12'd3722;
+            7'd40: dout = 12'd3750;
+            7'd41: dout = 12'd3777;
+            7'd42: dout = 12'd3804;
+            7'd43: dout = 12'd3829;
+            7'd44: dout = 12'd3853;
+            7'd45: dout = 12'd3876;
+            7'd46: dout = 12'd3898;
+            7'd47: dout = 12'd3919;
+            7'd48: dout = 12'd3939;
+            7'd49: dout = 12'd3958;
+            7'd50: dout = 12'd3975;
+            7'd51: dout = 12'd3992;
+            7'd52: dout = 12'd4007;
+            7'd53: dout = 12'd4021;
+            7'd54: dout = 12'd4034;
+            7'd55: dout = 12'd4045;
+            7'd56: dout = 12'd4056;
+            7'd57: dout = 12'd4065;
+            7'd58: dout = 12'd4073;
+            7'd59: dout = 12'd4080;
+            7'd60: dout = 12'd4085;
+            7'd61: dout = 12'd4089;
+            7'd62: dout = 12'd4093;
+            7'd63: dout = 12'd4094;
+            7'd64: dout = 12'd4095;
+            7'd65: dout = 12'd4094;
+            7'd66: dout = 12'd4093;
+            7'd67: dout = 12'd4089;
+            7'd68: dout = 12'd4085;
+            7'd69: dout = 12'd4080;
+            7'd70: dout = 12'd4073;
+            7'd71: dout = 12'd4065;
+            7'd72: dout = 12'd4056;
+            7'd73: dout = 12'd4045;
+            7'd74: dout = 12'd4034;
+            7'd75: dout = 12'd4021;
+            7'd76: dout = 12'd4007;
+            7'd77: dout = 12'd3992;
+            7'd78: dout = 12'd3975;
+            7'd79: dout = 12'd3958;
+            7'd80: dout = 12'd3939;
+            7'd81: dout = 12'd3919;
+            7'd82: dout = 12'd3898;
+            7'd83: dout = 12'd3876;
+            7'd84: dout = 12'd3853;
+            7'd85: dout = 12'd3829;
+            7'd86: dout = 12'd3804;
+            7'd87: dout = 12'd3777;
+            7'd88: dout = 12'd3750;
+            7'd89: dout = 12'd3722;
+            7'd90: dout = 12'd3692;
+            7'd91: dout = 12'd3662;
+            7'd92: dout = 12'd3630;
+            7'd93: dout = 12'd3598;
+            7'd94: dout = 12'd3565;
+            7'd95: dout = 12'd3530;
+            7'd96: dout = 12'd3495;
+            7'd97: dout = 12'd3459;
+            7'd98: dout = 12'd3423;
+            7'd99: dout = 12'd3385;
+            7'd100: dout = 12'd3346;
+            7'd101: dout = 12'd3307;
+            7'd102: dout = 12'd3267;
+            7'd103: dout = 12'd3226;
+            7'd104: dout = 12'd3185;
+            7'd105: dout = 12'd3143;
+            7'd106: dout = 12'd3100;
+            7'd107: dout = 12'd3057;
+            7'd108: dout = 12'd3013;
+            7'd109: dout = 12'd2968;
+            7'd110: dout = 12'd2923;
+            7'd111: dout = 12'd2877;
+            7'd112: dout = 12'd2831;
+            7'd113: dout = 12'd2784;
+            7'd114: dout = 12'd2737;
+            7'd115: dout = 12'd2690;
+            7'd116: dout = 12'd2642;
+            7'd117: dout = 12'd2594;
+            7'd118: dout = 12'd2545;
+            7'd119: dout = 12'd2496;
+            7'd120: dout = 12'd2447;
+            7'd121: dout = 12'd2398;
+            7'd122: dout = 12'd2348;
+            7'd123: dout = 12'd2298;
+            7'd124: dout = 12'd2248;
+            7'd125: dout = 12'd2198;
+            7'd126: dout = 12'd2148;
+            7'd127: dout = 12'd2098;
+            default: dout = 12'd2048;
+        endcase
     end
-
-    always @(posedge clk) begin
-        dout <= (addr>127 | addr<0) ? rom[0] : rom[addr];
-    end
-
 endmodule

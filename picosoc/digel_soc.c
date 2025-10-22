@@ -7,7 +7,6 @@
 #include <stdint.h>
 #include <stdbool.h>
 
-
 // Memorijsko mapiranje 
 #define reg_spictrl (*(volatile uint32_t*)0x02000000)
 #define reg_uart_clkdiv (*(volatile uint32_t*)0x02000004) // UART takt
@@ -139,7 +138,7 @@ void wave_gen_demonstrate_mode(uint32_t mode, uint32_t param1, uint32_t param2)
     wave_gen_set_param2(param2);
     
     // Cekanje
-    for(int i=0; i < 100; i++){
+    for(int i=0; i < 10; i++){
     	
     }
 }
@@ -149,12 +148,15 @@ void main()
     reg_uart_clkdiv = 104;
     
     // Testiranje svih modova
+    
     wave_gen_demonstrate_mode(WAVE_OFF, 0, 0);
     wave_gen_demonstrate_mode(WAVE_TOGGLE, 2, 0);
     wave_gen_demonstrate_mode(WAVE_PWM, 5, 2);
     wave_gen_demonstrate_mode(WAVE_PRN, 8, 0xACE);
     wave_gen_demonstrate_mode(WAVE_RECT, 100, 30);
-    wave_gen_demonstrate_mode(WAVE_TRI, 120, 15);
+    wave_gen_demonstrate_mode(WAVE_TRI, 120, 16);
     wave_gen_demonstrate_mode(WAVE_SAW, 120, 15);
-    wave_gen_demonstrate_mode(WAVE_SINE, 100, 50);
+    wave_gen_demonstrate_mode(WAVE_SINE, 100, 8);
+    wave_gen_demonstrate_mode(WAVE_SAW, 120, -16);
+    wave_gen_demonstrate_mode(WAVE_SINE, 100, 6);
 }
