@@ -1,0 +1,9 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "sim.outputs.waveforms": [],
+    "sim.outputs.saifs": [],
+    "sim.outputs.output_top_module": "digel_soc",
+    "sim.outputs.output_tb_name": "testbench",
+    "sim.outputs.output_tb_dut": "uut",
+    "sim.outputs.output_level": "par"
+}

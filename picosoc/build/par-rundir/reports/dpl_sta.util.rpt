@@ -1,0 +1,5 @@
+(hammer) report_design_area
+Design area 273190 u^2 19% utilization.
+(hammer) report_design_area_metrics
+(hammer) puts "Design has [llength [get_cells *]] instances."
+Design has 30749 instances.

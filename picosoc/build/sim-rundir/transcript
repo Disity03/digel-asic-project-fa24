@@ -1,0 +1,2192 @@
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 linux_x86_64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/sim-rundir/testbench.do
+# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+# vmap work_testbench /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/sim-rundir/work_testbench 
+# Modifying modelsim.ini
+# Questa Intel Starter FPGA Edition-64 vlog 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 23:12:50 on Oct 28,2025
+# vlog -reportprogress 300 -suppress 2892 -work work_testbench "+define+CLOCK_PERIOD=50.00" -timescale 1ns/10ps /home/urosdeljanin/digel-asic-project-fa24/picosoc/digel_soc_tb.v /home/urosdeljanin/digel-asic-project-fa24/picosoc/spiflash.v /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.v /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/primitives.v /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_fd_sc_hd.v /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/verilog/sky130_ef_io.v /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/verilog/sky130_fd_io.v /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32.v /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32.v /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8.v /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8.v /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24.v /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.v /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2.v /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8.v /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32.v /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8.v /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8.v 
+# -- Compiling module testbench
+# -- Compiling module spiflash
+# -- Compiling module sram22_256x32m4w8
+# -- Compiling module digel_soc
+# -- Compiling UDP sky130_fd_sc_hd__udp_dff$NSR
+# -- Compiling UDP sky130_fd_sc_hd__udp_dff$NSR_pp$PG$N
+# -- Compiling UDP sky130_fd_sc_hd__udp_dff$P
+# -- Compiling UDP sky130_fd_sc_hd__udp_dff$P_pp$PG$N
+# -- Compiling UDP sky130_fd_sc_hd__udp_dff$PR
+# -- Compiling UDP sky130_fd_sc_hd__udp_dff$PR_pp$PG$N
+# -- Compiling UDP sky130_fd_sc_hd__udp_dff$PS
+# -- Compiling UDP sky130_fd_sc_hd__udp_dff$PS_pp$PG$N
+# -- Compiling UDP sky130_fd_sc_hd__udp_dlatch$lP
+# -- Compiling UDP sky130_fd_sc_hd__udp_dlatch$lP_pp$PG$N
+# -- Compiling UDP sky130_fd_sc_hd__udp_dlatch$P
+# -- Compiling UDP sky130_fd_sc_hd__udp_dlatch$P_pp$PG$N
+# -- Compiling UDP sky130_fd_sc_hd__udp_dlatch$PR
+# -- Compiling UDP sky130_fd_sc_hd__udp_dlatch$PR_pp$PG$N
+# -- Compiling UDP sky130_fd_sc_hd__udp_mux_2to1
+# -- Compiling UDP sky130_fd_sc_hd__udp_mux_2to1_N
+# -- Compiling UDP sky130_fd_sc_hd__udp_mux_4to2
+# -- Compiling UDP sky130_fd_sc_hd__udp_pwrgood$l_pp$G
+# -- Compiling UDP sky130_fd_sc_hd__udp_pwrgood$l_pp$PG
+# -- Compiling UDP sky130_fd_sc_hd__udp_pwrgood$l_pp$PG$S
+# -- Compiling UDP sky130_fd_sc_hd__udp_pwrgood_pp$G
+# -- Compiling UDP sky130_fd_sc_hd__udp_pwrgood_pp$P
+# -- Compiling UDP sky130_fd_sc_hd__udp_pwrgood_pp$PG
+# -- Compiling module sky130_ef_sc_hd__decap_12
+# -- Compiling module sky130_ef_sc_hd__fill_4
+# -- Compiling module sky130_ef_sc_hd__fill_8
+# -- Compiling module sky130_ef_sc_hd__fill_12
+# -- Compiling module sky130_fd_sc_hd__a2bb2o_1
+# -- Compiling module sky130_fd_sc_hd__a2bb2o_2
+# -- Compiling module sky130_fd_sc_hd__a2bb2o_4
+# -- Compiling module sky130_fd_sc_hd__a2bb2oi_1
+# -- Compiling module sky130_fd_sc_hd__a2bb2oi_2
+# -- Compiling module sky130_fd_sc_hd__a2bb2oi_4
+# -- Compiling module sky130_fd_sc_hd__a21bo_1
+# -- Compiling module sky130_fd_sc_hd__a21bo_2
+# -- Compiling module sky130_fd_sc_hd__a21bo_4
+# -- Compiling module sky130_fd_sc_hd__a21boi_0
+# -- Compiling module sky130_fd_sc_hd__a21boi_1
+# -- Compiling module sky130_fd_sc_hd__a21boi_2
+# -- Compiling module sky130_fd_sc_hd__a21boi_4
+# -- Compiling module sky130_fd_sc_hd__a21o_1
+# -- Compiling module sky130_fd_sc_hd__a21o_2
+# -- Compiling module sky130_fd_sc_hd__a21o_4
+# -- Compiling module sky130_fd_sc_hd__a21oi_1
+# -- Compiling module sky130_fd_sc_hd__a21oi_2
+# -- Compiling module sky130_fd_sc_hd__a21oi_4
+# -- Compiling module sky130_fd_sc_hd__a22o_1
+# -- Compiling module sky130_fd_sc_hd__a22o_2
+# -- Compiling module sky130_fd_sc_hd__a22o_4
+# -- Compiling module sky130_fd_sc_hd__a22oi_1
+# -- Compiling module sky130_fd_sc_hd__a22oi_2
+# -- Compiling module sky130_fd_sc_hd__a22oi_4
+# -- Compiling module sky130_fd_sc_hd__a31o_1
+# -- Compiling module sky130_fd_sc_hd__a31o_2
+# -- Compiling module sky130_fd_sc_hd__a31o_4
+# -- Compiling module sky130_fd_sc_hd__a31oi_1
+# -- Compiling module sky130_fd_sc_hd__a31oi_2
+# -- Compiling module sky130_fd_sc_hd__a31oi_4
+# -- Compiling module sky130_fd_sc_hd__a32o_1
+# -- Compiling module sky130_fd_sc_hd__a32o_2
+# -- Compiling module sky130_fd_sc_hd__a32o_4
+# -- Compiling module sky130_fd_sc_hd__a32oi_1
+# -- Compiling module sky130_fd_sc_hd__a32oi_2
+# -- Compiling module sky130_fd_sc_hd__a32oi_4
+# -- Compiling module sky130_fd_sc_hd__a41o_1
+# -- Compiling module sky130_fd_sc_hd__a41o_2
+# -- Compiling module sky130_fd_sc_hd__a41o_4
+# -- Compiling module sky130_fd_sc_hd__a41oi_1
+# -- Compiling module sky130_fd_sc_hd__a41oi_2
+# -- Compiling module sky130_fd_sc_hd__a41oi_4
+# -- Compiling module sky130_fd_sc_hd__a211o_1
+# -- Compiling module sky130_fd_sc_hd__a211o_2
+# -- Compiling module sky130_fd_sc_hd__a211o_4
+# -- Compiling module sky130_fd_sc_hd__a211oi_1
+# -- Compiling module sky130_fd_sc_hd__a211oi_2
+# -- Compiling module sky130_fd_sc_hd__a211oi_4
+# -- Compiling module sky130_fd_sc_hd__a221o_1
+# -- Compiling module sky130_fd_sc_hd__a221o_2
+# -- Compiling module sky130_fd_sc_hd__a221o_4
+# -- Compiling module sky130_fd_sc_hd__a221oi_1
+# -- Compiling module sky130_fd_sc_hd__a221oi_2
+# -- Compiling module sky130_fd_sc_hd__a221oi_4
+# -- Compiling module sky130_fd_sc_hd__a222oi_1
+# -- Compiling module sky130_fd_sc_hd__a311o_1
+# -- Compiling module sky130_fd_sc_hd__a311o_2
+# -- Compiling module sky130_fd_sc_hd__a311o_4
+# -- Compiling module sky130_fd_sc_hd__a311oi_1
+# -- Compiling module sky130_fd_sc_hd__a311oi_2
+# -- Compiling module sky130_fd_sc_hd__a311oi_4
+# -- Compiling module sky130_fd_sc_hd__a2111o_1
+# -- Compiling module sky130_fd_sc_hd__a2111o_2
+# -- Compiling module sky130_fd_sc_hd__a2111o_4
+# -- Compiling module sky130_fd_sc_hd__a2111oi_0
+# -- Compiling module sky130_fd_sc_hd__a2111oi_1
+# -- Compiling module sky130_fd_sc_hd__a2111oi_2
+# -- Compiling module sky130_fd_sc_hd__a2111oi_4
+# -- Compiling module sky130_fd_sc_hd__and2_0
+# -- Compiling module sky130_fd_sc_hd__and2_1
+# -- Compiling module sky130_fd_sc_hd__and2_2
+# -- Compiling module sky130_fd_sc_hd__and2_4
+# -- Compiling module sky130_fd_sc_hd__and2b_1
+# -- Compiling module sky130_fd_sc_hd__and2b_2
+# -- Compiling module sky130_fd_sc_hd__and2b_4
+# -- Compiling module sky130_fd_sc_hd__and3_1
+# -- Compiling module sky130_fd_sc_hd__and3_2
+# -- Compiling module sky130_fd_sc_hd__and3_4
+# -- Compiling module sky130_fd_sc_hd__and3b_1
+# -- Compiling module sky130_fd_sc_hd__and3b_2
+# -- Compiling module sky130_fd_sc_hd__and3b_4
+# -- Compiling module sky130_fd_sc_hd__and4_1
+# -- Compiling module sky130_fd_sc_hd__and4_2
+# -- Compiling module sky130_fd_sc_hd__and4_4
+# -- Compiling module sky130_fd_sc_hd__and4b_1
+# -- Compiling module sky130_fd_sc_hd__and4b_2
+# -- Compiling module sky130_fd_sc_hd__and4b_4
+# -- Compiling module sky130_fd_sc_hd__and4bb_1
+# -- Compiling module sky130_fd_sc_hd__and4bb_2
+# -- Compiling module sky130_fd_sc_hd__and4bb_4
+# -- Compiling module sky130_fd_sc_hd__buf_1
+# -- Compiling module sky130_fd_sc_hd__buf_2
+# -- Compiling module sky130_fd_sc_hd__buf_4
+# -- Compiling module sky130_fd_sc_hd__buf_6
+# -- Compiling module sky130_fd_sc_hd__buf_8
+# -- Compiling module sky130_fd_sc_hd__buf_12
+# -- Compiling module sky130_fd_sc_hd__buf_16
+# -- Compiling module sky130_fd_sc_hd__bufbuf_8
+# -- Compiling module sky130_fd_sc_hd__bufbuf_16
+# -- Compiling module sky130_fd_sc_hd__bufinv_8
+# -- Compiling module sky130_fd_sc_hd__bufinv_16
+# -- Compiling module sky130_fd_sc_hd__clkbuf_1
+# -- Compiling module sky130_fd_sc_hd__clkbuf_2
+# -- Compiling module sky130_fd_sc_hd__clkbuf_4
+# -- Compiling module sky130_fd_sc_hd__clkbuf_8
+# -- Compiling module sky130_fd_sc_hd__clkbuf_16
+# -- Compiling module sky130_fd_sc_hd__clkdlybuf4s15_1
+# -- Compiling module sky130_fd_sc_hd__clkdlybuf4s15_2
+# -- Compiling module sky130_fd_sc_hd__clkdlybuf4s18_1
+# -- Compiling module sky130_fd_sc_hd__clkdlybuf4s18_2
+# -- Compiling module sky130_fd_sc_hd__clkdlybuf4s25_1
+# -- Compiling module sky130_fd_sc_hd__clkdlybuf4s25_2
+# -- Compiling module sky130_fd_sc_hd__clkdlybuf4s50_1
+# -- Compiling module sky130_fd_sc_hd__clkdlybuf4s50_2
+# -- Compiling module sky130_fd_sc_hd__clkinv_1
+# -- Compiling module sky130_fd_sc_hd__clkinv_2
+# -- Compiling module sky130_fd_sc_hd__clkinv_4
+# -- Compiling module sky130_fd_sc_hd__clkinv_8
+# -- Compiling module sky130_fd_sc_hd__clkinv_16
+# -- Compiling module sky130_fd_sc_hd__clkinvlp_2
+# -- Compiling module sky130_fd_sc_hd__clkinvlp_4
+# -- Compiling module sky130_fd_sc_hd__conb_1
+# -- Compiling module sky130_fd_sc_hd__decap_3
+# -- Compiling module sky130_fd_sc_hd__decap_4
+# -- Compiling module sky130_fd_sc_hd__decap_6
+# -- Compiling module sky130_fd_sc_hd__decap_8
+# -- Compiling module sky130_fd_sc_hd__decap_12
+# -- Compiling module sky130_fd_sc_hd__dfbbn_1
+# -- Compiling module sky130_fd_sc_hd__dfbbn_2
+# -- Compiling module sky130_fd_sc_hd__dfbbp_1
+# -- Compiling module sky130_fd_sc_hd__dfrbp_1
+# -- Compiling module sky130_fd_sc_hd__dfrbp_2
+# -- Compiling module sky130_fd_sc_hd__dfrtn_1
+# -- Compiling module sky130_fd_sc_hd__dfrtp_1
+# -- Compiling module sky130_fd_sc_hd__dfrtp_2
+# -- Compiling module sky130_fd_sc_hd__dfrtp_4
+# -- Compiling module sky130_fd_sc_hd__dfsbp_1
+# -- Compiling module sky130_fd_sc_hd__dfsbp_2
+# -- Compiling module sky130_fd_sc_hd__dfstp_1
+# -- Compiling module sky130_fd_sc_hd__dfstp_2
+# -- Compiling module sky130_fd_sc_hd__dfstp_4
+# -- Compiling module sky130_fd_sc_hd__dfxbp_1
+# -- Compiling module sky130_fd_sc_hd__dfxbp_2
+# -- Compiling module sky130_fd_sc_hd__dfxtp_1
+# -- Compiling module sky130_fd_sc_hd__dfxtp_2
+# -- Compiling module sky130_fd_sc_hd__dfxtp_4
+# -- Compiling module sky130_fd_sc_hd__diode_2
+# -- Compiling module sky130_fd_sc_hd__dlclkp_1
+# -- Compiling module sky130_fd_sc_hd__dlclkp_2
+# -- Compiling module sky130_fd_sc_hd__dlclkp_4
+# -- Compiling module sky130_fd_sc_hd__dlrbn_1
+# -- Compiling module sky130_fd_sc_hd__dlrbn_2
+# -- Compiling module sky130_fd_sc_hd__dlrbp_1
+# -- Compiling module sky130_fd_sc_hd__dlrbp_2
+# -- Compiling module sky130_fd_sc_hd__dlrtn_1
+# -- Compiling module sky130_fd_sc_hd__dlrtn_2
+# -- Compiling module sky130_fd_sc_hd__dlrtn_4
+# -- Compiling module sky130_fd_sc_hd__dlrtp_1
+# -- Compiling module sky130_fd_sc_hd__dlrtp_2
+# -- Compiling module sky130_fd_sc_hd__dlrtp_4
+# -- Compiling module sky130_fd_sc_hd__dlxbn_1
+# -- Compiling module sky130_fd_sc_hd__dlxbn_2
+# -- Compiling module sky130_fd_sc_hd__dlxbp_1
+# -- Compiling module sky130_fd_sc_hd__dlxtn_1
+# -- Compiling module sky130_fd_sc_hd__dlxtn_2
+# -- Compiling module sky130_fd_sc_hd__dlxtn_4
+# -- Compiling module sky130_fd_sc_hd__dlxtp_1
+# -- Compiling module sky130_fd_sc_hd__dlygate4sd1_1
+# -- Compiling module sky130_fd_sc_hd__dlygate4sd2_1
+# -- Compiling module sky130_fd_sc_hd__dlygate4sd3_1
+# -- Compiling module sky130_fd_sc_hd__dlymetal6s2s_1
+# -- Compiling module sky130_fd_sc_hd__dlymetal6s4s_1
+# -- Compiling module sky130_fd_sc_hd__dlymetal6s6s_1
+# -- Compiling module sky130_fd_sc_hd__ebufn_1
+# -- Compiling module sky130_fd_sc_hd__ebufn_2
+# -- Compiling module sky130_fd_sc_hd__ebufn_4
+# -- Compiling module sky130_fd_sc_hd__ebufn_8
+# -- Compiling module sky130_fd_sc_hd__edfxbp_1
+# -- Compiling module sky130_fd_sc_hd__edfxtp_1
+# -- Compiling module sky130_fd_sc_hd__einvn_0
+# -- Compiling module sky130_fd_sc_hd__einvn_1
+# -- Compiling module sky130_fd_sc_hd__einvn_2
+# -- Compiling module sky130_fd_sc_hd__einvn_4
+# -- Compiling module sky130_fd_sc_hd__einvn_8
+# -- Compiling module sky130_fd_sc_hd__einvp_1
+# -- Compiling module sky130_fd_sc_hd__einvp_2
+# -- Compiling module sky130_fd_sc_hd__einvp_4
+# -- Compiling module sky130_fd_sc_hd__einvp_8
+# -- Compiling module sky130_fd_sc_hd__fa_1
+# -- Compiling module sky130_fd_sc_hd__fa_2
+# -- Compiling module sky130_fd_sc_hd__fa_4
+# -- Compiling module sky130_fd_sc_hd__fah_1
+# -- Compiling module sky130_fd_sc_hd__fahcin_1
+# -- Compiling module sky130_fd_sc_hd__fahcon_1
+# -- Compiling module sky130_fd_sc_hd__fill_1
+# -- Compiling module sky130_fd_sc_hd__fill_2
+# -- Compiling module sky130_fd_sc_hd__fill_4
+# -- Compiling module sky130_fd_sc_hd__fill_8
+# -- Compiling module sky130_fd_sc_hd__ha_1
+# -- Compiling module sky130_fd_sc_hd__ha_2
+# -- Compiling module sky130_fd_sc_hd__ha_4
+# -- Compiling module sky130_fd_sc_hd__inv_1
+# -- Compiling module sky130_fd_sc_hd__inv_2
+# -- Compiling module sky130_fd_sc_hd__inv_4
+# -- Compiling module sky130_fd_sc_hd__inv_6
+# -- Compiling module sky130_fd_sc_hd__inv_8
+# -- Compiling module sky130_fd_sc_hd__inv_12
+# -- Compiling module sky130_fd_sc_hd__inv_16
+# -- Compiling module sky130_fd_sc_hd__lpflow_bleeder_1
+# -- Compiling module sky130_fd_sc_hd__lpflow_clkbufkapwr_1
+# -- Compiling module sky130_fd_sc_hd__lpflow_clkbufkapwr_2
+# -- Compiling module sky130_fd_sc_hd__lpflow_clkbufkapwr_4
+# -- Compiling module sky130_fd_sc_hd__lpflow_clkbufkapwr_8
+# -- Compiling module sky130_fd_sc_hd__lpflow_clkbufkapwr_16
+# -- Compiling module sky130_fd_sc_hd__lpflow_clkinvkapwr_1
+# -- Compiling module sky130_fd_sc_hd__lpflow_clkinvkapwr_2
+# -- Compiling module sky130_fd_sc_hd__lpflow_clkinvkapwr_4
+# -- Compiling module sky130_fd_sc_hd__lpflow_clkinvkapwr_8
+# -- Compiling module sky130_fd_sc_hd__lpflow_clkinvkapwr_16
+# -- Compiling module sky130_fd_sc_hd__lpflow_decapkapwr_3
+# -- Compiling module sky130_fd_sc_hd__lpflow_decapkapwr_4
+# -- Compiling module sky130_fd_sc_hd__lpflow_decapkapwr_6
+# -- Compiling module sky130_fd_sc_hd__lpflow_decapkapwr_8
+# -- Compiling module sky130_fd_sc_hd__lpflow_decapkapwr_12
+# -- Compiling module sky130_fd_sc_hd__lpflow_inputiso0n_1
+# -- Compiling module sky130_fd_sc_hd__lpflow_inputiso0p_1
+# -- Compiling module sky130_fd_sc_hd__lpflow_inputiso1n_1
+# -- Compiling module sky130_fd_sc_hd__lpflow_inputiso1p_1
+# -- Compiling module sky130_fd_sc_hd__lpflow_inputisolatch_1
+# -- Compiling module sky130_fd_sc_hd__lpflow_isobufsrc_1
+# -- Compiling module sky130_fd_sc_hd__lpflow_isobufsrc_2
+# -- Compiling module sky130_fd_sc_hd__lpflow_isobufsrc_4
+# -- Compiling module sky130_fd_sc_hd__lpflow_isobufsrc_8
+# -- Compiling module sky130_fd_sc_hd__lpflow_isobufsrc_16
+# -- Compiling module sky130_fd_sc_hd__lpflow_isobufsrckapwr_16
+# -- Compiling module sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1
+# -- Compiling module sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2
+# -- Compiling module sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4
+# -- Compiling module sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4
+# -- Compiling module sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1
+# -- Compiling module sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2
+# -- Compiling module sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4
+# -- Compiling module sky130_fd_sc_hd__macro_sparecell
+# -- Compiling module sky130_fd_sc_hd__maj3_1
+# -- Compiling module sky130_fd_sc_hd__maj3_2
+# -- Compiling module sky130_fd_sc_hd__maj3_4
+# -- Compiling module sky130_fd_sc_hd__mux2_1
+# -- Compiling module sky130_fd_sc_hd__mux2_2
+# -- Compiling module sky130_fd_sc_hd__mux2_4
+# -- Compiling module sky130_fd_sc_hd__mux2_8
+# -- Compiling module sky130_fd_sc_hd__mux2i_1
+# -- Compiling module sky130_fd_sc_hd__mux2i_2
+# -- Compiling module sky130_fd_sc_hd__mux2i_4
+# -- Compiling module sky130_fd_sc_hd__mux4_1
+# -- Compiling module sky130_fd_sc_hd__mux4_2
+# -- Compiling module sky130_fd_sc_hd__mux4_4
+# -- Compiling module sky130_fd_sc_hd__nand2_1
+# -- Compiling module sky130_fd_sc_hd__nand2_2
+# -- Compiling module sky130_fd_sc_hd__nand2_4
+# -- Compiling module sky130_fd_sc_hd__nand2_8
+# -- Compiling module sky130_fd_sc_hd__nand2b_1
+# -- Compiling module sky130_fd_sc_hd__nand2b_2
+# -- Compiling module sky130_fd_sc_hd__nand2b_4
+# -- Compiling module sky130_fd_sc_hd__nand3_1
+# -- Compiling module sky130_fd_sc_hd__nand3_2
+# -- Compiling module sky130_fd_sc_hd__nand3_4
+# -- Compiling module sky130_fd_sc_hd__nand3b_1
+# -- Compiling module sky130_fd_sc_hd__nand3b_2
+# -- Compiling module sky130_fd_sc_hd__nand3b_4
+# -- Compiling module sky130_fd_sc_hd__nand4_1
+# -- Compiling module sky130_fd_sc_hd__nand4_2
+# -- Compiling module sky130_fd_sc_hd__nand4_4
+# -- Compiling module sky130_fd_sc_hd__nand4b_1
+# -- Compiling module sky130_fd_sc_hd__nand4b_2
+# -- Compiling module sky130_fd_sc_hd__nand4b_4
+# -- Compiling module sky130_fd_sc_hd__nand4bb_1
+# -- Compiling module sky130_fd_sc_hd__nand4bb_2
+# -- Compiling module sky130_fd_sc_hd__nand4bb_4
+# -- Compiling module sky130_fd_sc_hd__nor2_1
+# -- Compiling module sky130_fd_sc_hd__nor2_2
+# -- Compiling module sky130_fd_sc_hd__nor2_4
+# -- Compiling module sky130_fd_sc_hd__nor2_8
+# -- Compiling module sky130_fd_sc_hd__nor2b_1
+# -- Compiling module sky130_fd_sc_hd__nor2b_2
+# -- Compiling module sky130_fd_sc_hd__nor2b_4
+# -- Compiling module sky130_fd_sc_hd__nor3_1
+# -- Compiling module sky130_fd_sc_hd__nor3_2
+# -- Compiling module sky130_fd_sc_hd__nor3_4
+# -- Compiling module sky130_fd_sc_hd__nor3b_1
+# -- Compiling module sky130_fd_sc_hd__nor3b_2
+# -- Compiling module sky130_fd_sc_hd__nor3b_4
+# -- Compiling module sky130_fd_sc_hd__nor4_1
+# -- Compiling module sky130_fd_sc_hd__nor4_2
+# -- Compiling module sky130_fd_sc_hd__nor4_4
+# -- Compiling module sky130_fd_sc_hd__nor4b_1
+# -- Compiling module sky130_fd_sc_hd__nor4b_2
+# -- Compiling module sky130_fd_sc_hd__nor4b_4
+# -- Compiling module sky130_fd_sc_hd__nor4bb_1
+# -- Compiling module sky130_fd_sc_hd__nor4bb_2
+# -- Compiling module sky130_fd_sc_hd__nor4bb_4
+# -- Compiling module sky130_fd_sc_hd__o2bb2a_1
+# -- Compiling module sky130_fd_sc_hd__o2bb2a_2
+# -- Compiling module sky130_fd_sc_hd__o2bb2a_4
+# -- Compiling module sky130_fd_sc_hd__o2bb2ai_1
+# -- Compiling module sky130_fd_sc_hd__o2bb2ai_2
+# -- Compiling module sky130_fd_sc_hd__o2bb2ai_4
+# -- Compiling module sky130_fd_sc_hd__o21a_1
+# -- Compiling module sky130_fd_sc_hd__o21a_2
+# -- Compiling module sky130_fd_sc_hd__o21a_4
+# -- Compiling module sky130_fd_sc_hd__o21ai_0
+# -- Compiling module sky130_fd_sc_hd__o21ai_1
+# -- Compiling module sky130_fd_sc_hd__o21ai_2
+# -- Compiling module sky130_fd_sc_hd__o21ai_4
+# -- Compiling module sky130_fd_sc_hd__o21ba_1
+# -- Compiling module sky130_fd_sc_hd__o21ba_2
+# -- Compiling module sky130_fd_sc_hd__o21ba_4
+# -- Compiling module sky130_fd_sc_hd__o21bai_1
+# -- Compiling module sky130_fd_sc_hd__o21bai_2
+# -- Compiling module sky130_fd_sc_hd__o21bai_4
+# -- Compiling module sky130_fd_sc_hd__o22a_1
+# -- Compiling module sky130_fd_sc_hd__o22a_2
+# -- Compiling module sky130_fd_sc_hd__o22a_4
+# -- Compiling module sky130_fd_sc_hd__o22ai_1
+# -- Compiling module sky130_fd_sc_hd__o22ai_2
+# -- Compiling module sky130_fd_sc_hd__o22ai_4
+# -- Compiling module sky130_fd_sc_hd__o31a_1
+# -- Compiling module sky130_fd_sc_hd__o31a_2
+# -- Compiling module sky130_fd_sc_hd__o31a_4
+# -- Compiling module sky130_fd_sc_hd__o31ai_1
+# -- Compiling module sky130_fd_sc_hd__o31ai_2
+# -- Compiling module sky130_fd_sc_hd__o31ai_4
+# -- Compiling module sky130_fd_sc_hd__o32a_1
+# -- Compiling module sky130_fd_sc_hd__o32a_2
+# -- Compiling module sky130_fd_sc_hd__o32a_4
+# -- Compiling module sky130_fd_sc_hd__o32ai_1
+# -- Compiling module sky130_fd_sc_hd__o32ai_2
+# -- Compiling module sky130_fd_sc_hd__o32ai_4
+# -- Compiling module sky130_fd_sc_hd__o41a_1
+# -- Compiling module sky130_fd_sc_hd__o41a_2
+# -- Compiling module sky130_fd_sc_hd__o41a_4
+# -- Compiling module sky130_fd_sc_hd__o41ai_1
+# -- Compiling module sky130_fd_sc_hd__o41ai_2
+# -- Compiling module sky130_fd_sc_hd__o41ai_4
+# -- Compiling module sky130_fd_sc_hd__o211a_1
+# -- Compiling module sky130_fd_sc_hd__o211a_2
+# -- Compiling module sky130_fd_sc_hd__o211a_4
+# -- Compiling module sky130_fd_sc_hd__o211ai_1
+# -- Compiling module sky130_fd_sc_hd__o211ai_2
+# -- Compiling module sky130_fd_sc_hd__o211ai_4
+# -- Compiling module sky130_fd_sc_hd__o221a_1
+# -- Compiling module sky130_fd_sc_hd__o221a_2
+# -- Compiling module sky130_fd_sc_hd__o221a_4
+# -- Compiling module sky130_fd_sc_hd__o221ai_1
+# -- Compiling module sky130_fd_sc_hd__o221ai_2
+# -- Compiling module sky130_fd_sc_hd__o221ai_4
+# -- Compiling module sky130_fd_sc_hd__o311a_1
+# -- Compiling module sky130_fd_sc_hd__o311a_2
+# -- Compiling module sky130_fd_sc_hd__o311a_4
+# -- Compiling module sky130_fd_sc_hd__o311ai_0
+# -- Compiling module sky130_fd_sc_hd__o311ai_1
+# -- Compiling module sky130_fd_sc_hd__o311ai_2
+# -- Compiling module sky130_fd_sc_hd__o311ai_4
+# -- Compiling module sky130_fd_sc_hd__o2111a_1
+# -- Compiling module sky130_fd_sc_hd__o2111a_2
+# -- Compiling module sky130_fd_sc_hd__o2111a_4
+# -- Compiling module sky130_fd_sc_hd__o2111ai_1
+# -- Compiling module sky130_fd_sc_hd__o2111ai_2
+# -- Compiling module sky130_fd_sc_hd__o2111ai_4
+# -- Compiling module sky130_fd_sc_hd__or2_0
+# -- Compiling module sky130_fd_sc_hd__or2_1
+# -- Compiling module sky130_fd_sc_hd__or2_2
+# -- Compiling module sky130_fd_sc_hd__or2_4
+# -- Compiling module sky130_fd_sc_hd__or2b_1
+# -- Compiling module sky130_fd_sc_hd__or2b_2
+# -- Compiling module sky130_fd_sc_hd__or2b_4
+# -- Compiling module sky130_fd_sc_hd__or3_1
+# -- Compiling module sky130_fd_sc_hd__or3_2
+# -- Compiling module sky130_fd_sc_hd__or3_4
+# -- Compiling module sky130_fd_sc_hd__or3b_1
+# -- Compiling module sky130_fd_sc_hd__or3b_2
+# -- Compiling module sky130_fd_sc_hd__or3b_4
+# -- Compiling module sky130_fd_sc_hd__or4_1
+# -- Compiling module sky130_fd_sc_hd__or4_2
+# -- Compiling module sky130_fd_sc_hd__or4_4
+# -- Compiling module sky130_fd_sc_hd__or4b_1
+# -- Compiling module sky130_fd_sc_hd__or4b_2
+# -- Compiling module sky130_fd_sc_hd__or4b_4
+# -- Compiling module sky130_fd_sc_hd__or4bb_1
+# -- Compiling module sky130_fd_sc_hd__or4bb_2
+# -- Compiling module sky130_fd_sc_hd__or4bb_4
+# -- Compiling module sky130_fd_sc_hd__probe_p_8
+# -- Compiling module sky130_fd_sc_hd__probec_p_8
+# -- Compiling module sky130_fd_sc_hd__sdfbbn_1
+# -- Compiling module sky130_fd_sc_hd__sdfbbn_2
+# -- Compiling module sky130_fd_sc_hd__sdfbbp_1
+# -- Compiling module sky130_fd_sc_hd__sdfrbp_1
+# -- Compiling module sky130_fd_sc_hd__sdfrbp_2
+# -- Compiling module sky130_fd_sc_hd__sdfrtn_1
+# -- Compiling module sky130_fd_sc_hd__sdfrtp_1
+# -- Compiling module sky130_fd_sc_hd__sdfrtp_2
+# -- Compiling module sky130_fd_sc_hd__sdfrtp_4
+# -- Compiling module sky130_fd_sc_hd__sdfsbp_1
+# -- Compiling module sky130_fd_sc_hd__sdfsbp_2
+# -- Compiling module sky130_fd_sc_hd__sdfstp_1
+# -- Compiling module sky130_fd_sc_hd__sdfstp_2
+# -- Compiling module sky130_fd_sc_hd__sdfstp_4
+# -- Compiling module sky130_fd_sc_hd__sdfxbp_1
+# -- Compiling module sky130_fd_sc_hd__sdfxbp_2
+# -- Compiling module sky130_fd_sc_hd__sdfxtp_1
+# -- Compiling module sky130_fd_sc_hd__sdfxtp_2
+# -- Compiling module sky130_fd_sc_hd__sdfxtp_4
+# -- Compiling module sky130_fd_sc_hd__sdlclkp_1
+# -- Compiling module sky130_fd_sc_hd__sdlclkp_2
+# -- Compiling module sky130_fd_sc_hd__sdlclkp_4
+# -- Compiling module sky130_fd_sc_hd__sedfxbp_1
+# -- Compiling module sky130_fd_sc_hd__sedfxbp_2
+# -- Compiling module sky130_fd_sc_hd__sedfxtp_1
+# -- Compiling module sky130_fd_sc_hd__sedfxtp_2
+# -- Compiling module sky130_fd_sc_hd__sedfxtp_4
+# -- Compiling module sky130_fd_sc_hd__tap_1
+# -- Compiling module sky130_fd_sc_hd__tap_2
+# -- Compiling module sky130_fd_sc_hd__tapvgnd2_1
+# -- Compiling module sky130_fd_sc_hd__tapvgnd_1
+# -- Compiling module sky130_fd_sc_hd__tapvpwrvgnd_1
+# -- Compiling module sky130_fd_sc_hd__xnor2_1
+# -- Compiling module sky130_fd_sc_hd__xnor2_2
+# -- Compiling module sky130_fd_sc_hd__xnor2_4
+# -- Compiling module sky130_fd_sc_hd__xnor3_1
+# -- Compiling module sky130_fd_sc_hd__xnor3_2
+# -- Compiling module sky130_fd_sc_hd__xnor3_4
+# -- Compiling module sky130_fd_sc_hd__xor2_1
+# -- Compiling module sky130_fd_sc_hd__xor2_2
+# -- Compiling module sky130_fd_sc_hd__xor2_4
+# -- Compiling module sky130_fd_sc_hd__xor3_1
+# -- Compiling module sky130_fd_sc_hd__xor3_2
+# -- Compiling module sky130_fd_sc_hd__xor3_4
+# -- Compiling module sky130_ef_io__vccd_hvc_pad
+# -- Compiling module sky130_ef_io__vccd_lvc_pad
+# -- Compiling module sky130_ef_io__vdda_lvc_pad
+# -- Compiling module sky130_ef_io__vdda_hvc_pad
+# -- Compiling module sky130_ef_io__vddio_lvc_pad
+# -- Compiling module sky130_ef_io__vddio_hvc_pad
+# -- Compiling module sky130_ef_io__vssd_lvc_pad
+# -- Compiling module sky130_ef_io__vssd_hvc_pad
+# -- Compiling module sky130_ef_io__vssio_lvc_pad
+# -- Compiling module sky130_ef_io__vssio_hvc_pad
+# -- Compiling module sky130_ef_io__vssa_lvc_pad
+# -- Compiling module sky130_ef_io__vssa_hvc_pad
+# -- Compiling module sky130_ef_io__corner_pad
+# -- Compiling module sky130_fd_io__com_bus_slice
+# -- Compiling module sky130_ef_io__com_bus_slice_1um
+# -- Compiling module sky130_ef_io__com_bus_slice_5um
+# -- Compiling module sky130_ef_io__com_bus_slice_10um
+# -- Compiling module sky130_ef_io__com_bus_slice_20um
+# -- Compiling module sky130_ef_io__gpiov2_pad
+# -- Compiling module sky130_ef_io__vddio_hvc_clamped_pad
+# -- Compiling module sky130_ef_io__vssio_hvc_clamped_pad
+# -- Compiling module sky130_ef_io__vdda_hvc_clamped_pad
+# -- Compiling module sky130_ef_io__vssa_hvc_clamped_pad
+# -- Compiling module sky130_ef_io__vccd_lvc_clamped_pad
+# -- Compiling module sky130_ef_io__vssd_lvc_clamped_pad
+# -- Compiling module sky130_ef_io__vccd_lvc_clamped2_pad
+# -- Compiling module sky130_ef_io__vssd_lvc_clamped2_pad
+# -- Compiling module sky130_ef_io__vccd_lvc_clamped3_pad
+# -- Compiling module sky130_ef_io__vssd_lvc_clamped3_pad
+# -- Compiling module sky130_ef_io__top_power_hvc
+# -- Compiling module sky130_ef_io__analog_esd_pad
+# -- Compiling module sky130_ef_io__analog_noesd_pad
+# -- Compiling module sky130_ef_io__analog_pad
+# -- Compiling module sky130_ef_io__gpiov2_pad_wrapped
+# -- Compiling module sky130_fd_io__top_amuxsplitv2
+# -- Compiling module sky130_fd_io__top_analog_pad
+# -- Compiling module sky130_fd_io__top_gpio_ovtv2
+# -- Compiling module sky130_fd_io__top_gpiov2
+# -- Compiling module sky130_fd_io__top_gpiovrefv2
+# -- Compiling module sky130_fd_io__top_ground_hvc_wpad
+# -- Compiling module sky130_fd_io__top_ground_lvc_wpad
+# -- Compiling module sky130_fd_io__top_hvclamp
+# -- Compiling module sky130_fd_io__hvclampv2
+# -- Compiling module sky130_fd_io__top_lvc_b2b
+# -- Compiling module sky130_fd_io__top_lvclamp
+# -- Compiling module sky130_fd_io__top_power_hvc_wpad
+# -- Compiling module sky130_fd_io__top_power_hvc_wpadv2
+# -- Compiling module sky130_fd_io__top_power_lvc_wpad
+# -- Compiling module sky130_fd_io__top_pwrdetv2
+# -- Compiling module sky130_fd_io__top_refgen
+# -- Compiling module sky130_fd_io__top_refgen_new
+# -- Compiling module sky130_fd_io__top_sio
+# -- Compiling module sky130_fd_io__top_sio_macro
+# -- Compiling module sky130_fd_io__top_vrefcapv2
+# -- Compiling module sky130_fd_io__top_xres4v2
+# -- Compiling module sram22_512x32m4w32
+# -- Compiling module sram22_64x32m4w32
+# -- Compiling module sram22_512x64m4w8
+# -- Compiling module sram22_512x32m4w8
+# -- Compiling module sram22_64x24m4w24
+# -- Compiling module sram22_256x32m4w8
+# ** Warning: /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.v(6): (vlog-2275) Existing module 'sram22_256x32m4w8' at line 6 will be overwritten.
+# -- Compiling module sram22_64x4m4w2
+# -- Compiling module sram22_2048x32m8w8
+# -- Compiling module sram22_1024x32m8w32
+# -- Compiling module sram22_1024x32m8w8
+# -- Compiling module sram22_64x32m4w8
+# 
+# Top level modules:
+# 	testbench
+# 	sky130_ef_sc_hd__decap_12
+# 	sky130_ef_sc_hd__fill_4
+# 	sky130_ef_sc_hd__fill_8
+# 	sky130_ef_sc_hd__fill_12
+# 	sky130_fd_sc_hd__a2bb2o_1
+# 	sky130_fd_sc_hd__a2bb2o_2
+# 	sky130_fd_sc_hd__a2bb2o_4
+# 	sky130_fd_sc_hd__a2bb2oi_4
+# 	sky130_fd_sc_hd__a21bo_2
+# 	sky130_fd_sc_hd__a21bo_4
+# 	sky130_fd_sc_hd__a31o_4
+# 	sky130_fd_sc_hd__a32o_2
+# 	sky130_fd_sc_hd__a32o_4
+# 	sky130_fd_sc_hd__a41o_2
+# 	sky130_fd_sc_hd__a41o_4
+# 	sky130_fd_sc_hd__a221o_4
+# 	sky130_fd_sc_hd__a311o_4
+# 	sky130_fd_sc_hd__a2111o_2
+# 	sky130_fd_sc_hd__a2111o_4
+# 	sky130_fd_sc_hd__and2b_1
+# 	sky130_fd_sc_hd__and2b_2
+# 	sky130_fd_sc_hd__and2b_4
+# 	sky130_fd_sc_hd__and3b_2
+# 	sky130_fd_sc_hd__and3b_4
+# 	sky130_fd_sc_hd__and4b_2
+# 	sky130_fd_sc_hd__and4bb_1
+# 	sky130_fd_sc_hd__and4bb_2
+# 	sky130_fd_sc_hd__and4bb_4
+# 	sky130_fd_sc_hd__bufbuf_8
+# 	sky130_fd_sc_hd__bufbuf_16
+# 	sky130_fd_sc_hd__bufinv_8
+# 	sky130_fd_sc_hd__bufinv_16
+# 	sky130_fd_sc_hd__clkdlybuf4s15_1
+# 	sky130_fd_sc_hd__clkdlybuf4s15_2
+# 	sky130_fd_sc_hd__clkdlybuf4s18_1
+# 	sky130_fd_sc_hd__clkdlybuf4s18_2
+# 	sky130_fd_sc_hd__clkdlybuf4s25_1
+# 	sky130_fd_sc_hd__clkdlybuf4s25_2
+# 	sky130_fd_sc_hd__clkdlybuf4s50_1
+# 	sky130_fd_sc_hd__clkdlybuf4s50_2
+# 	sky130_fd_sc_hd__clkinv_1
+# 	sky130_fd_sc_hd__clkinvlp_2
+# 	sky130_fd_sc_hd__clkinvlp_4
+# 	sky130_fd_sc_hd__decap_3
+# 	sky130_fd_sc_hd__decap_4
+# 	sky130_fd_sc_hd__decap_6
+# 	sky130_fd_sc_hd__decap_8
+# 	sky130_fd_sc_hd__decap_12
+# 	sky130_fd_sc_hd__dfbbn_1
+# 	sky130_fd_sc_hd__dfbbn_2
+# 	sky130_fd_sc_hd__dfbbp_1
+# 	sky130_fd_sc_hd__dfrbp_1
+# 	sky130_fd_sc_hd__dfrbp_2
+# 	sky130_fd_sc_hd__dfrtn_1
+# 	sky130_fd_sc_hd__dfrtp_1
+# 	sky130_fd_sc_hd__dfrtp_2
+# 	sky130_fd_sc_hd__dfrtp_4
+# 	sky130_fd_sc_hd__dfsbp_1
+# 	sky130_fd_sc_hd__dfsbp_2
+# 	sky130_fd_sc_hd__dfstp_1
+# 	sky130_fd_sc_hd__dfstp_2
+# 	sky130_fd_sc_hd__dfstp_4
+# 	sky130_fd_sc_hd__dfxbp_1
+# 	sky130_fd_sc_hd__dfxbp_2
+# 	sky130_fd_sc_hd__diode_2
+# 	sky130_fd_sc_hd__dlclkp_1
+# 	sky130_fd_sc_hd__dlclkp_2
+# 	sky130_fd_sc_hd__dlclkp_4
+# 	sky130_fd_sc_hd__dlrbn_1
+# 	sky130_fd_sc_hd__dlrbn_2
+# 	sky130_fd_sc_hd__dlrbp_1
+# 	sky130_fd_sc_hd__dlrbp_2
+# 	sky130_fd_sc_hd__dlrtn_1
+# 	sky130_fd_sc_hd__dlrtn_2
+# 	sky130_fd_sc_hd__dlrtn_4
+# 	sky130_fd_sc_hd__dlrtp_1
+# 	sky130_fd_sc_hd__dlrtp_2
+# 	sky130_fd_sc_hd__dlrtp_4
+# 	sky130_fd_sc_hd__dlxbn_1
+# 	sky130_fd_sc_hd__dlxbn_2
+# 	sky130_fd_sc_hd__dlxbp_1
+# 	sky130_fd_sc_hd__dlxtn_1
+# 	sky130_fd_sc_hd__dlxtn_2
+# 	sky130_fd_sc_hd__dlxtn_4
+# 	sky130_fd_sc_hd__dlxtp_1
+# 	sky130_fd_sc_hd__dlygate4sd1_1
+# 	sky130_fd_sc_hd__dlygate4sd2_1
+# 	sky130_fd_sc_hd__dlymetal6s4s_1
+# 	sky130_fd_sc_hd__dlymetal6s6s_1
+# 	sky130_fd_sc_hd__ebufn_1
+# 	sky130_fd_sc_hd__ebufn_2
+# 	sky130_fd_sc_hd__ebufn_4
+# 	sky130_fd_sc_hd__ebufn_8
+# 	sky130_fd_sc_hd__edfxbp_1
+# 	sky130_fd_sc_hd__edfxtp_1
+# 	sky130_fd_sc_hd__einvn_0
+# 	sky130_fd_sc_hd__einvn_1
+# 	sky130_fd_sc_hd__einvn_2
+# 	sky130_fd_sc_hd__einvn_4
+# 	sky130_fd_sc_hd__einvn_8
+# 	sky130_fd_sc_hd__einvp_1
+# 	sky130_fd_sc_hd__einvp_2
+# 	sky130_fd_sc_hd__einvp_4
+# 	sky130_fd_sc_hd__einvp_8
+# 	sky130_fd_sc_hd__fa_1
+# 	sky130_fd_sc_hd__fa_2
+# 	sky130_fd_sc_hd__fa_4
+# 	sky130_fd_sc_hd__fah_1
+# 	sky130_fd_sc_hd__fahcin_1
+# 	sky130_fd_sc_hd__fahcon_1
+# 	sky130_fd_sc_hd__fill_1
+# 	sky130_fd_sc_hd__fill_2
+# 	sky130_fd_sc_hd__fill_4
+# 	sky130_fd_sc_hd__fill_8
+# 	sky130_fd_sc_hd__ha_1
+# 	sky130_fd_sc_hd__ha_2
+# 	sky130_fd_sc_hd__ha_4
+# 	sky130_fd_sc_hd__lpflow_bleeder_1
+# 	sky130_fd_sc_hd__lpflow_clkbufkapwr_1
+# 	sky130_fd_sc_hd__lpflow_clkbufkapwr_2
+# 	sky130_fd_sc_hd__lpflow_clkbufkapwr_4
+# 	sky130_fd_sc_hd__lpflow_clkbufkapwr_8
+# 	sky130_fd_sc_hd__lpflow_clkbufkapwr_16
+# 	sky130_fd_sc_hd__lpflow_clkinvkapwr_1
+# 	sky130_fd_sc_hd__lpflow_clkinvkapwr_2
+# 	sky130_fd_sc_hd__lpflow_clkinvkapwr_4
+# 	sky130_fd_sc_hd__lpflow_clkinvkapwr_8
+# 	sky130_fd_sc_hd__lpflow_clkinvkapwr_16
+# 	sky130_fd_sc_hd__lpflow_decapkapwr_3
+# 	sky130_fd_sc_hd__lpflow_decapkapwr_4
+# 	sky130_fd_sc_hd__lpflow_decapkapwr_6
+# 	sky130_fd_sc_hd__lpflow_decapkapwr_8
+# 	sky130_fd_sc_hd__lpflow_decapkapwr_12
+# 	sky130_fd_sc_hd__lpflow_inputiso0p_1
+# 	sky130_fd_sc_hd__lpflow_inputiso1n_1
+# 	sky130_fd_sc_hd__lpflow_inputisolatch_1
+# 	sky130_fd_sc_hd__lpflow_isobufsrckapwr_16
+# 	sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_1
+# 	sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_2
+# 	sky130_fd_sc_hd__lpflow_lsbuf_lh_hl_isowell_tap_4
+# 	sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_4
+# 	sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_1
+# 	sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_2
+# 	sky130_fd_sc_hd__lpflow_lsbuf_lh_isowell_tap_4
+# 	sky130_fd_sc_hd__macro_sparecell
+# 	sky130_fd_sc_hd__maj3_4
+# 	sky130_fd_sc_hd__mux2_8
+# 	sky130_fd_sc_hd__nand4b_2
+# 	sky130_fd_sc_hd__nand4bb_1
+# 	sky130_fd_sc_hd__nand4bb_4
+# 	sky130_fd_sc_hd__nor2b_4
+# 	sky130_fd_sc_hd__nor4bb_2
+# 	sky130_fd_sc_hd__o2bb2a_2
+# 	sky130_fd_sc_hd__o2bb2a_4
+# 	sky130_fd_sc_hd__o2bb2ai_2
+# 	sky130_fd_sc_hd__o21ba_2
+# 	sky130_fd_sc_hd__o21ba_4
+# 	sky130_fd_sc_hd__o21bai_4
+# 	sky130_fd_sc_hd__o31a_2
+# 	sky130_fd_sc_hd__o32a_2
+# 	sky130_fd_sc_hd__o32a_4
+# 	sky130_fd_sc_hd__o41a_2
+# 	sky130_fd_sc_hd__o41a_4
+# 	sky130_fd_sc_hd__o41ai_4
+# 	sky130_fd_sc_hd__o211a_4
+# 	sky130_fd_sc_hd__o221a_2
+# 	sky130_fd_sc_hd__o221a_4
+# 	sky130_fd_sc_hd__o311a_2
+# 	sky130_fd_sc_hd__o311a_4
+# 	sky130_fd_sc_hd__o311ai_0
+# 	sky130_fd_sc_hd__o2111a_2
+# 	sky130_fd_sc_hd__o2111a_4
+# 	sky130_fd_sc_hd__or2b_1
+# 	sky130_fd_sc_hd__or2b_2
+# 	sky130_fd_sc_hd__or2b_4
+# 	sky130_fd_sc_hd__or3b_2
+# 	sky130_fd_sc_hd__or4b_4
+# 	sky130_fd_sc_hd__or4bb_1
+# 	sky130_fd_sc_hd__or4bb_2
+# 	sky130_fd_sc_hd__or4bb_4
+# 	sky130_fd_sc_hd__probe_p_8
+# 	sky130_fd_sc_hd__probec_p_8
+# 	sky130_fd_sc_hd__sdfbbn_1
+# 	sky130_fd_sc_hd__sdfbbn_2
+# 	sky130_fd_sc_hd__sdfbbp_1
+# 	sky130_fd_sc_hd__sdfrbp_1
+# 	sky130_fd_sc_hd__sdfrbp_2
+# 	sky130_fd_sc_hd__sdfrtn_1
+# 	sky130_fd_sc_hd__sdfrtp_1
+# 	sky130_fd_sc_hd__sdfrtp_2
+# 	sky130_fd_sc_hd__sdfrtp_4
+# 	sky130_fd_sc_hd__sdfsbp_1
+# 	sky130_fd_sc_hd__sdfsbp_2
+# 	sky130_fd_sc_hd__sdfstp_1
+# 	sky130_fd_sc_hd__sdfstp_2
+# 	sky130_fd_sc_hd__sdfstp_4
+# 	sky130_fd_sc_hd__sdfxbp_1
+# 	sky130_fd_sc_hd__sdfxbp_2
+# 	sky130_fd_sc_hd__sdfxtp_1
+# 	sky130_fd_sc_hd__sdfxtp_2
+# 	sky130_fd_sc_hd__sdfxtp_4
+# 	sky130_fd_sc_hd__sdlclkp_1
+# 	sky130_fd_sc_hd__sdlclkp_2
+# 	sky130_fd_sc_hd__sdlclkp_4
+# 	sky130_fd_sc_hd__sedfxbp_1
+# 	sky130_fd_sc_hd__sedfxbp_2
+# 	sky130_fd_sc_hd__sedfxtp_1
+# 	sky130_fd_sc_hd__sedfxtp_2
+# 	sky130_fd_sc_hd__sedfxtp_4
+# 	sky130_fd_sc_hd__tap_1
+# 	sky130_fd_sc_hd__tap_2
+# 	sky130_fd_sc_hd__tapvgnd2_1
+# 	sky130_fd_sc_hd__tapvgnd_1
+# 	sky130_fd_sc_hd__tapvpwrvgnd_1
+# 	sky130_fd_sc_hd__xnor3_2
+# 	sky130_fd_sc_hd__xnor3_4
+# 	sky130_fd_sc_hd__xor3_2
+# 	sky130_fd_sc_hd__xor3_4
+# 	sky130_ef_io__vccd_hvc_pad
+# 	sky130_ef_io__vccd_lvc_pad
+# 	sky130_ef_io__vdda_lvc_pad
+# 	sky130_ef_io__vdda_hvc_pad
+# 	sky130_ef_io__vddio_lvc_pad
+# 	sky130_ef_io__vddio_hvc_pad
+# 	sky130_ef_io__vssd_lvc_pad
+# 	sky130_ef_io__vssd_hvc_pad
+# 	sky130_ef_io__vssio_lvc_pad
+# 	sky130_ef_io__vssio_hvc_pad
+# 	sky130_ef_io__vssa_lvc_pad
+# 	sky130_ef_io__vssa_hvc_pad
+# 	sky130_ef_io__corner_pad
+# 	sky130_fd_io__com_bus_slice
+# 	sky130_ef_io__com_bus_slice_1um
+# 	sky130_ef_io__com_bus_slice_5um
+# 	sky130_ef_io__com_bus_slice_10um
+# 	sky130_ef_io__com_bus_slice_20um
+# 	sky130_ef_io__gpiov2_pad
+# 	sky130_ef_io__vddio_hvc_clamped_pad
+# 	sky130_ef_io__vssio_hvc_clamped_pad
+# 	sky130_ef_io__vdda_hvc_clamped_pad
+# 	sky130_ef_io__vssa_hvc_clamped_pad
+# 	sky130_ef_io__vccd_lvc_clamped_pad
+# 	sky130_ef_io__vssd_lvc_clamped_pad
+# 	sky130_ef_io__vccd_lvc_clamped2_pad
+# 	sky130_ef_io__vssd_lvc_clamped2_pad
+# 	sky130_ef_io__vccd_lvc_clamped3_pad
+# 	sky130_ef_io__vssd_lvc_clamped3_pad
+# 	sky130_ef_io__top_power_hvc
+# 	sky130_ef_io__analog_esd_pad
+# 	sky130_ef_io__analog_noesd_pad
+# 	sky130_ef_io__analog_pad
+# 	sky130_ef_io__gpiov2_pad_wrapped
+# 	sky130_fd_io__top_amuxsplitv2
+# 	sky130_fd_io__top_analog_pad
+# 	sky130_fd_io__top_gpio_ovtv2
+# 	sky130_fd_io__top_gpiovrefv2
+# 	sky130_fd_io__top_hvclamp
+# 	sky130_fd_io__hvclampv2
+# 	sky130_fd_io__top_lvc_b2b
+# 	sky130_fd_io__top_lvclamp
+# 	sky130_fd_io__top_power_hvc_wpad
+# 	sky130_fd_io__top_pwrdetv2
+# 	sky130_fd_io__top_refgen
+# 	sky130_fd_io__top_sio_macro
+# 	sky130_fd_io__top_vrefcapv2
+# 	sky130_fd_io__top_xres4v2
+# 	sram22_512x32m4w32
+# 	sram22_64x32m4w32
+# 	sram22_512x64m4w8
+# 	sram22_512x32m4w8
+# 	sram22_64x24m4w24
+# 	sram22_64x4m4w2
+# 	sram22_2048x32m8w8
+# 	sram22_1024x32m8w32
+# 	sram22_1024x32m8w8
+# 	sram22_64x32m4w8
+# End time: 23:12:50 on Oct 28,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1, Suppressed Errors: 1987
+# Questa Intel Starter FPGA Edition-64 vopt 2023.3 Compiler 2023.07 Jul 17 2023
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# Start time: 23:12:51 on Oct 28,2025
+# vopt -reportprogress 300 -debugdb -work work_testbench -timescale 1ns/10ps "+sdf_verbose" -sdfmax "/testbench/uut=/home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz" "+acc" testbench -o opt_testbench 
+# 
+# Top level modules:
+# 	testbench
+# 
+# Analyzing design...
+# -- Loading module testbench
+# -- Loading module digel_soc
+# -- Loading module sky130_fd_sc_hd__nand2_1
+# -- Loading module sky130_fd_sc_hd__nand4_1
+# -- Loading module sky130_fd_sc_hd__lpflow_inputiso1p_1
+# -- Loading module sky130_fd_sc_hd__clkinv_16
+# -- Loading module sky130_fd_sc_hd__clkinv_4
+# -- Loading module sky130_fd_sc_hd__inv_4
+# -- Loading module sky130_fd_sc_hd__lpflow_isobufsrc_2
+# -- Loading module sky130_fd_sc_hd__nor2_1
+# -- Loading module sky130_fd_sc_hd__xor2_1
+# -- Loading module sky130_fd_sc_hd__a21oi_1
+# -- Loading module sky130_fd_sc_hd__nand3_1
+# -- Loading module sky130_fd_sc_hd__nor2b_1
+# -- Loading module sky130_fd_sc_hd__xnor2_1
+# -- Loading module sky130_fd_sc_hd__a41o_1
+# -- Loading module sky130_fd_sc_hd__nor4_4
+# -- Loading module sky130_fd_sc_hd__nand4b_4
+# -- Loading module sky130_fd_sc_hd__mux2_1
+# -- Loading UDP sky130_fd_sc_hd__udp_mux_2to1
+# -- Loading module sky130_fd_sc_hd__nor4bb_4
+# -- Loading module sky130_fd_sc_hd__lpflow_isobufsrc_4
+# -- Loading module sky130_fd_sc_hd__inv_1
+# -- Loading module sky130_fd_sc_hd__a211oi_4
+# -- Loading module sky130_fd_sc_hd__a21o_1
+# -- Loading module sky130_fd_sc_hd__nand4_4
+# -- Loading module sky130_fd_sc_hd__o21ai_0
+# -- Loading module sky130_fd_sc_hd__mux2i_1
+# -- Loading UDP sky130_fd_sc_hd__udp_mux_2to1_N
+# -- Loading module sky130_fd_sc_hd__dfxtp_1
+# -- Loading UDP sky130_fd_sc_hd__udp_dff$P_pp$PG$N
+# -- Loading module sky130_fd_sc_hd__dfxtp_2
+# -- Loading module sky130_fd_sc_hd__dfxtp_4
+# -- Loading module sky130_fd_sc_hd__conb_1
+# -- Loading module sky130_fd_sc_hd__nor4_1
+# -- Loading module sky130_fd_sc_hd__nor3_1
+# -- Loading module sky130_fd_sc_hd__nor2_2
+# -- Loading module sky130_fd_sc_hd__nor4b_1
+# -- Loading module sky130_fd_sc_hd__nor3_4
+# -- Loading module sky130_fd_sc_hd__a311oi_4
+# -- Loading module sky130_fd_sc_hd__or3_1
+# -- Loading module sky130_fd_sc_hd__nand4_2
+# -- Loading module sky130_fd_sc_hd__nand4b_1
+# -- Loading module sky130_fd_sc_hd__nor3_2
+# -- Loading module sky130_fd_sc_hd__o21ai_4
+# -- Loading module sky130_fd_sc_hd__or4_4
+# -- Loading module sky130_fd_sc_hd__nor4_2
+# -- Loading module sky130_fd_sc_hd__and2_0
+# -- Loading module sky130_fd_sc_hd__and3_2
+# -- Loading module sky130_fd_sc_hd__and2_2
+# -- Loading module sky130_fd_sc_hd__and2_1
+# -- Loading module sky130_fd_sc_hd__and2_4
+# -- Loading module sky130_fd_sc_hd__a222oi_1
+# -- Loading module sky130_fd_sc_hd__a22o_2
+# -- Loading module sky130_fd_sc_hd__a22o_4
+# -- Loading module sky130_fd_sc_hd__a21oi_2
+# -- Loading module sky130_fd_sc_hd__nand3_2
+# -- Loading module sky130_fd_sc_hd__nand2_8
+# -- Loading module sky130_fd_sc_hd__or2_4
+# -- Loading module sky130_fd_sc_hd__o21ai_2
+# -- Loading module sky130_fd_sc_hd__nor2_4
+# -- Loading module sky130_fd_sc_hd__nor2_8
+# -- Loading module sky130_fd_sc_hd__a22oi_4
+# -- Loading module sky130_fd_sc_hd__a21boi_1
+# -- Loading module sky130_fd_sc_hd__or3_4
+# -- Loading module sky130_fd_sc_hd__o21a_1
+# -- Loading module sky130_fd_sc_hd__o21a_4
+# -- Loading module sky130_fd_sc_hd__o21ai_1
+# -- Loading module sky130_fd_sc_hd__nand2_2
+# -- Loading module sky130_fd_sc_hd__o32ai_1
+# -- Loading module sky130_fd_sc_hd__inv_6
+# -- Loading module sky130_fd_sc_hd__lpflow_isobufsrc_8
+# -- Loading module sky130_fd_sc_hd__and3_1
+# -- Loading module sky130_fd_sc_hd__nand2_4
+# -- Loading module sky130_fd_sc_hd__nand3_4
+# -- Loading module sky130_fd_sc_hd__and4_1
+# -- Loading module sky130_fd_sc_hd__o31ai_4
+# -- Loading module sky130_fd_sc_hd__or4_1
+# -- Loading module sky130_fd_sc_hd__inv_16
+# -- Loading module sky130_fd_sc_hd__a221oi_1
+# -- Loading module sky130_fd_sc_hd__nand2b_1
+# -- Loading module sky130_fd_sc_hd__o21bai_1
+# -- Loading module sky130_fd_sc_hd__o211ai_2
+# -- Loading module sky130_fd_sc_hd__a22oi_1
+# -- Loading module sky130_fd_sc_hd__a32oi_2
+# -- Loading module sky130_fd_sc_hd__o31ai_1
+# -- Loading module sky130_fd_sc_hd__o22a_1
+# -- Loading module sky130_fd_sc_hd__o211ai_1
+# -- Loading module sky130_fd_sc_hd__a211oi_1
+# -- Loading module sky130_fd_sc_hd__o22ai_1
+# -- Loading module sky130_fd_sc_hd__a2bb2oi_1
+# -- Loading module sky130_fd_sc_hd__a2111oi_0
+# -- Loading module sky130_fd_sc_hd__o21a_2
+# -- Loading module sky130_fd_sc_hd__inv_2
+# -- Loading module sky130_fd_sc_hd__a21oi_4
+# -- Loading module sky130_fd_sc_hd__or3_2
+# -- Loading module sky130_fd_sc_hd__lpflow_isobufsrc_1
+# -- Loading module sky130_fd_sc_hd__nand2b_4
+# -- Loading module sky130_fd_sc_hd__nand2b_2
+# -- Loading module sky130_fd_sc_hd__xor2_2
+# -- Loading module sky130_fd_sc_hd__nor4b_2
+# -- Loading module sky130_fd_sc_hd__nand3b_1
+# -- Loading module sky130_fd_sc_hd__o21bai_2
+# -- Loading module sky130_fd_sc_hd__inv_12
+# -- Loading module sky130_fd_sc_hd__mux2i_4
+# -- Loading module sky130_fd_sc_hd__o22ai_4
+# -- Loading module sky130_fd_sc_hd__or2_0
+# -- Loading module sky130_fd_sc_hd__a21boi_2
+# -- Loading module sky130_fd_sc_hd__o22a_4
+# -- Loading module sky130_fd_sc_hd__mux2i_2
+# -- Loading module sky130_fd_sc_hd__o22ai_2
+# -- Loading module sky130_fd_sc_hd__o22a_2
+# -- Loading module sky130_fd_sc_hd__o221ai_2
+# -- Loading module sky130_fd_sc_hd__a31oi_1
+# -- Loading module sky130_fd_sc_hd__o2111ai_1
+# -- Loading module sky130_fd_sc_hd__a21boi_0
+# -- Loading module sky130_fd_sc_hd__a311oi_2
+# -- Loading module sky130_fd_sc_hd__a2111oi_2
+# -- Loading module sky130_fd_sc_hd__o221ai_1
+# -- Loading module sky130_fd_sc_hd__a211o_1
+# -- Loading module sky130_fd_sc_hd__o311ai_1
+# -- Loading module sky130_fd_sc_hd__xnor2_4
+# -- Loading module sky130_fd_sc_hd__xnor2_2
+# -- Loading module sky130_fd_sc_hd__maj3_1
+# -- Loading module sky130_fd_sc_hd__o221ai_4
+# -- Loading module sky130_fd_sc_hd__a31oi_2
+# -- Loading module sky130_fd_sc_hd__nor3b_1
+# -- Loading module sky130_fd_sc_hd__o221a_1
+# -- Loading module sky130_fd_sc_hd__maj3_2
+# -- Loading module sky130_fd_sc_hd__a211o_4
+# -- Loading module sky130_fd_sc_hd__a221oi_2
+# -- Loading module sky130_fd_sc_hd__lpflow_isobufsrc_16
+# -- Loading module sky130_fd_sc_hd__o32a_1
+# -- Loading module sky130_fd_sc_hd__a21o_2
+# -- Loading module sky130_fd_sc_hd__a22o_1
+# -- Loading module sky130_fd_sc_hd__or2_2
+# -- Loading module sky130_fd_sc_hd__or2_1
+# -- Loading module sky130_fd_sc_hd__or4_2
+# -- Loading module sky130_fd_sc_hd__o21ba_1
+# -- Loading module sky130_fd_sc_hd__a22oi_2
+# -- Loading module sky130_fd_sc_hd__a211oi_2
+# -- Loading module sky130_fd_sc_hd__o31ai_2
+# -- Loading module sky130_fd_sc_hd__o211a_1
+# -- Loading module sky130_fd_sc_hd__o311ai_4
+# -- Loading module sky130_fd_sc_hd__a311o_1
+# -- Loading module sky130_fd_sc_hd__a31o_1
+# -- Loading module sky130_fd_sc_hd__mux2_2
+# -- Loading module sky130_fd_sc_hd__mux2_4
+# -- Loading module sky130_fd_sc_hd__a221oi_4
+# -- Loading module sky130_fd_sc_hd__and4_2
+# -- Loading module sky130_fd_sc_hd__o211ai_4
+# -- Loading module sky130_fd_sc_hd__and3_4
+# -- Loading module sky130_fd_sc_hd__nand3b_2
+# -- Loading module sky130_fd_sc_hd__or4b_2
+# -- Loading module sky130_fd_sc_hd__a32o_1
+# -- Loading module sky130_fd_sc_hd__or3b_4
+# -- Loading module sky130_fd_sc_hd__nor3b_2
+# -- Loading module sky130_fd_sc_hd__a311oi_1
+# -- Loading module sky130_fd_sc_hd__o311a_1
+# -- Loading module sky130_fd_sc_hd__a21boi_4
+# -- Loading module sky130_fd_sc_hd__a41oi_2
+# -- Loading module sky130_fd_sc_hd__a221o_1
+# -- Loading module sky130_fd_sc_hd__a32oi_4
+# -- Loading module sky130_fd_sc_hd__o32ai_4
+# -- Loading module sky130_fd_sc_hd__o32ai_2
+# -- Loading module sky130_fd_sc_hd__o31a_1
+# -- Loading module sky130_fd_sc_hd__o311ai_2
+# -- Loading module sky130_fd_sc_hd__o41ai_1
+# -- Loading module sky130_fd_sc_hd__and3b_1
+# -- Loading module sky130_fd_sc_hd__a221o_2
+# -- Loading module sky130_fd_sc_hd__o2111ai_4
+# -- Loading module sky130_fd_sc_hd__a31oi_4
+# -- Loading module sky130_fd_sc_hd__o2111ai_2
+# -- Loading module sky130_fd_sc_hd__a311o_2
+# -- Loading module sky130_fd_sc_hd__a2111o_1
+# -- Loading module sky130_fd_sc_hd__a41oi_4
+# -- Loading module sky130_fd_sc_hd__a32oi_1
+# -- Loading module sky130_fd_sc_hd__o2bb2ai_1
+# -- Loading module sky130_fd_sc_hd__o2bb2ai_4
+# -- Loading module sky130_fd_sc_hd__o41a_1
+# -- Loading module sky130_fd_sc_hd__nor4bb_1
+# -- Loading module sky130_fd_sc_hd__or4b_1
+# -- Loading module sky130_fd_sc_hd__mux4_1
+# -- Loading UDP sky130_fd_sc_hd__udp_mux_4to2
+# -- Loading module sky130_fd_sc_hd__mux4_2
+# -- Loading module sky130_fd_sc_hd__lpflow_inputiso0n_1
+# -- Loading module sky130_fd_sc_hd__a31o_2
+# -- Loading module sky130_fd_sc_hd__mux4_4
+# -- Loading module sky130_fd_sc_hd__nand3b_4
+# -- Loading module sky130_fd_sc_hd__nor3b_4
+# -- Loading module sram22_256x32m4w8
+# -- Loading module sky130_fd_sc_hd__clkinv_8
+# -- Loading module sky130_fd_sc_hd__clkinv_2
+# -- Loading module sky130_fd_sc_hd__o2111a_1
+# -- Loading module sky130_fd_sc_hd__a2111oi_1
+# -- Loading module sky130_fd_sc_hd__nor2b_2
+# -- Loading module sky130_fd_sc_hd__and4_4
+# -- Loading module sky130_fd_sc_hd__xnor3_1
+# -- Loading module sky130_fd_sc_hd__a41oi_1
+# -- Loading module sky130_fd_sc_hd__clkbuf_1
+# -- Loading module sky130_fd_sc_hd__and4b_4
+# -- Loading module sky130_fd_sc_hd__inv_8
+# -- Loading module sky130_fd_sc_hd__a211o_2
+# -- Loading module sky130_fd_sc_hd__o2bb2a_1
+# -- Loading module sky130_fd_sc_hd__xor3_1
+# -- Loading module sky130_fd_sc_hd__a2bb2oi_2
+# -- Loading module sky130_fd_sc_hd__nand4bb_2
+# -- Loading module sky130_fd_sc_hd__a2111oi_4
+# -- Loading module sky130_fd_sc_hd__xor2_4
+# -- Loading module sky130_fd_sc_hd__or3b_1
+# -- Loading module sky130_fd_sc_hd__o211a_2
+# -- Loading module sky130_fd_sc_hd__o41ai_2
+# -- Loading module sky130_fd_sc_hd__nor4b_4
+# -- Loading module sky130_fd_sc_hd__and4b_1
+# -- Loading module sky130_fd_sc_hd__a21bo_1
+# -- Loading module sky130_fd_sc_hd__a21o_4
+# -- Loading module sky130_fd_sc_hd__o31a_4
+# -- Loading module sky130_fd_sc_hd__buf_1
+# -- Loading module sky130_fd_sc_hd__buf_16
+# -- Loading module sky130_fd_sc_hd__clkbuf_8
+# -- Loading module sky130_fd_sc_hd__buf_8
+# -- Loading module sky130_fd_sc_hd__buf_6
+# -- Loading module sky130_fd_sc_hd__clkbuf_16
+# -- Loading module sky130_fd_sc_hd__clkbuf_2
+# -- Loading module sky130_fd_sc_hd__buf_12
+# -- Loading module sky130_fd_sc_hd__buf_4
+# -- Loading module sky130_fd_sc_hd__buf_2
+# -- Loading module sky130_fd_sc_hd__clkbuf_4
+# -- Loading module sky130_fd_sc_hd__dlymetal6s2s_1
+# -- Loading module sky130_fd_sc_hd__dlygate4sd3_1
+# -- Loading module spiflash
+# 
+# Waiting for 1 SDF compilation to complete...
+# -- Compiling max SDF from /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz
+# Finished SDF compilation.
+# 
+# Optimizing 233 design-units (inlining 0/4 module instances, 0/14178 cell instances, 4130/4130 UDP instances):
+# -- Optimizing module sky130_fd_sc_hd__nand2_1(fast)
+# -- Processing module sky130_fd_sc_hd__nand2_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor2_1(fast)
+# -- Processing module sky130_fd_sc_hd__nor2_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor2_2(fast)
+# -- Processing module sky130_fd_sc_hd__nor2_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__and2_0(fast)
+# -- Processing module sky130_fd_sc_hd__and2_0(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__and2_2(fast)
+# -- Processing module sky130_fd_sc_hd__and2_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__and2_1(fast)
+# -- Processing module sky130_fd_sc_hd__and2_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__and2_4(fast)
+# -- Processing module sky130_fd_sc_hd__and2_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand2_8(fast)
+# -- Processing module sky130_fd_sc_hd__nand2_8(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__or2_4(fast)
+# -- Processing module sky130_fd_sc_hd__or2_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor2_4(fast)
+# -- Processing module sky130_fd_sc_hd__nor2_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor2_8(fast)
+# -- Processing module sky130_fd_sc_hd__nor2_8(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand2_2(fast)
+# -- Processing module sky130_fd_sc_hd__nand2_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand2_4(fast)
+# -- Processing module sky130_fd_sc_hd__nand2_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__or2_0(fast)
+# -- Processing module sky130_fd_sc_hd__or2_0(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__or2_2(fast)
+# -- Processing module sky130_fd_sc_hd__or2_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__or2_1(fast)
+# -- Processing module sky130_fd_sc_hd__or2_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__lpflow_inputiso1p_1(fast)
+# -- Processing module sky130_fd_sc_hd__lpflow_inputiso1p_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__lpflow_inputiso0n_1(fast)
+# -- Processing module sky130_fd_sc_hd__lpflow_inputiso0n_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__clkinv_16(fast)
+# -- Processing module sky130_fd_sc_hd__clkinv_16(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__clkinv_4(fast)
+# -- Processing module sky130_fd_sc_hd__clkinv_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__inv_4(fast)
+# -- Processing module sky130_fd_sc_hd__inv_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__inv_1(fast)
+# -- Processing module sky130_fd_sc_hd__inv_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__inv_6(fast)
+# -- Processing module sky130_fd_sc_hd__inv_6(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__inv_16(fast)
+# -- Processing module sky130_fd_sc_hd__inv_16(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__inv_2(fast)
+# -- Processing module sky130_fd_sc_hd__inv_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__inv_12(fast)
+# -- Processing module sky130_fd_sc_hd__inv_12(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__clkinv_8(fast)
+# -- Processing module sky130_fd_sc_hd__clkinv_8(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__clkinv_2(fast)
+# -- Processing module sky130_fd_sc_hd__clkinv_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__clkbuf_1(fast)
+# -- Processing module sky130_fd_sc_hd__clkbuf_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__inv_8(fast)
+# -- Processing module sky130_fd_sc_hd__inv_8(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__inv_1(fast__1)
+# -- Processing module sky130_fd_sc_hd__inv_1(fast__1) for debug
+# -- Optimizing module sky130_fd_sc_hd__buf_1(fast)
+# -- Processing module sky130_fd_sc_hd__buf_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__buf_16(fast)
+# -- Processing module sky130_fd_sc_hd__buf_16(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__clkbuf_8(fast)
+# -- Processing module sky130_fd_sc_hd__clkbuf_8(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__buf_8(fast)
+# -- Processing module sky130_fd_sc_hd__buf_8(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__buf_6(fast)
+# -- Processing module sky130_fd_sc_hd__buf_6(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__clkbuf_16(fast)
+# -- Processing module sky130_fd_sc_hd__clkbuf_16(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__clkbuf_2(fast)
+# -- Processing module sky130_fd_sc_hd__clkbuf_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__buf_12(fast)
+# -- Processing module sky130_fd_sc_hd__buf_12(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__buf_4(fast)
+# -- Processing module sky130_fd_sc_hd__buf_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__buf_2(fast)
+# -- Processing module sky130_fd_sc_hd__buf_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__clkbuf_4(fast)
+# -- Processing module sky130_fd_sc_hd__clkbuf_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__clkbuf_1(fast__1)
+# -- Processing module sky130_fd_sc_hd__clkbuf_1(fast__1) for debug
+# -- Optimizing module sky130_fd_sc_hd__dlymetal6s2s_1(fast)
+# -- Processing module sky130_fd_sc_hd__dlymetal6s2s_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__dlygate4sd3_1(fast)
+# -- Processing module sky130_fd_sc_hd__dlygate4sd3_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__conb_1(fast)
+# -- Processing module sky130_fd_sc_hd__conb_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o211ai_2(fast)
+# -- Processing module sky130_fd_sc_hd__o211ai_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o211ai_1(fast)
+# -- Processing module sky130_fd_sc_hd__o211ai_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o211a_1(fast)
+# -- Processing module sky130_fd_sc_hd__o211a_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o211ai_4(fast)
+# -- Processing module sky130_fd_sc_hd__o211ai_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o211a_2(fast)
+# -- Processing module sky130_fd_sc_hd__o211a_2(fast) for debug
+# -- Optimizing module sram22_256x32m4w8(fast)
+# -- Processing module sram22_256x32m4w8(fast) for debug
+# ** Note: (vopt-4301) Memory core inferred for signal 'mem' width=32, depth=256, type=RAM at location /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.v:33
+# -- Optimizing module sky130_fd_sc_hd__maj3_1(fast)
+# -- Processing module sky130_fd_sc_hd__maj3_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__maj3_2(fast)
+# -- Processing module sky130_fd_sc_hd__maj3_2(fast) for debug
+# -- Inlining UDP sky130_fd_sc_hd__udp_mux_2to1
+# -- Optimizing module sky130_fd_sc_hd__mux2_1(fast)
+# -- Processing module sky130_fd_sc_hd__mux2_1(fast) for debug
+# -- Inlining UDP sky130_fd_sc_hd__udp_mux_2to1_N
+# -- Optimizing module sky130_fd_sc_hd__mux2i_1(fast)
+# -- Processing module sky130_fd_sc_hd__mux2i_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__mux2i_4(fast)
+# -- Processing module sky130_fd_sc_hd__mux2i_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__mux2i_2(fast)
+# -- Processing module sky130_fd_sc_hd__mux2i_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__mux2_2(fast)
+# -- Processing module sky130_fd_sc_hd__mux2_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__mux2_4(fast)
+# -- Processing module sky130_fd_sc_hd__mux2_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a21boi_1(fast)
+# -- Processing module sky130_fd_sc_hd__a21boi_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a21boi_2(fast)
+# -- Processing module sky130_fd_sc_hd__a21boi_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a21boi_0(fast)
+# -- Processing module sky130_fd_sc_hd__a21boi_0(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a21boi_4(fast)
+# -- Processing module sky130_fd_sc_hd__a21boi_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a21oi_1(fast)
+# -- Processing module sky130_fd_sc_hd__a21oi_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a21o_1(fast)
+# -- Processing module sky130_fd_sc_hd__a21o_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a21oi_2(fast)
+# -- Processing module sky130_fd_sc_hd__a21oi_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o21bai_1(fast)
+# -- Processing module sky130_fd_sc_hd__o21bai_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a21oi_4(fast)
+# -- Processing module sky130_fd_sc_hd__a21oi_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o21bai_2(fast)
+# -- Processing module sky130_fd_sc_hd__o21bai_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a22o_1(fast)
+# -- Processing module sky130_fd_sc_hd__a22o_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a22oi_2(fast)
+# -- Processing module sky130_fd_sc_hd__a22oi_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o2111ai_4(fast)
+# -- Processing module sky130_fd_sc_hd__o2111ai_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o2111ai_2(fast)
+# -- Processing module sky130_fd_sc_hd__o2111ai_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o2111a_1(fast)
+# -- Processing module sky130_fd_sc_hd__o2111a_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__xnor3_1(fast)
+# -- Processing module sky130_fd_sc_hd__xnor3_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__xor3_1(fast)
+# -- Processing module sky130_fd_sc_hd__xor3_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a31oi_1(fast)
+# -- Processing module sky130_fd_sc_hd__a31oi_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a31oi_2(fast)
+# -- Processing module sky130_fd_sc_hd__a31oi_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a31o_1(fast)
+# -- Processing module sky130_fd_sc_hd__a31o_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a31oi_4(fast)
+# -- Processing module sky130_fd_sc_hd__a31oi_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a31o_2(fast)
+# -- Processing module sky130_fd_sc_hd__a31o_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o31ai_4(fast)
+# -- Processing module sky130_fd_sc_hd__o31ai_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o31ai_1(fast)
+# -- Processing module sky130_fd_sc_hd__o31ai_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o31ai_2(fast)
+# -- Processing module sky130_fd_sc_hd__o31ai_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o31a_1(fast)
+# -- Processing module sky130_fd_sc_hd__o31a_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o31a_4(fast)
+# -- Processing module sky130_fd_sc_hd__o31a_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a211oi_4(fast)
+# -- Processing module sky130_fd_sc_hd__a211oi_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a211oi_1(fast)
+# -- Processing module sky130_fd_sc_hd__a211oi_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a211o_1(fast)
+# -- Processing module sky130_fd_sc_hd__a211o_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a211o_4(fast)
+# -- Processing module sky130_fd_sc_hd__a211o_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a211oi_2(fast)
+# -- Processing module sky130_fd_sc_hd__a211oi_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a211o_2(fast)
+# -- Processing module sky130_fd_sc_hd__a211o_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o311ai_2(fast)
+# -- Processing module sky130_fd_sc_hd__o311ai_2(fast) for debug
+# -- Optimizing module testbench(fast)
+# -- Processing module testbench(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a2111oi_0(fast)
+# -- Processing module sky130_fd_sc_hd__a2111oi_0(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a2111oi_2(fast)
+# -- Processing module sky130_fd_sc_hd__a2111oi_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a2111o_1(fast)
+# -- Processing module sky130_fd_sc_hd__a2111o_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a2111oi_1(fast)
+# -- Processing module sky130_fd_sc_hd__a2111oi_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a2111oi_4(fast)
+# -- Processing module sky130_fd_sc_hd__a2111oi_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o22a_1(fast)
+# -- Processing module sky130_fd_sc_hd__o22a_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o22ai_1(fast)
+# -- Processing module sky130_fd_sc_hd__o22ai_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o22ai_4(fast)
+# -- Processing module sky130_fd_sc_hd__o22ai_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o22a_4(fast)
+# -- Processing module sky130_fd_sc_hd__o22a_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o22ai_2(fast)
+# -- Processing module sky130_fd_sc_hd__o22ai_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o22a_2(fast)
+# -- Processing module sky130_fd_sc_hd__o22a_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a2bb2oi_1(fast)
+# -- Processing module sky130_fd_sc_hd__a2bb2oi_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o2bb2ai_1(fast)
+# -- Processing module sky130_fd_sc_hd__o2bb2ai_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o2bb2ai_4(fast)
+# -- Processing module sky130_fd_sc_hd__o2bb2ai_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o2bb2a_1(fast)
+# -- Processing module sky130_fd_sc_hd__o2bb2a_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a2bb2oi_2(fast)
+# -- Processing module sky130_fd_sc_hd__a2bb2oi_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a22o_2(fast)
+# -- Processing module sky130_fd_sc_hd__a22o_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a22o_4(fast)
+# -- Processing module sky130_fd_sc_hd__a22o_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a22oi_4(fast)
+# -- Processing module sky130_fd_sc_hd__a22oi_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a22oi_1(fast)
+# -- Processing module sky130_fd_sc_hd__a22oi_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a221o_1(fast)
+# -- Processing module sky130_fd_sc_hd__a221o_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a221o_2(fast)
+# -- Processing module sky130_fd_sc_hd__a221o_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o221ai_2(fast)
+# -- Processing module sky130_fd_sc_hd__o221ai_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o221ai_1(fast)
+# -- Processing module sky130_fd_sc_hd__o221ai_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o221ai_4(fast)
+# -- Processing module sky130_fd_sc_hd__o221ai_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o221a_1(fast)
+# -- Processing module sky130_fd_sc_hd__o221a_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a41o_1(fast)
+# -- Processing module sky130_fd_sc_hd__a41o_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a41oi_2(fast)
+# -- Processing module sky130_fd_sc_hd__a41oi_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a41oi_4(fast)
+# -- Processing module sky130_fd_sc_hd__a41oi_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a41oi_1(fast)
+# -- Processing module sky130_fd_sc_hd__a41oi_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o41ai_1(fast)
+# -- Processing module sky130_fd_sc_hd__o41ai_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o41a_1(fast)
+# -- Processing module sky130_fd_sc_hd__o41a_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o41ai_2(fast)
+# -- Processing module sky130_fd_sc_hd__o41ai_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a311oi_4(fast)
+# -- Processing module sky130_fd_sc_hd__a311oi_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a311oi_2(fast)
+# -- Processing module sky130_fd_sc_hd__a311oi_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a311o_1(fast)
+# -- Processing module sky130_fd_sc_hd__a311o_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a311oi_1(fast)
+# -- Processing module sky130_fd_sc_hd__a311oi_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a311o_2(fast)
+# -- Processing module sky130_fd_sc_hd__a311o_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o311ai_1(fast)
+# -- Processing module sky130_fd_sc_hd__o311ai_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o311ai_4(fast)
+# -- Processing module sky130_fd_sc_hd__o311ai_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o311a_1(fast)
+# -- Processing module sky130_fd_sc_hd__o311a_1(fast) for debug
+# -- Inlining UDP sky130_fd_sc_hd__udp_mux_4to2
+# -- Optimizing module sky130_fd_sc_hd__mux4_1(fast)
+# -- Processing module sky130_fd_sc_hd__mux4_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__mux4_2(fast)
+# -- Processing module sky130_fd_sc_hd__mux4_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__mux4_4(fast)
+# -- Processing module sky130_fd_sc_hd__mux4_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a222oi_1(fast)
+# -- Processing module sky130_fd_sc_hd__a222oi_1(fast) for debug
+# -- Optimizing module spiflash(fast)
+# -- Processing module spiflash(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o32ai_1(fast)
+# -- Processing module sky130_fd_sc_hd__o32ai_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o32a_1(fast)
+# -- Processing module sky130_fd_sc_hd__o32a_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o32ai_4(fast)
+# -- Processing module sky130_fd_sc_hd__o32ai_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o32ai_2(fast)
+# -- Processing module sky130_fd_sc_hd__o32ai_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a32oi_2(fast)
+# -- Processing module sky130_fd_sc_hd__a32oi_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a32o_1(fast)
+# -- Processing module sky130_fd_sc_hd__a32o_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a32oi_4(fast)
+# -- Processing module sky130_fd_sc_hd__a32oi_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a32oi_1(fast)
+# -- Processing module sky130_fd_sc_hd__a32oi_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a221oi_1(fast)
+# -- Processing module sky130_fd_sc_hd__a221oi_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a221oi_2(fast)
+# -- Processing module sky130_fd_sc_hd__a221oi_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a221oi_4(fast)
+# -- Processing module sky130_fd_sc_hd__a221oi_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o2111ai_1(fast)
+# -- Processing module sky130_fd_sc_hd__o2111ai_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a21o_2(fast)
+# -- Processing module sky130_fd_sc_hd__a21o_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a21bo_1(fast)
+# -- Processing module sky130_fd_sc_hd__a21bo_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__a21o_4(fast)
+# -- Processing module sky130_fd_sc_hd__a21o_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o21ai_0(fast)
+# -- Processing module sky130_fd_sc_hd__o21ai_0(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o21ai_4(fast)
+# -- Processing module sky130_fd_sc_hd__o21ai_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o21ai_2(fast)
+# -- Processing module sky130_fd_sc_hd__o21ai_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o21a_1(fast)
+# -- Processing module sky130_fd_sc_hd__o21a_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o21a_4(fast)
+# -- Processing module sky130_fd_sc_hd__o21a_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o21ai_1(fast)
+# -- Processing module sky130_fd_sc_hd__o21ai_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o21a_2(fast)
+# -- Processing module sky130_fd_sc_hd__o21a_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__o21ba_1(fast)
+# -- Processing module sky130_fd_sc_hd__o21ba_1(fast) for debug
+# -- Inlining UDP sky130_fd_sc_hd__udp_dff$P_pp$PG$N
+# -- Optimizing module sky130_fd_sc_hd__dfxtp_1(fast)
+# -- Processing module sky130_fd_sc_hd__dfxtp_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__dfxtp_2(fast)
+# -- Processing module sky130_fd_sc_hd__dfxtp_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__dfxtp_4(fast)
+# -- Processing module sky130_fd_sc_hd__dfxtp_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand4b_4(fast)
+# -- Processing module sky130_fd_sc_hd__nand4b_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor4bb_4(fast)
+# -- Processing module sky130_fd_sc_hd__nor4bb_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor4b_1(fast)
+# -- Processing module sky130_fd_sc_hd__nor4b_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand4b_1(fast)
+# -- Processing module sky130_fd_sc_hd__nand4b_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor4b_2(fast)
+# -- Processing module sky130_fd_sc_hd__nor4b_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__or4b_2(fast)
+# -- Processing module sky130_fd_sc_hd__or4b_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor4bb_1(fast)
+# -- Processing module sky130_fd_sc_hd__nor4bb_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__or4b_1(fast)
+# -- Processing module sky130_fd_sc_hd__or4b_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__and4b_4(fast)
+# -- Processing module sky130_fd_sc_hd__and4b_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand4bb_2(fast)
+# -- Processing module sky130_fd_sc_hd__nand4bb_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor4b_4(fast)
+# -- Processing module sky130_fd_sc_hd__nor4b_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__and4b_1(fast)
+# -- Processing module sky130_fd_sc_hd__and4b_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand4_1(fast)
+# -- Processing module sky130_fd_sc_hd__nand4_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor4_4(fast)
+# -- Processing module sky130_fd_sc_hd__nor4_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand4_4(fast)
+# -- Processing module sky130_fd_sc_hd__nand4_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor4_1(fast)
+# -- Processing module sky130_fd_sc_hd__nor4_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand4_2(fast)
+# -- Processing module sky130_fd_sc_hd__nand4_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__or4_4(fast)
+# -- Processing module sky130_fd_sc_hd__or4_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor4_2(fast)
+# -- Processing module sky130_fd_sc_hd__nor4_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__and4_1(fast)
+# -- Processing module sky130_fd_sc_hd__and4_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__or4_1(fast)
+# -- Processing module sky130_fd_sc_hd__or4_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__or4_2(fast)
+# -- Processing module sky130_fd_sc_hd__or4_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__and4_2(fast)
+# -- Processing module sky130_fd_sc_hd__and4_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__and4_4(fast)
+# -- Processing module sky130_fd_sc_hd__and4_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__xor2_1(fast)
+# -- Processing module sky130_fd_sc_hd__xor2_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__xnor2_1(fast)
+# -- Processing module sky130_fd_sc_hd__xnor2_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__xor2_2(fast)
+# -- Processing module sky130_fd_sc_hd__xor2_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand3b_1(fast)
+# -- Processing module sky130_fd_sc_hd__nand3b_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__xnor2_4(fast)
+# -- Processing module sky130_fd_sc_hd__xnor2_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__xnor2_2(fast)
+# -- Processing module sky130_fd_sc_hd__xnor2_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor3b_1(fast)
+# -- Processing module sky130_fd_sc_hd__nor3b_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand3b_2(fast)
+# -- Processing module sky130_fd_sc_hd__nand3b_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__or3b_4(fast)
+# -- Processing module sky130_fd_sc_hd__or3b_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor3b_2(fast)
+# -- Processing module sky130_fd_sc_hd__nor3b_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__and3b_1(fast)
+# -- Processing module sky130_fd_sc_hd__and3b_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand3b_4(fast)
+# -- Processing module sky130_fd_sc_hd__nand3b_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor3b_4(fast)
+# -- Processing module sky130_fd_sc_hd__nor3b_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__xor2_4(fast)
+# -- Processing module sky130_fd_sc_hd__xor2_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__or3b_1(fast)
+# -- Processing module sky130_fd_sc_hd__or3b_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand3_1(fast)
+# -- Processing module sky130_fd_sc_hd__nand3_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor3_1(fast)
+# -- Processing module sky130_fd_sc_hd__nor3_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor3_4(fast)
+# -- Processing module sky130_fd_sc_hd__nor3_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__or3_1(fast)
+# -- Processing module sky130_fd_sc_hd__or3_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor3_2(fast)
+# -- Processing module sky130_fd_sc_hd__nor3_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__and3_2(fast)
+# -- Processing module sky130_fd_sc_hd__and3_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand3_2(fast)
+# -- Processing module sky130_fd_sc_hd__nand3_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__or3_4(fast)
+# -- Processing module sky130_fd_sc_hd__or3_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__and3_1(fast)
+# -- Processing module sky130_fd_sc_hd__and3_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand3_4(fast)
+# -- Processing module sky130_fd_sc_hd__nand3_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__or3_2(fast)
+# -- Processing module sky130_fd_sc_hd__or3_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__and3_4(fast)
+# -- Processing module sky130_fd_sc_hd__and3_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__lpflow_isobufsrc_2(fast)
+# -- Processing module sky130_fd_sc_hd__lpflow_isobufsrc_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor2b_1(fast)
+# -- Processing module sky130_fd_sc_hd__nor2b_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__lpflow_isobufsrc_4(fast)
+# -- Processing module sky130_fd_sc_hd__lpflow_isobufsrc_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__lpflow_isobufsrc_8(fast)
+# -- Processing module sky130_fd_sc_hd__lpflow_isobufsrc_8(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand2b_1(fast)
+# -- Processing module sky130_fd_sc_hd__nand2b_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__lpflow_isobufsrc_1(fast)
+# -- Processing module sky130_fd_sc_hd__lpflow_isobufsrc_1(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand2b_4(fast)
+# -- Processing module sky130_fd_sc_hd__nand2b_4(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nand2b_2(fast)
+# -- Processing module sky130_fd_sc_hd__nand2b_2(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__lpflow_isobufsrc_16(fast)
+# -- Processing module sky130_fd_sc_hd__lpflow_isobufsrc_16(fast) for debug
+# -- Optimizing module sky130_fd_sc_hd__nor2b_2(fast)
+# -- Processing module sky130_fd_sc_hd__nor2b_2(fast) for debug
+# -- Optimizing module digel_soc(fast)
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(14934): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06653__419 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(14934): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(15936): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_243__448 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(15936): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(35939): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_326__458 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(35939): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(54519): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_2903__474 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(54519): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(63089): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_2738__473 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(63089): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64824): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06662__416 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64824): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64825): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06664__417 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64825): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64826): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06666__418 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64826): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64827): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06657__420 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64827): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64828): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06659__421 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64828): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64829): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06668__422 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64829): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64830): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06670__423 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64830): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64831): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06672__424 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64831): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64832): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06675__425 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64832): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64833): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06677__426 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64833): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64834): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06679__427 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64834): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64835): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06681__428 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64835): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64836): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06684__429 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64836): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64837): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06686__430 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64837): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64838): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06688__431 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64838): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64839): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06690__432 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64839): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64840): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06692__433 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64840): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64841): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06694__434 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64841): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64842): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06697__435 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64842): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64843): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06699__436 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64843): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64844): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06701__437 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64844): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64845): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06703__438 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64845): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64846): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06706__439 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64846): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64847): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06708__440 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64847): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64848): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06710__441 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64848): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64849): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06712__442 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64849): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64850): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06714__443 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64850): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64851): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06716__444 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64851): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64852): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_06718__445 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64852): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64853): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_05182__446 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64853): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64854): (vopt-2685) [TFMPC] - Too few port connections for '\soc/cpu/_05231__447 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64854): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64855): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_243__449 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64855): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64856): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_252__450 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64856): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64857): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_252__451 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64857): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64858): (vopt-2685) [TFMPC] - Too few port connections for '\soc/spimemio/_0564__452 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64858): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64859): (vopt-2685) [TFMPC] - Too few port connections for '\soc/spimemio/_0565__453 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64859): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64860): (vopt-2685) [TFMPC] - Too few port connections for '\soc/spimemio/_0759__454 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64860): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64861): (vopt-2685) [TFMPC] - Too few port connections for '\soc/spimemio/_0764__455 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64861): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64862): (vopt-2685) [TFMPC] - Too few port connections for '\soc/spimemio/_0962__456 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64862): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64863): (vopt-2685) [TFMPC] - Too few port connections for '\soc/spimemio/_0971__457 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64863): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64864): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_332__459 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64864): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64865): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_369__460 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64865): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64866): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_375__461 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64866): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64867): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_381__462 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64867): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64868): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_389__463 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64868): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64869): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_444__464 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64869): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64870): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_450__465 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64870): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64871): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_456__466 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64871): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64872): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_462__467 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64872): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64873): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_468__468 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64873): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64874): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_474__469 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64874): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64875): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_480__470 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64875): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64876): (vopt-2685) [TFMPC] - Too few port connections for '\soc/_486__471 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64876): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64877): (vopt-2685) [TFMPC] - Too few port connections for '\soc/spimemio/xfer/_364__472 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64877): (vopt-2718) [TFMPC] - Missing connection for port 'HI'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64878): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_3056__475 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64878): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64879): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_3089__476 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64879): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64880): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_3120__477 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64880): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64881): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_3144__478 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64881): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64882): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_3205__479 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64882): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64883): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_3231__480 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64883): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64884): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_3250__481 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64884): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64885): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_3272__482 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64885): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64886): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_3273__483 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64886): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64887): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_3308__484 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64887): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64888): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_3347__485 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64888): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64889): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_3375__486 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64889): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64890): (vopt-2685) [TFMPC] - Too few port connections for '\wave_gen_inst/_3377__487 '.  Expected 2, found 1.
+# ** Warning: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v(64890): (vopt-2718) [TFMPC] - Missing connection for port 'LO'.
+# -- Processing module digel_soc(fast) for debug
+# Optimized design name is opt_testbench
+# End time: 23:12:54 on Oct 28,2025, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 145, Suppressed Errors: 1926
+# vsim -debugDB -sdfnoerror -work work_testbench opt_testbench 
+# Start time: 23:12:54 on Oct 28,2025
+# Loading work.testbench(fast)
+# Loading work.digel_soc(fast)
+# Loading work.sky130_fd_sc_hd__nand2_1(fast)
+# Loading work.sky130_fd_sc_hd__nand4_1(fast)
+# Loading work.sky130_fd_sc_hd__lpflow_inputiso1p_1(fast)
+# Loading work.sky130_fd_sc_hd__clkinv_16(fast)
+# Loading work.sky130_fd_sc_hd__clkinv_4(fast)
+# Loading work.sky130_fd_sc_hd__inv_4(fast)
+# Loading work.sky130_fd_sc_hd__lpflow_isobufsrc_2(fast)
+# Loading work.sky130_fd_sc_hd__nor2_1(fast)
+# Loading work.sky130_fd_sc_hd__xor2_1(fast)
+# Loading work.sky130_fd_sc_hd__a21oi_1(fast)
+# Loading work.sky130_fd_sc_hd__nand3_1(fast)
+# Loading work.sky130_fd_sc_hd__nor2b_1(fast)
+# Loading work.sky130_fd_sc_hd__xnor2_1(fast)
+# Loading work.sky130_fd_sc_hd__a41o_1(fast)
+# Loading work.sky130_fd_sc_hd__nor4_4(fast)
+# Loading work.sky130_fd_sc_hd__nand4b_4(fast)
+# Loading work.sky130_fd_sc_hd__mux2_1(fast)
+# Loading work.sky130_fd_sc_hd__nor4bb_4(fast)
+# Loading work.sky130_fd_sc_hd__lpflow_isobufsrc_4(fast)
+# Loading work.sky130_fd_sc_hd__inv_1(fast)
+# Loading work.sky130_fd_sc_hd__a211oi_4(fast)
+# Loading work.sky130_fd_sc_hd__a21o_1(fast)
+# Loading work.sky130_fd_sc_hd__nand4_4(fast)
+# Loading work.sky130_fd_sc_hd__o21ai_0(fast)
+# Loading work.sky130_fd_sc_hd__mux2i_1(fast)
+# Loading work.sky130_fd_sc_hd__dfxtp_1(fast)
+# Loading work.sky130_fd_sc_hd__dfxtp_2(fast)
+# Loading work.sky130_fd_sc_hd__dfxtp_4(fast)
+# Loading work.sky130_fd_sc_hd__conb_1(fast)
+# Loading work.sky130_fd_sc_hd__nor4_1(fast)
+# Loading work.sky130_fd_sc_hd__nor3_1(fast)
+# Loading work.sky130_fd_sc_hd__nor2_2(fast)
+# Loading work.sky130_fd_sc_hd__nor4b_1(fast)
+# Loading work.sky130_fd_sc_hd__nor3_4(fast)
+# Loading work.sky130_fd_sc_hd__a311oi_4(fast)
+# Loading work.sky130_fd_sc_hd__or3_1(fast)
+# Loading work.sky130_fd_sc_hd__nand4_2(fast)
+# Loading work.sky130_fd_sc_hd__nand4b_1(fast)
+# Loading work.sky130_fd_sc_hd__nor3_2(fast)
+# Loading work.sky130_fd_sc_hd__o21ai_4(fast)
+# Loading work.sky130_fd_sc_hd__or4_4(fast)
+# Loading work.sky130_fd_sc_hd__nor4_2(fast)
+# Loading work.sky130_fd_sc_hd__and2_0(fast)
+# Loading work.sky130_fd_sc_hd__and3_2(fast)
+# Loading work.sky130_fd_sc_hd__and2_2(fast)
+# Loading work.sky130_fd_sc_hd__and2_1(fast)
+# Loading work.sky130_fd_sc_hd__and2_4(fast)
+# Loading work.sky130_fd_sc_hd__a222oi_1(fast)
+# Loading work.sky130_fd_sc_hd__a22o_2(fast)
+# Loading work.sky130_fd_sc_hd__a22o_4(fast)
+# Loading work.sky130_fd_sc_hd__a21oi_2(fast)
+# Loading work.sky130_fd_sc_hd__nand3_2(fast)
+# Loading work.sky130_fd_sc_hd__nand2_8(fast)
+# Loading work.sky130_fd_sc_hd__or2_4(fast)
+# Loading work.sky130_fd_sc_hd__o21ai_2(fast)
+# Loading work.sky130_fd_sc_hd__nor2_4(fast)
+# Loading work.sky130_fd_sc_hd__nor2_8(fast)
+# Loading work.sky130_fd_sc_hd__a22oi_4(fast)
+# Loading work.sky130_fd_sc_hd__a21boi_1(fast)
+# Loading work.sky130_fd_sc_hd__or3_4(fast)
+# Loading work.sky130_fd_sc_hd__o21a_1(fast)
+# Loading work.sky130_fd_sc_hd__o21a_4(fast)
+# Loading work.sky130_fd_sc_hd__o21ai_1(fast)
+# Loading work.sky130_fd_sc_hd__nand2_2(fast)
+# Loading work.sky130_fd_sc_hd__o32ai_1(fast)
+# Loading work.sky130_fd_sc_hd__inv_6(fast)
+# Loading work.sky130_fd_sc_hd__lpflow_isobufsrc_8(fast)
+# Loading work.sky130_fd_sc_hd__and3_1(fast)
+# Loading work.sky130_fd_sc_hd__nand2_4(fast)
+# Loading work.sky130_fd_sc_hd__nand3_4(fast)
+# Loading work.sky130_fd_sc_hd__and4_1(fast)
+# Loading work.sky130_fd_sc_hd__o31ai_4(fast)
+# Loading work.sky130_fd_sc_hd__or4_1(fast)
+# Loading work.sky130_fd_sc_hd__inv_16(fast)
+# Loading work.sky130_fd_sc_hd__a221oi_1(fast)
+# Loading work.sky130_fd_sc_hd__nand2b_1(fast)
+# Loading work.sky130_fd_sc_hd__o21bai_1(fast)
+# Loading work.sky130_fd_sc_hd__o211ai_2(fast)
+# Loading work.sky130_fd_sc_hd__a22oi_1(fast)
+# Loading work.sky130_fd_sc_hd__a32oi_2(fast)
+# Loading work.sky130_fd_sc_hd__o31ai_1(fast)
+# Loading work.sky130_fd_sc_hd__o22a_1(fast)
+# Loading work.sky130_fd_sc_hd__o211ai_1(fast)
+# Loading work.sky130_fd_sc_hd__a211oi_1(fast)
+# Loading work.sky130_fd_sc_hd__o22ai_1(fast)
+# Loading work.sky130_fd_sc_hd__a2bb2oi_1(fast)
+# Loading work.sky130_fd_sc_hd__a2111oi_0(fast)
+# Loading work.sky130_fd_sc_hd__o21a_2(fast)
+# Loading work.sky130_fd_sc_hd__inv_2(fast)
+# Loading work.sky130_fd_sc_hd__a21oi_4(fast)
+# Loading work.sky130_fd_sc_hd__or3_2(fast)
+# Loading work.sky130_fd_sc_hd__lpflow_isobufsrc_1(fast)
+# Loading work.sky130_fd_sc_hd__nand2b_4(fast)
+# Loading work.sky130_fd_sc_hd__nand2b_2(fast)
+# Loading work.sky130_fd_sc_hd__xor2_2(fast)
+# Loading work.sky130_fd_sc_hd__nor4b_2(fast)
+# Loading work.sky130_fd_sc_hd__nand3b_1(fast)
+# Loading work.sky130_fd_sc_hd__o21bai_2(fast)
+# Loading work.sky130_fd_sc_hd__inv_12(fast)
+# Loading work.sky130_fd_sc_hd__mux2i_4(fast)
+# Loading work.sky130_fd_sc_hd__o22ai_4(fast)
+# Loading work.sky130_fd_sc_hd__or2_0(fast)
+# Loading work.sky130_fd_sc_hd__a21boi_2(fast)
+# Loading work.sky130_fd_sc_hd__o22a_4(fast)
+# Loading work.sky130_fd_sc_hd__mux2i_2(fast)
+# Loading work.sky130_fd_sc_hd__o22ai_2(fast)
+# Loading work.sky130_fd_sc_hd__o22a_2(fast)
+# Loading work.sky130_fd_sc_hd__o221ai_2(fast)
+# Loading work.sky130_fd_sc_hd__a31oi_1(fast)
+# Loading work.sky130_fd_sc_hd__o2111ai_1(fast)
+# Loading work.sky130_fd_sc_hd__a21boi_0(fast)
+# Loading work.sky130_fd_sc_hd__a311oi_2(fast)
+# Loading work.sky130_fd_sc_hd__a2111oi_2(fast)
+# Loading work.sky130_fd_sc_hd__o221ai_1(fast)
+# Loading work.sky130_fd_sc_hd__a211o_1(fast)
+# Loading work.sky130_fd_sc_hd__o311ai_1(fast)
+# Loading work.sky130_fd_sc_hd__xnor2_4(fast)
+# Loading work.sky130_fd_sc_hd__xnor2_2(fast)
+# Loading work.sky130_fd_sc_hd__maj3_1(fast)
+# Loading work.sky130_fd_sc_hd__o221ai_4(fast)
+# Loading work.sky130_fd_sc_hd__a31oi_2(fast)
+# Loading work.sky130_fd_sc_hd__nor3b_1(fast)
+# Loading work.sky130_fd_sc_hd__o221a_1(fast)
+# Loading work.sky130_fd_sc_hd__maj3_2(fast)
+# Loading work.sky130_fd_sc_hd__a211o_4(fast)
+# Loading work.sky130_fd_sc_hd__a221oi_2(fast)
+# Loading work.sky130_fd_sc_hd__lpflow_isobufsrc_16(fast)
+# Loading work.sky130_fd_sc_hd__o32a_1(fast)
+# Loading work.sky130_fd_sc_hd__a21o_2(fast)
+# Loading work.sky130_fd_sc_hd__a22o_1(fast)
+# Loading work.sky130_fd_sc_hd__or2_2(fast)
+# Loading work.sky130_fd_sc_hd__or2_1(fast)
+# Loading work.sky130_fd_sc_hd__or4_2(fast)
+# Loading work.sky130_fd_sc_hd__o21ba_1(fast)
+# Loading work.sky130_fd_sc_hd__a22oi_2(fast)
+# Loading work.sky130_fd_sc_hd__a211oi_2(fast)
+# Loading work.sky130_fd_sc_hd__o31ai_2(fast)
+# Loading work.sky130_fd_sc_hd__o211a_1(fast)
+# Loading work.sky130_fd_sc_hd__o311ai_4(fast)
+# Loading work.sky130_fd_sc_hd__a311o_1(fast)
+# Loading work.sky130_fd_sc_hd__a31o_1(fast)
+# Loading work.sky130_fd_sc_hd__mux2_2(fast)
+# Loading work.sky130_fd_sc_hd__mux2_4(fast)
+# Loading work.sky130_fd_sc_hd__a221oi_4(fast)
+# Loading work.sky130_fd_sc_hd__and4_2(fast)
+# Loading work.sky130_fd_sc_hd__o211ai_4(fast)
+# Loading work.sky130_fd_sc_hd__and3_4(fast)
+# Loading work.sky130_fd_sc_hd__nand3b_2(fast)
+# Loading work.sky130_fd_sc_hd__or4b_2(fast)
+# Loading work.sky130_fd_sc_hd__a32o_1(fast)
+# Loading work.sky130_fd_sc_hd__or3b_4(fast)
+# Loading work.sky130_fd_sc_hd__nor3b_2(fast)
+# Loading work.sky130_fd_sc_hd__a311oi_1(fast)
+# Loading work.sky130_fd_sc_hd__o311a_1(fast)
+# Loading work.sky130_fd_sc_hd__a21boi_4(fast)
+# Loading work.sky130_fd_sc_hd__a41oi_2(fast)
+# Loading work.sky130_fd_sc_hd__a221o_1(fast)
+# Loading work.sky130_fd_sc_hd__a32oi_4(fast)
+# Loading work.sky130_fd_sc_hd__o32ai_4(fast)
+# Loading work.sky130_fd_sc_hd__o32ai_2(fast)
+# Loading work.sky130_fd_sc_hd__o31a_1(fast)
+# Loading work.sky130_fd_sc_hd__o311ai_2(fast)
+# Loading work.sky130_fd_sc_hd__o41ai_1(fast)
+# Loading work.sky130_fd_sc_hd__and3b_1(fast)
+# Loading work.sky130_fd_sc_hd__a221o_2(fast)
+# Loading work.sky130_fd_sc_hd__o2111ai_4(fast)
+# Loading work.sky130_fd_sc_hd__a31oi_4(fast)
+# Loading work.sky130_fd_sc_hd__o2111ai_2(fast)
+# Loading work.sky130_fd_sc_hd__a311o_2(fast)
+# Loading work.sky130_fd_sc_hd__a2111o_1(fast)
+# Loading work.sky130_fd_sc_hd__a41oi_4(fast)
+# Loading work.sky130_fd_sc_hd__a32oi_1(fast)
+# Loading work.sky130_fd_sc_hd__o2bb2ai_1(fast)
+# Loading work.sky130_fd_sc_hd__o2bb2ai_4(fast)
+# Loading work.sky130_fd_sc_hd__o41a_1(fast)
+# Loading work.sky130_fd_sc_hd__nor4bb_1(fast)
+# Loading work.sky130_fd_sc_hd__or4b_1(fast)
+# Loading work.sky130_fd_sc_hd__mux4_1(fast)
+# Loading work.sky130_fd_sc_hd__mux4_2(fast)
+# Loading work.sky130_fd_sc_hd__lpflow_inputiso0n_1(fast)
+# Loading work.sky130_fd_sc_hd__a31o_2(fast)
+# Loading work.sky130_fd_sc_hd__mux4_4(fast)
+# Loading work.sky130_fd_sc_hd__nand3b_4(fast)
+# Loading work.sky130_fd_sc_hd__nor3b_4(fast)
+# Loading work.sram22_256x32m4w8(fast)
+# Loading work.sky130_fd_sc_hd__clkinv_8(fast)
+# Loading work.sky130_fd_sc_hd__clkinv_2(fast)
+# Loading work.sky130_fd_sc_hd__o2111a_1(fast)
+# Loading work.sky130_fd_sc_hd__a2111oi_1(fast)
+# Loading work.sky130_fd_sc_hd__nor2b_2(fast)
+# Loading work.sky130_fd_sc_hd__and4_4(fast)
+# Loading work.sky130_fd_sc_hd__xnor3_1(fast)
+# Loading work.sky130_fd_sc_hd__a41oi_1(fast)
+# Loading work.sky130_fd_sc_hd__clkbuf_1(fast)
+# Loading work.sky130_fd_sc_hd__and4b_4(fast)
+# Loading work.sky130_fd_sc_hd__inv_8(fast)
+# Loading work.sky130_fd_sc_hd__a211o_2(fast)
+# Loading work.sky130_fd_sc_hd__o2bb2a_1(fast)
+# Loading work.sky130_fd_sc_hd__xor3_1(fast)
+# Loading work.sky130_fd_sc_hd__a2bb2oi_2(fast)
+# Loading work.sky130_fd_sc_hd__nand4bb_2(fast)
+# Loading work.sky130_fd_sc_hd__a2111oi_4(fast)
+# Loading work.sky130_fd_sc_hd__xor2_4(fast)
+# Loading work.sky130_fd_sc_hd__or3b_1(fast)
+# Loading work.sky130_fd_sc_hd__o211a_2(fast)
+# Loading work.sky130_fd_sc_hd__o41ai_2(fast)
+# Loading work.sky130_fd_sc_hd__nor4b_4(fast)
+# Loading work.sky130_fd_sc_hd__and4b_1(fast)
+# Loading work.sky130_fd_sc_hd__a21bo_1(fast)
+# Loading work.sky130_fd_sc_hd__a21o_4(fast)
+# Loading work.sky130_fd_sc_hd__o31a_4(fast)
+# Loading work.sky130_fd_sc_hd__inv_1(fast__1)
+# Loading work.sky130_fd_sc_hd__buf_1(fast)
+# Loading work.sky130_fd_sc_hd__buf_16(fast)
+# Loading work.sky130_fd_sc_hd__clkbuf_8(fast)
+# Loading work.sky130_fd_sc_hd__buf_8(fast)
+# Loading work.sky130_fd_sc_hd__buf_6(fast)
+# Loading work.sky130_fd_sc_hd__clkbuf_16(fast)
+# Loading work.sky130_fd_sc_hd__clkbuf_2(fast)
+# Loading work.sky130_fd_sc_hd__buf_12(fast)
+# Loading work.sky130_fd_sc_hd__buf_4(fast)
+# Loading work.sky130_fd_sc_hd__buf_2(fast)
+# Loading work.sky130_fd_sc_hd__clkbuf_4(fast)
+# Loading work.sky130_fd_sc_hd__clkbuf_1(fast__1)
+# Loading work.sky130_fd_sc_hd__dlymetal6s2s_1(fast)
+# Loading work.sky130_fd_sc_hd__dlygate4sd3_1(fast)
+# Loading work.spiflash(fast)
+# Loading instances from /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz
+# Loading timing data from /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(23200): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(23206): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(23213): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(23219): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31063): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31064): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31065): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31066): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31067): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31068): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31069): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31070): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31071): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31072): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31073): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31074): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31075): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31076): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31077): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31078): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31079): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31080): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31081): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31082): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31083): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31084): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31085): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31086): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31087): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31088): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31089): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31090): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31091): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31092): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31093): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31094): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31095): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31096): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31097): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31098): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31099): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31100): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31101): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31102): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31103): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31104): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31105): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31106): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-3438) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(31107): Annotating cell drivers of INTERCONNECT source port.
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148884): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148885): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148886): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148887): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148888): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148889): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148890): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148891): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148892): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148893): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148894): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148895): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148896): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148897): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148898): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148899): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148900): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148901): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148902): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148903): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148904): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148905): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148906): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148907): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148908): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148909): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148910): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148911): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148912): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148913): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148914): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12088) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148915): Failed to find matching specify module path for IOPATH. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148919): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148920): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148921): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148922): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148923): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148924): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148925): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148926): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148927): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148928): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148929): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148930): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148931): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148932): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148933): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148934): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148935): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148936): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148937): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148938): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148939): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148940): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148941): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148942): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148943): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148944): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148945): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148946): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148947): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148948): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148949): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148950): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148951): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148952): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148953): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148954): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148955): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148956): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148957): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148958): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148959): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148960): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148961): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148962): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148963): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148964): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148965): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148966): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148967): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148968): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148969): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148970): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148971): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148972): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148973): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148974): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148975): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148976): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148977): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148978): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148979): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148980): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148981): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148982): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148983): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148984): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148985): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148986): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148987): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148988): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148989): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148990): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148991): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148992): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148993): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148994): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148995): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148996): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148997): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148998): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(148999): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149000): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149001): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149002): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149003): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149004): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149005): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149006): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149007): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149008): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149009): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149010): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149011): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149012): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149013): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149014): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149015): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149016): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149017): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149018): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149019): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149020): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149021): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149022): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149023): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149024): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149025): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149026): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149027): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149028): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149029): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149030): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149031): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149032): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149033): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149034): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149035): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149036): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149037): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149038): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149039): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149040): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149041): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149042): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149043): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149044): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149045): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149046): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149047): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149048): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149049): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149050): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149051): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149052): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149053): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149054): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149055): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149056): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149057): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149058): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149059): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149060): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149061): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149062): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149063): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149064): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149065): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149066): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149067): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149068): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149069): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149070): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149071): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149072): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149073): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149074): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149075): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149076): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149077): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149078): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149079): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149080): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149081): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149082): Failed to find matching specify timing constraint for SETUP. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149083): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149084): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149085): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149086): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149087): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149088): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149089): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149090): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149091): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149092): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149093): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149094): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149095): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149096): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149097): Failed to find matching specify timing constraint for HOLD. 
+# ** Warning: (vsim-SDF-12090) /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz(149098): Failed to find matching specify timing constraint for HOLD. 
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /testbench File: /home/urosdeljanin/digel-asic-project-fa24/picosoc/digel_soc_tb.v
+# ** Note: (vsim-8900) Creating design debug database vsim.dbg.
+# End time: 23:13:13 on Oct 28,2025, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 261

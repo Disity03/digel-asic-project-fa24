@@ -224,9 +224,13 @@ sim-rtl: $(HAMMER_D_MK) digel_soc.hex
 #########################################################################################
 
 .PHONY: sim-gl-syn
-sim-gl-syn: $(HAMMER_D_MK) $(INPUT_SIM_GL_SYN_DB)
+sim-gl-syn: $(HAMMER_D_MK) $(INPUT_SIM_GL_SYN_DB) digel_soc.hex
 	cp --update $(pdk_dir)/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v $(OBJ_DIR)/tech-sky130-cache/primitives.v
 	cp --update $(hammer_dir)/e2e/tech-sky130-cache/sky130_fd_sc_hd.v $(OBJ_DIR)/tech-sky130-cache/sky130_fd_sc_hd.v
+	mkdir -p $(OBJ_DIR)/sim-rundir
+	cp $(vlsi_dir)/digel_soc.hex $(OBJ_DIR)/sim-rundir/firmware.hex
+	cp $(vlsi_dir)/python_graphs.py $(OBJ_DIR)/sim-rundir/python_graphs.py
+	mkdir -p $(OBJ_DIR)/sim-rundir/waves
 	$(HAMMER_EXEC) -p $(TECH_CONF) -p $(SIM_GL_SYN_CONF) -p $(INPUT_SIM_GL_SYN_DB) --obj_dir $(OBJ_DIR) sim
 
 #########################################################################################e
@@ -234,9 +238,13 @@ sim-gl-syn: $(HAMMER_D_MK) $(INPUT_SIM_GL_SYN_DB)
 #########################################################################################
 
 .PHONY: sim-gl-par
-sim-gl-par: $(HAMMER_D_MK) $(INPUT_SIM_GL_PAR_DB)
+sim-gl-par: $(HAMMER_D_MK) $(INPUT_SIM_GL_PAR_DB) digel_soc.hex
 	cp --update $(pdk_dir)/sky130A/libs.ref/sky130_fd_sc_hd/verilog/primitives.v $(OBJ_DIR)/tech-sky130-cache/primitives.v
 	cp --update $(hammer_dir)/e2e/tech-sky130-cache/sky130_fd_sc_hd.v $(OBJ_DIR)/tech-sky130-cache/sky130_fd_sc_hd.v
+	mkdir -p $(OBJ_DIR)/sim-rundir
+	cp $(vlsi_dir)/digel_soc.hex $(OBJ_DIR)/sim-rundir/firmware.hex
+	cp $(vlsi_dir)/python_graphs.py $(OBJ_DIR)/sim-rundir/python_graphs.py
+	mkdir -p $(OBJ_DIR)/sim-rundir/waves
 	$(HAMMER_EXEC) -p $(TECH_CONF) -p $(SIM_GL_PAR_CONF) -p $(INPUT_SIM_GL_PAR_DB) --obj_dir $(OBJ_DIR) sim
 
 #########################################################################################

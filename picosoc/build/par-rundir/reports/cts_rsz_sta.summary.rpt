@@ -1,0 +1,32 @@
+(hammer) report_units
+ time 1ns
+ capacitance 1pF
+ resistance 1kohm
+ voltage 1v
+ current 1mA
+ power 1nW
+ distance 1um
+(hammer) report_units_metric
+(hammer) report_tns -digits 3
+tns 0.000
+(hammer) report_tns_metric -setup
+(hammer) report_tns_metric -hold
+(hammer) report_wns -digits 3
+wns 0.000
+(hammer) report_worst_negative_slack_metric -setup
+(hammer) report_worst_negative_slack_metric -hold
+(hammer) report_worst_slack -max -digits 3
+worst slack 7.240
+(hammer) report_worst_slack -min -digits 3
+worst slack 0.175
+(hammer) report_worst_slack_metric -setup
+(hammer) report_worst_slack_metric -hold
+(hammer) report_clock_skew -digits 3
+Clock clk
+Latency      CRPR       Skew
+soc/memory/clk ^
+  8.874
+soc/cpu/_09928_/CLK ^
+  3.892     0.000      4.981
+
+(hammer) report_clock_skew_metric

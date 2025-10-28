@@ -12,5 +12,5 @@ sim.inputs:
   tb_dut: "uut"
   sdf_corner: "max"
   defines: 
-    - "CLOCK_PERIOD=20.00"
+    - "CLOCK_PERIOD=50.00"
 

@@ -1,0 +1,21 @@
+{
+    "vlsi.builtins.is_complete": false,
+    "par.outputs.output_ilms": [],
+    "par.outputs.output_ilms_meta": "append",
+    "vlsi.inputs.ilms": [],
+    "vlsi.inputs.ilms_meta": "append",
+    "par.outputs.output_gds": "/home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.gds",
+    "par.outputs.output_netlist": "/home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.lvs.v",
+    "par.outputs.output_sim_netlist": "/home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.sim.v",
+    "par.outputs.hcells_list": [],
+    "par.outputs.seq_cells": "",
+    "par.outputs.all_regs": "",
+    "par.inputs.input_files": [
+        "/home/urosdeljanin/digel-asic-project-fa24/picosoc/build/syn-rundir/digel_soc.mapped.v"
+    ],
+    "par.inputs.top_module": "digel_soc",
+    "par.outputs.sdf_file": "/home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.sdf.gz",
+    "par.outputs.spefs": [
+        "/home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.spef"
+    ]
+}

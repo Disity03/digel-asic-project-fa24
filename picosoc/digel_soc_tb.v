@@ -148,7 +148,7 @@ module testbench;
 		// We limit the amount of memory in simulation
 		// in order to avoid reduce simulation time
 		// required for intialization of RAM
-		.MEM_WORDS(256)
+		//.MEM_WORDS(256)
 	) uut (
 		.clk      (clk      ),
 		.led1     (led1     ),

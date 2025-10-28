@@ -1,5 +1,5 @@
 # Specify Global Variables
-digel_soc.clockPeriod: &CLK_PERIOD "25ns"
+digel_soc.clockPeriod: &CLK_PERIOD "50ns"
 digel_soc.verilogSrc: &VERILOG_SRC
   - "wave_gen.v"
   - "digel_soc.v"
@@ -24,8 +24,8 @@ vlsi.inputs.placement_constraints:
     type: "toplevel"
     x: 0
     y: 0
-    width: 1000
-    height: 1000
+    width: 1150
+    height: 1150
     margins:
       left: 2
       right: 2
@@ -34,11 +34,11 @@ vlsi.inputs.placement_constraints:
     
   - path: "digel_soc/soc/memory"
     type: hardmacro
-    x: 50
-    y: 50
+    x: 25.0
+    y: 25.0
     width: 292.37
     height: 358.29
-    orientation: my90
+    orientation: r90
     top_layer: met3
     
 
@@ -50,7 +50,8 @@ vlsi.inputs.pin.assignments: [
 ]
 
 # Number of routing iterations
-vlsi.route.iter: 10
+vlsi.route.iter: 16
 
 # Do not use FILLER cells which cause li1 Metal Spacing errors
 vlsi.inputs.use_fillers: 0
+

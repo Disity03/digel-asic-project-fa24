@@ -1,0 +1,39 @@
+#!/bin/bash
+
+usage() {
+    echo ""
+    echo "Usage: ${0} [-t] [openroad_db_name]"
+    echo ""
+    echo "Options"
+    echo "  openroad_db_name    : Name of database to load (default=latest)"
+    echo "  -t, --timing        : Load timing info (default=disabled because of slow load time)"
+    echo "  -h, --help          : Display this message"
+    echo ""
+    exit
+}
+
+cd /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir
+source enter
+
+export db_name=$(readlink latest)
+export timing=0
+
+while [ "$1" != "" ];
+do
+    case $1 in
+        -h | --help )
+            usage ;;
+        -t | --timing)
+            export timing=1 ;;
+        * )
+            if [ -f $1 ]; then
+                export db_name=$1
+            else
+                error "invalid option $1"
+                usage
+            fi ;;
+    esac
+    shift
+done
+
+$OPENROAD_BIN -no_init -gui /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/generated-scripts/open_chip.tcl

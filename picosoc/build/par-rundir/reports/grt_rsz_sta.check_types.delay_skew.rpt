@@ -1,0 +1,5 @@
+(hammer) report_check_types -max_delay -max_skew -digits 3
+Group                                   Slack
+---------------------------------------------
+clk                                     6.537
+

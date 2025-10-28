@@ -1,0 +1,24 @@
+(hammer) report_power -corner setup -digits 3
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential            1.578e-03  3.179e-04  3.365e-05  1.929e-03  39.3%
+Combinational         1.177e-03  1.605e-03  1.942e-04  2.976e-03  60.7%
+Macro                 0.000e+00  0.000e+00  0.000e+00  0.000e+00   0.0%
+Pad                   0.000e+00  0.000e+00  0.000e+00  0.000e+00   0.0%
+----------------------------------------------------------------
+Total                 2.755e-03  1.923e-03  2.279e-04  4.905e-03 100.0%
+                          56.2%      39.2%       4.6%
+(hammer) report_power_metric -corner setup
+(hammer) report_power -corner hold -digits 3
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential            2.511e-03  4.798e-04  3.598e-08  2.991e-03  42.0%
+Combinational         1.538e-03  2.448e-03  1.403e-04  4.127e-03  58.0%
+Macro                 0.000e+00  0.000e+00  0.000e+00  0.000e+00   0.0%
+Pad                   0.000e+00  0.000e+00  0.000e+00  0.000e+00   0.0%
+----------------------------------------------------------------
+Total                 4.050e-03  2.928e-03  1.403e-04  7.118e-03 100.0%
+                          56.9%      41.1%       2.0%
+(hammer) report_power_metric -corner hold

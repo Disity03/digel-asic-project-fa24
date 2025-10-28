@@ -47,7 +47,7 @@ module digel_soc (
 	inout  flash_io2,
 	inout  flash_io3
 );
-	parameter integer MEM_WORDS = 32768;
+	parameter integer MEM_WORDS = 256;
 
 	reg [5:0] reset_cnt = 0;
 	wire resetn = &reset_cnt;
@@ -147,7 +147,7 @@ module digel_soc (
 		.BARREL_SHIFTER(0),
 		.ENABLE_MUL(0),
 		.ENABLE_DIV(0),
-		.ENABLE_FAST_MUL(1),
+		.ENABLE_FAST_MUL(0),
 		.MEM_WORDS(MEM_WORDS)
 	) soc (
 		.clk          (clk         ),
