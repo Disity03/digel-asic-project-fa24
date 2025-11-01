@@ -20,16 +20,23 @@
 `timescale 1 ns / 1 ps
 
 module testbench;
-	reg clk;
-	always #5 clk = (clk === 1'b0);
-
+	reg clk = 0;
+	always #(`CLOCK_PERIOD / 2) clk = ~clk;
+	reg rst;
+	
 	localparam ser_half_period = 53;
 	event ser_sample;
 
 	initial begin
 		$dumpfile("testbench.vcd");
 		$dumpvars(0, testbench);
-
+		
+		rst = 1;
+		// Hold reset signal for some time
+		repeat (1) @(posedge clk);
+		// Note: we should reset on the negedge clk to prevent race behavior
+		@(negedge clk);
+		rst = 0;
 		repeat (10) begin
 			repeat (50000) @(posedge clk);
 			$display("+50000 cycles");
@@ -151,6 +158,7 @@ module testbench;
 		//.MEM_WORDS(256)
 	) uut (
 		.clk      (clk      ),
+		.rst      (rst      ),
 		.led1     (led1     ),
 		.led2     (led2     ),
 		.led3     (led3     ),

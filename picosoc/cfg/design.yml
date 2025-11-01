@@ -24,8 +24,8 @@ vlsi.inputs.placement_constraints:
     type: "toplevel"
     x: 0
     y: 0
-    width: 1150
-    height: 1150
+    width: 1300
+    height: 1300
     margins:
       left: 2
       right: 2

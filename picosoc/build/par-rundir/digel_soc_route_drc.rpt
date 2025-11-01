@@ -1,384 +1,336 @@
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[6\]\[20\] net:soc/cpu/cpuregs/regs\[7\]\[20\] 
-    bbox = ( 246.26, 940.2 ) - ( 246.4, 940.34 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[6\]\[20\] net:soc/cpu/cpuregs/regs\[7\]\[20\] 
-    bbox = ( 246.26, 939.86 ) - ( 246.4, 940.34 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[6\]\[20\] net:soc/cpu/cpuregs/regs\[7\]\[20\] 
-    bbox = ( 246.26, 939.86 ) - ( 246.4, 940 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[6\]\[20\] net:soc/cpu/cpuregs/regs\[7\]\[20\] 
-    bbox = ( 247.16, 939.86 ) - ( 247.45, 940 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[6\]\[20\] net:soc/cpu/cpuregs/regs\[7\]\[20\] 
-    bbox = ( 246.26, 939.86 ) - ( 247.45, 940 ) on Layer met1
-  violation type: Short
-    srcs: net:net305 net:soc/cpu/cpuregs/regs\[22\]\[25\] 
-    bbox = ( 250.835, 852.82 ) - ( 251.125, 852.96 ) on Layer met1
-  violation type: Short
-    srcs: net:net305 net:soc/cpu/cpuregs/regs\[22\]\[25\] 
-    bbox = ( 252.7, 852.82 ) - ( 252.84, 852.96 ) on Layer met1
-  violation type: Short
-    srcs: net:net305 net:soc/cpu/cpuregs/regs\[22\]\[25\] 
-    bbox = ( 250.835, 852.82 ) - ( 252.84, 852.96 ) on Layer met1
   violation type: Metal Spacing
-    srcs: net:soc/cpu/_00531_ net:net701 
-    bbox = ( 396.015, 344.165 ) - ( 396.15, 344.335 ) on Layer li1
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[17\] net:net284 
+    bbox = ( 131.635, 762.905 ) - ( 131.925, 763 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[17\] net:net312 
+    bbox = ( 132.1, 760.34 ) - ( 132.42, 760.48 ) on Layer met1
   violation type: Metal Spacing
-    srcs: net:_041_ net:net594 
-    bbox = ( 397.375, 264.945 ) - ( 397.53, 265.115 ) on Layer li1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[28\]\[5\] net:net334 
-    bbox = ( 367.61, 776.49 ) - ( 367.93, 776.505 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[28\]\[5\] net:net334 
-    bbox = ( 367.61, 776.49 ) - ( 367.93, 776.52 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[28\]\[5\] net:net334 
-    bbox = ( 367.565, 776.49 ) - ( 367.93, 776.505 ) on Layer met1
-  violation type: Short
-    srcs: inst:soc/cpu/cpuregs/_3366_ net:soc/cpu/cpuregs/regs\[28\]\[5\] 
-    bbox = ( 368.135, 776.49 ) - ( 368.29, 776.505 ) on Layer met1
-  violation type: Metal Spacing
-    srcs: inst:soc/cpu/cpuregs/_3366_ net:soc/cpu/cpuregs/regs\[28\]\[5\] 
-    bbox = ( 368.135, 776.46 ) - ( 368.29, 776.49 ) on Layer met1
-  violation type: Short
-    srcs: inst:soc/cpu/cpuregs/_3366_ net:soc/cpu/cpuregs/regs\[28\]\[5\] 
-    bbox = ( 368.15, 776.49 ) - ( 368.29, 776.505 ) on Layer met1
-  violation type: Metal Spacing
-    srcs: inst:soc/cpu/cpuregs/_3366_ net:soc/cpu/cpuregs/regs\[28\]\[5\] 
-    bbox = ( 368.15, 776.46 ) - ( 368.29, 776.49 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[28\]\[5\] net:soc/cpu/cpuregs/regs\[29\]\[5\] 
-    bbox = ( 364.94, 782.1 ) - ( 365.08, 782.24 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[28\]\[5\] net:soc/cpu/cpuregs/regs\[29\]\[5\] 
-    bbox = ( 364.94, 782.1 ) - ( 366.155, 782.24 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[28\]\[5\] net:soc/cpu/cpuregs/regs\[29\]\[5\] 
-    bbox = ( 365.865, 782.1 ) - ( 366.155, 782.24 ) on Layer met1
-  violation type: Metal Spacing
-    srcs: net:net334 net:VSS 
-    bbox = ( 367.54, 776.205 ) - ( 367.63, 776.575 ) on Layer met2
-  violation type: Metal Spacing
-    srcs: net:net334 net:VDD 
-    bbox = ( 367.91, 776.205 ) - ( 367.96, 776.575 ) on Layer met2
-  violation type: Metal Spacing
-    srcs: net:net695 net:soc/spimemio/_0189_ 
-    bbox = ( 443.815, 200.345 ) - ( 443.955, 200.515 ) on Layer li1
-  violation type: Short
-    srcs: net:net308 net:soc/cpu/cpuregs/regs\[14\]\[16\] 
-    bbox = ( 130.315, 697.44 ) - ( 130.605, 697.58 ) on Layer met1
-  violation type: Short
-    srcs: net:net308 net:soc/cpu/cpuregs/regs\[14\]\[16\] 
-    bbox = ( 132.18, 697.38 ) - ( 132.32, 697.58 ) on Layer met1
-  violation type: Short
-    srcs: net:net308 net:soc/cpu/cpuregs/regs\[14\]\[16\] 
-    bbox = ( 132.09, 697.44 ) - ( 132.32, 697.58 ) on Layer met1
-  violation type: Short
-    srcs: net:net308 net:soc/cpu/cpuregs/regs\[14\]\[16\] 
-    bbox = ( 132.18, 697.44 ) - ( 132.32, 697.58 ) on Layer met1
-  violation type: Short
-    srcs: net:net308 net:soc/cpu/cpuregs/regs\[14\]\[16\] 
-    bbox = ( 130.315, 697.44 ) - ( 132.32, 697.58 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[28\]\[6\] net:soc/cpu/cpuregs/regs\[29\]\[6\] 
-    bbox = ( 129.86, 787.54 ) - ( 130.15, 787.68 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[28\]\[6\] net:soc/cpu/cpuregs/regs\[29\]\[6\] 
-    bbox = ( 128.96, 787.54 ) - ( 129.1, 787.68 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[28\]\[6\] net:soc/cpu/cpuregs/regs\[29\]\[6\] 
-    bbox = ( 128.96, 787.54 ) - ( 130.15, 787.68 ) on Layer met1
-  violation type: Metal Spacing
-    srcs: net:net689 net:wave_gen_inst/_1850_ 
-    bbox = ( 560.235, 341.105 ) - ( 560.375, 341.275 ) on Layer li1
-  violation type: Metal Spacing
-    srcs: net:net689 net:wave_gen_inst/_1850_ 
-    bbox = ( 560.265, 340.965 ) - ( 560.315, 341.045 ) on Layer met1
-  violation type: Metal Spacing
-    srcs: net:wave_gen_inst/_1850_ 
-    bbox = ( 560.35, 340.64 ) - ( 560.605, 340.735 ) on Layer met1
-  violation type: Metal Spacing
-    srcs: inst:wire186 net:net808 
-    bbox = ( 413.015, 308.465 ) - ( 413.165, 308.635 ) on Layer li1
-  violation type: Metal Spacing
-    srcs: inst:wire229 net:net934 
-    bbox = ( 428.655, 327.845 ) - ( 428.805, 328.015 ) on Layer li1
-  violation type: Metal Spacing
-    srcs: net:net880 net:wave_gen_inst/_0890_ 
-    bbox = ( 624.155, 349.605 ) - ( 624.315, 349.775 ) on Layer li1
-  violation type: Metal Spacing
-    srcs: net:net853 net:clknet_leaf_39_clk 
-    bbox = ( 365.615, 599.165 ) - ( 365.755, 599.335 ) on Layer li1
-  violation type: Metal Spacing
-    srcs: net:_115_ net:net661 
-    bbox = ( 427.295, 243.185 ) - ( 427.43, 243.355 ) on Layer li1
+    srcs: net:soc/cpu/cpuregs/regs\[14\]\[17\] net:soc/cpu/cpuregs/regs\[15\]\[17\] 
+    bbox = ( 125.26, 722.12 ) - ( 125.51, 722.215 ) on Layer met1
   violation type: Short
     srcs: net:soc/cpu/cpuregs/regs\[14\]\[17\] net:soc/cpu/cpuregs/regs\[15\]\[17\] 
-    bbox = ( 126.64, 928.98 ) - ( 126.93, 929.12 ) on Layer met1
+    bbox = ( 128.975, 724.64 ) - ( 129.265, 724.78 ) on Layer met1
   violation type: Short
     srcs: net:soc/cpu/cpuregs/regs\[14\]\[17\] net:soc/cpu/cpuregs/regs\[15\]\[17\] 
-    bbox = ( 125.83, 928.98 ) - ( 125.97, 929.12 ) on Layer met1
+    bbox = ( 128.04, 724.64 ) - ( 128.18, 724.78 ) on Layer met1
   violation type: Short
     srcs: net:soc/cpu/cpuregs/regs\[14\]\[17\] net:soc/cpu/cpuregs/regs\[15\]\[17\] 
-    bbox = ( 125.83, 928.98 ) - ( 126.93, 929.12 ) on Layer met1
+    bbox = ( 128.04, 724.64 ) - ( 129.265, 724.78 ) on Layer met1
   violation type: Metal Spacing
-    srcs: inst:wire224 net:net942 
-    bbox = ( 428.655, 311.525 ) - ( 428.805, 311.695 ) on Layer li1
+    srcs: net:soc/cpu/cpuregs/regs\[14\]\[17\] net:VSS 
+    bbox = ( 125.48, 721.83 ) - ( 125.54, 722.15 ) on Layer met2
   violation type: Metal Spacing
-    srcs: net:net888 net:soc/cpu/_03115_ 
-    bbox = ( 263.075, 550.545 ) - ( 263.215, 550.665 ) on Layer li1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[22\]\[3\] net:soc/cpu/cpuregs/regs\[23\]\[3\] 
-    bbox = ( 487.755, 887.84 ) - ( 487.895, 888.025 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[22\]\[3\] net:soc/cpu/cpuregs/regs\[23\]\[3\] 
-    bbox = ( 487.755, 887.84 ) - ( 487.895, 887.98 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[22\]\[3\] net:soc/cpu/cpuregs/regs\[23\]\[3\] 
-    bbox = ( 486.98, 887.84 ) - ( 487.12, 887.98 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[22\]\[3\] net:soc/cpu/cpuregs/regs\[23\]\[3\] 
-    bbox = ( 486.98, 887.84 ) - ( 487.895, 887.98 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[3\] net:soc/cpu/cpuregs/regs\[5\]\[3\] 
-    bbox = ( 487.755, 904.16 ) - ( 487.895, 904.345 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[3\] net:soc/cpu/cpuregs/regs\[5\]\[3\] 
-    bbox = ( 487.755, 904.16 ) - ( 487.895, 904.3 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[3\] net:soc/cpu/cpuregs/regs\[5\]\[3\] 
-    bbox = ( 486.98, 904.16 ) - ( 487.12, 904.3 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[3\] net:soc/cpu/cpuregs/regs\[5\]\[3\] 
-    bbox = ( 486.98, 904.16 ) - ( 487.895, 904.3 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[3\] net:soc/cpu/cpuregs/regs\[5\]\[3\] 
-    bbox = ( 485.935, 907.22 ) - ( 486.225, 907.36 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[3\] net:soc/cpu/cpuregs/regs\[5\]\[3\] 
-    bbox = ( 485.11, 907.22 ) - ( 485.25, 907.36 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[3\] net:soc/cpu/cpuregs/regs\[5\]\[3\] 
-    bbox = ( 485.11, 907.22 ) - ( 486.225, 907.36 ) on Layer met1
+    srcs: net:soc/cpu/cpuregs/regs\[14\]\[17\] net:VSS 
+    bbox = ( 125.48, 721.92 ) - ( 125.54, 722.06 ) on Layer met2
   violation type: Metal Spacing
-    srcs: inst:soc/cpu/cpuregs/_2654_ net:net312 
-    bbox = ( 489.5, 904.47 ) - ( 489.575, 904.5 ) on Layer met1
+    srcs: net:soc/cpu/_00431_ net:net1037 
+    bbox = ( 405.195, 338.725 ) - ( 405.35, 338.895 ) on Layer li1
   violation type: Metal Spacing
-    srcs: inst:soc/cpu/cpuregs/_2654_ net:net312 
-    bbox = ( 489.5, 904.455 ) - ( 489.575, 904.47 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[21\] net:soc/cpu/cpuregs/regs\[5\]\[21\] 
-    bbox = ( 486.98, 866.08 ) - ( 487.12, 866.22 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[21\] net:soc/cpu/cpuregs/regs\[5\]\[21\] 
-    bbox = ( 487.755, 866.08 ) - ( 488.045, 866.22 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[21\] net:soc/cpu/cpuregs/regs\[5\]\[21\] 
-    bbox = ( 486.98, 866.08 ) - ( 488.045, 866.22 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[21\] net:soc/cpu/cpuregs/regs\[5\]\[21\] 
-    bbox = ( 487.28, 869.095 ) - ( 487.395, 869.28 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[21\] net:soc/cpu/cpuregs/regs\[5\]\[21\] 
-    bbox = ( 487.28, 869.14 ) - ( 487.395, 869.28 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[21\] net:soc/cpu/cpuregs/regs\[5\]\[21\] 
-    bbox = ( 486.3, 869.14 ) - ( 486.44, 869.28 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[21\] net:soc/cpu/cpuregs/regs\[5\]\[21\] 
-    bbox = ( 487.255, 869.14 ) - ( 487.395, 869.28 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[21\] net:soc/cpu/cpuregs/regs\[5\]\[21\] 
-    bbox = ( 486.3, 869.14 ) - ( 487.395, 869.28 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[20\] net:soc/cpu/cpuregs/regs\[21\]\[20\] 
-    bbox = ( 246.66, 956.18 ) - ( 246.8, 956.32 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[20\] net:soc/cpu/cpuregs/regs\[21\]\[20\] 
-    bbox = ( 246.735, 956.135 ) - ( 246.8, 956.32 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[20\] net:soc/cpu/cpuregs/regs\[21\]\[20\] 
-    bbox = ( 245.92, 956.18 ) - ( 246.06, 956.32 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[20\] net:soc/cpu/cpuregs/regs\[21\]\[20\] 
-    bbox = ( 245.92, 956.18 ) - ( 246.8, 956.32 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[20\] net:soc/cpu/cpuregs/regs\[21\]\[20\] 
-    bbox = ( 246.735, 956.18 ) - ( 246.8, 956.32 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[20\] net:soc/cpu/cpuregs/regs\[21\]\[20\] 
-    bbox = ( 247.64, 958.56 ) - ( 247.78, 958.7 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[20\] net:soc/cpu/cpuregs/regs\[21\]\[20\] 
-    bbox = ( 248.54, 958.56 ) - ( 248.655, 958.745 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[20\] net:soc/cpu/cpuregs/regs\[21\]\[20\] 
-    bbox = ( 248.54, 958.56 ) - ( 248.655, 958.7 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[20\] net:soc/cpu/cpuregs/regs\[21\]\[20\] 
-    bbox = ( 248.515, 958.56 ) - ( 248.655, 958.7 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[20\] net:soc/cpu/cpuregs/regs\[21\]\[20\] 
-    bbox = ( 247.64, 958.56 ) - ( 248.655, 958.7 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/_02665_ net:VSS 
-    bbox = ( 248.04, 541.04 ) - ( 248.18, 541.52 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/_02665_ net:VSS 
-    bbox = ( 248.04, 541.14 ) - ( 248.18, 541.42 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[30\]\[26\] net:soc/cpu/cpuregs/regs\[31\]\[26\] 
-    bbox = ( 247.64, 670.24 ) - ( 247.78, 670.38 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[30\]\[26\] net:soc/cpu/cpuregs/regs\[31\]\[26\] 
-    bbox = ( 248.565, 670.24 ) - ( 248.655, 670.425 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[30\]\[26\] net:soc/cpu/cpuregs/regs\[31\]\[26\] 
-    bbox = ( 248.565, 670.24 ) - ( 248.655, 670.38 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[30\]\[26\] net:soc/cpu/cpuregs/regs\[31\]\[26\] 
-    bbox = ( 248.515, 670.24 ) - ( 248.655, 670.38 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[30\]\[26\] net:soc/cpu/cpuregs/regs\[31\]\[26\] 
-    bbox = ( 247.64, 670.24 ) - ( 248.655, 670.38 ) on Layer met1
+    srcs: inst:wave_gen_inst/_4378_ net:net784 
+    bbox = ( 577.235, 249.645 ) - ( 577.385, 249.815 ) on Layer li1
   violation type: Metal Spacing
-    srcs: inst:soc/cpu/cpuregs/_3097_ net:soc/cpu/cpuregs/regs\[30\]\[26\] 
-    bbox = ( 244.79, 672.76 ) - ( 245.11, 672.79 ) on Layer met1
+    srcs: net:soc/cpu/_00633_ net:net995 
+    bbox = ( 294.355, 357.425 ) - ( 294.49, 357.595 ) on Layer li1
   violation type: Metal Spacing
-    srcs: inst:soc/cpu/cpuregs/_3097_ net:soc/cpu/cpuregs/regs\[30\]\[26\] 
-    bbox = ( 244.88, 672.76 ) - ( 245.11, 672.79 ) on Layer met1
+    srcs: net:net851 net:soc/cpu/_02948_ 
+    bbox = ( 290.635, 495.805 ) - ( 290.785, 495.975 ) on Layer li1
   violation type: Metal Spacing
-    srcs: net:soc/cpu/cpuregs/regs\[30\]\[26\] net:VSS 
-    bbox = ( 245.08, 672.76 ) - ( 245.14, 673.08 ) on Layer met2
+    srcs: inst:soc/cpu/_07209_ net:clknet_3_1_0_clk 
+    bbox = ( 338.935, 333.625 ) - ( 339.065, 333.665 ) on Layer li1
   violation type: Metal Spacing
-    srcs: net:soc/cpu/cpuregs/regs\[30\]\[26\] net:VSS 
-    bbox = ( 245.08, 672.79 ) - ( 245.14, 672.93 ) on Layer met2
+    srcs: net:soc/cpu/_00411_ net:net1050 
+    bbox = ( 350.455, 335.665 ) - ( 350.61, 335.835 ) on Layer li1
   violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[6\]\[20\] net:soc/cpu/cpuregs/regs\[7\]\[20\] 
-    bbox = ( 247.64, 936.8 ) - ( 247.78, 936.94 ) on Layer met1
+    srcs: net:net317 net:soc/cpu/cpuregs/regs\[30\]\[1\] 
+    bbox = ( 369.68, 915.04 ) - ( 369.745, 915.225 ) on Layer met1
   violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[6\]\[20\] net:soc/cpu/cpuregs/regs\[7\]\[20\] 
-    bbox = ( 248.54, 936.8 ) - ( 248.83, 936.94 ) on Layer met1
+    srcs: net:net317 net:soc/cpu/cpuregs/regs\[30\]\[1\] 
+    bbox = ( 369.68, 915.04 ) - ( 369.745, 915.18 ) on Layer met1
   violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[6\]\[20\] net:soc/cpu/cpuregs/regs\[7\]\[20\] 
-    bbox = ( 247.64, 936.8 ) - ( 248.83, 936.94 ) on Layer met1
+    srcs: net:net317 net:soc/cpu/cpuregs/regs\[30\]\[1\] 
+    bbox = ( 371.38, 915.04 ) - ( 371.52, 915.18 ) on Layer met1
   violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[14\]\[17\] net:soc/cpu/cpuregs/regs\[15\]\[17\] 
-    bbox = ( 128.11, 931.36 ) - ( 128.25, 931.5 ) on Layer met1
+    srcs: net:net317 net:soc/cpu/cpuregs/regs\[30\]\[1\] 
+    bbox = ( 369.68, 915.04 ) - ( 369.82, 915.18 ) on Layer met1
   violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[14\]\[17\] net:soc/cpu/cpuregs/regs\[15\]\[17\] 
-    bbox = ( 128.885, 931.36 ) - ( 129.175, 931.5 ) on Layer met1
+    srcs: net:net317 net:soc/cpu/cpuregs/regs\[30\]\[1\] 
+    bbox = ( 369.68, 915.04 ) - ( 371.52, 915.18 ) on Layer met1
   violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[14\]\[17\] net:soc/cpu/cpuregs/regs\[15\]\[17\] 
-    bbox = ( 128.11, 931.36 ) - ( 129.175, 931.5 ) on Layer met1
+    srcs: net:soc/cpu/cpuregs/regs\[30\]\[18\] net:soc/cpu/cpuregs/regs\[31\]\[18\] 
+    bbox = ( 247.64, 773.6 ) - ( 247.78, 773.74 ) on Layer met1
   violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[28\]\[26\] net:soc/cpu/cpuregs/regs\[29\]\[26\] 
-    bbox = ( 247.64, 730.08 ) - ( 247.78, 730.22 ) on Layer met1
+    srcs: net:soc/cpu/cpuregs/regs\[30\]\[18\] net:soc/cpu/cpuregs/regs\[31\]\[18\] 
+    bbox = ( 244.845, 776.66 ) - ( 245.115, 776.8 ) on Layer met1
   violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[28\]\[26\] net:soc/cpu/cpuregs/regs\[29\]\[26\] 
-    bbox = ( 247.64, 730.08 ) - ( 248.855, 730.22 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[28\]\[26\] net:soc/cpu/cpuregs/regs\[29\]\[26\] 
-    bbox = ( 248.565, 730.08 ) - ( 248.855, 730.22 ) on Layer met1
+    srcs: net:soc/cpu/cpuregs/regs\[30\]\[18\] net:soc/cpu/cpuregs/regs\[31\]\[18\] 
+    bbox = ( 244.845, 776.615 ) - ( 245.115, 776.845 ) on Layer met1
   violation type: Metal Spacing
-    srcs: net:soc/cpu/_01762_ net:net754 
-    bbox = ( 200.515, 583.525 ) - ( 200.655, 583.695 ) on Layer li1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[0\] net:soc/cpu/cpuregs/regs\[21\]\[0\] 
-    bbox = ( 367.3, 953.12 ) - ( 367.44, 953.26 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[0\] net:soc/cpu/cpuregs/regs\[21\]\[0\] 
-    bbox = ( 367.3, 953.12 ) - ( 368.29, 953.26 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[0\] net:soc/cpu/cpuregs/regs\[21\]\[0\] 
-    bbox = ( 368.245, 953.12 ) - ( 368.29, 953.26 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[0\] net:soc/cpu/cpuregs/regs\[21\]\[0\] 
-    bbox = ( 368.15, 953.12 ) - ( 368.29, 953.26 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[0\] net:soc/cpu/cpuregs/regs\[21\]\[0\] 
-    bbox = ( 364.92, 956.18 ) - ( 365.06, 956.32 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[0\] net:soc/cpu/cpuregs/regs\[21\]\[0\] 
-    bbox = ( 364.94, 956.18 ) - ( 365.06, 956.32 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[0\] net:soc/cpu/cpuregs/regs\[21\]\[0\] 
-    bbox = ( 365.84, 956.18 ) - ( 366.13, 956.32 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[20\]\[0\] net:soc/cpu/cpuregs/regs\[21\]\[0\] 
-    bbox = ( 364.92, 956.18 ) - ( 366.13, 956.32 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[0\] net:soc/cpu/cpuregs/regs\[5\]\[0\] 
-    bbox = ( 368.16, 972.5 ) - ( 368.3, 972.64 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[0\] net:soc/cpu/cpuregs/regs\[5\]\[0\] 
-    bbox = ( 368.16, 972.5 ) - ( 369.14, 972.64 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[0\] net:soc/cpu/cpuregs/regs\[5\]\[0\] 
-    bbox = ( 369.06, 972.5 ) - ( 369.14, 972.64 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[0\] net:soc/cpu/cpuregs/regs\[5\]\[0\] 
-    bbox = ( 369, 972.5 ) - ( 369.14, 972.64 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[22\]\[0\] net:soc/cpu/cpuregs/regs\[23\]\[0\] 
-    bbox = ( 367.3, 920.48 ) - ( 367.44, 920.62 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[22\]\[0\] net:soc/cpu/cpuregs/regs\[23\]\[0\] 
-    bbox = ( 367.3, 920.48 ) - ( 368.365, 920.62 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[22\]\[0\] net:soc/cpu/cpuregs/regs\[23\]\[0\] 
-    bbox = ( 368.075, 920.48 ) - ( 368.365, 920.62 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/_02971_ net:VSS 
-    bbox = ( 249.02, 437.78 ) - ( 249.16, 438.06 ) on Layer met1
+    srcs: net:soc/cpu/cpuregs/regs\[30\]\[18\] net:VSS 
+    bbox = ( 245.135, 776.57 ) - ( 245.14, 776.89 ) on Layer met2
   violation type: Metal Spacing
-    srcs: net:soc/_037_ net:net726 
-    bbox = ( 422.705, 126.785 ) - ( 422.825, 126.905 ) on Layer li1
+    srcs: net:soc/cpu/cpuregs/regs\[30\]\[18\] net:VSS 
+    bbox = ( 245.135, 776.66 ) - ( 245.14, 776.8 ) on Layer met2
   violation type: Metal Spacing
-    srcs: inst:soc/spimemio/_0801_ net:net678 
-    bbox = ( 413.015, 178.585 ) - ( 413.165, 178.755 ) on Layer li1
+    srcs: net:soc/cpu/_00180_ net:net836 
+    bbox = ( 385.855, 430.525 ) - ( 385.985, 430.695 ) on Layer li1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[9\] net:net286 
+    bbox = ( 369.59, 762.72 ) - ( 369.73, 762.905 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[9\] net:net286 
+    bbox = ( 369.59, 762.72 ) - ( 369.805, 762.86 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[9\] net:net286 
+    bbox = ( 369.59, 762.72 ) - ( 369.73, 762.86 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[9\] net:net286 
+    bbox = ( 369.59, 762.72 ) - ( 371.52, 762.86 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[9\] net:net286 
+    bbox = ( 371.38, 762.72 ) - ( 371.52, 762.86 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/_1747_ net:soc/cpu/cpuregs/_1748_ 
+    bbox = ( 369.135, 939.86 ) - ( 369.425, 940 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/_1747_ net:soc/cpu/cpuregs/_1748_ 
+    bbox = ( 368.16, 939.86 ) - ( 368.3, 940 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/_1747_ net:soc/cpu/cpuregs/_1748_ 
+    bbox = ( 368.16, 939.86 ) - ( 369.425, 940 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs_raddr2\[2\] net:soc/cpu/cpuregs/regs\[4\]\[7\] 
+    bbox = ( 490.89, 760.34 ) - ( 491.21, 760.48 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[9\] net:soc/cpu/cpuregs/regs\[23\]\[9\] 
+    bbox = ( 366.81, 765.78 ) - ( 366.95, 765.92 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[9\] net:soc/cpu/cpuregs/regs\[23\]\[9\] 
+    bbox = ( 367.715, 765.78 ) - ( 368.005, 765.92 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[9\] net:soc/cpu/cpuregs/regs\[23\]\[9\] 
+    bbox = ( 366.81, 765.78 ) - ( 368.005, 765.92 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[17\] net:net312 
+    bbox = ( 131.235, 760.34 ) - ( 131.525, 760.48 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[17\] net:net312 
+    bbox = ( 131.235, 760.34 ) - ( 132.42, 760.48 ) on Layer met1
   violation type: Metal Spacing
-    srcs: net:clknet_leaf_91_clk net:net194 
-    bbox = ( 393.66, 232.305 ) - ( 393.805, 232.475 ) on Layer li1
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[17\] net:VDD 
+    bbox = ( 131.56, 762.97 ) - ( 131.66, 763.29 ) on Layer met2
   violation type: Metal Spacing
-    srcs: net:net715 net:soc/spimemio/_0309_ 
-    bbox = ( 418.975, 184.025 ) - ( 419.135, 184.195 ) on Layer li1
+    srcs: net:_233_ net:net958 
+    bbox = ( 483.395, 299.965 ) - ( 483.555, 300.135 ) on Layer li1
+  violation type: Short
+    srcs: net:net331 net:soc/cpu/cpuregs/regs\[23\]\[19\] 
+    bbox = ( 366.905, 740.915 ) - ( 367.005, 741.1 ) on Layer met1
+  violation type: Short
+    srcs: net:net331 net:soc/cpu/cpuregs/regs\[23\]\[19\] 
+    bbox = ( 366.905, 740.96 ) - ( 367.005, 741.1 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[19\] net:soc/cpu/cpuregs/regs\[23\]\[19\] 
+    bbox = ( 367.3, 740.96 ) - ( 367.44, 741.1 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[19\] net:soc/cpu/cpuregs/regs\[23\]\[19\] 
+    bbox = ( 368.08, 740.96 ) - ( 368.22, 741.145 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[19\] net:soc/cpu/cpuregs/regs\[23\]\[19\] 
+    bbox = ( 368.08, 740.96 ) - ( 368.22, 741.1 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[19\] net:soc/cpu/cpuregs/regs\[23\]\[19\] 
+    bbox = ( 368.075, 740.96 ) - ( 368.22, 741.1 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[19\] net:soc/cpu/cpuregs/regs\[23\]\[19\] 
+    bbox = ( 367.3, 740.96 ) - ( 368.22, 741.1 ) on Layer met1
+  violation type: Short
+    srcs: net:net315 net:soc/cpu/cpuregs/regs\[30\]\[30\] 
+    bbox = ( 250.86, 928.98 ) - ( 251, 929.12 ) on Layer met1
+  violation type: Short
+    srcs: net:net315 net:soc/cpu/cpuregs/regs\[30\]\[30\] 
+    bbox = ( 251.69, 928.98 ) - ( 252.01, 929.12 ) on Layer met1
+  violation type: Short
+    srcs: net:net315 net:soc/cpu/cpuregs/regs\[30\]\[30\] 
+    bbox = ( 250.86, 928.98 ) - ( 252.01, 929.12 ) on Layer met1
   violation type: Metal Spacing
-    srcs: net:soc/spimemio/_0042_ net:soc/spimemio/rd_addr\[15\] 
-    bbox = ( 412.515, 226.865 ) - ( 412.675, 227.035 ) on Layer li1
+    srcs: net:soc/cpu/_00969_ net:net837 
+    bbox = ( 310.875, 434.265 ) - ( 311.015, 434.435 ) on Layer li1
   violation type: Metal Spacing
-    srcs: net:net873 net:soc/cpu/_04161_ 
-    bbox = ( 419.475, 466.615 ) - ( 419.615, 466.735 ) on Layer li1
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[0\] net:net291 
+    bbox = ( 490.89, 936.985 ) - ( 491.125, 937.08 ) on Layer met1
+  violation type: Short
+    srcs: net:net319 net:soc/cpu/cpuregs/regs\[4\]\[0\] 
+    bbox = ( 490.89, 934.42 ) - ( 491.21, 934.56 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[14\]\[30\] net:net288 
+    bbox = ( 250, 964 ) - ( 250.14, 964.14 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[14\]\[30\] net:net288 
+    bbox = ( 252.195, 964 ) - ( 252.335, 964.14 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[14\]\[30\] net:net288 
+    bbox = ( 250, 964 ) - ( 252.335, 964.14 ) on Layer met1
   violation type: Metal Spacing
-    srcs: inst:soc/spimemio/_0945_ net:net704 
-    bbox = ( 459.935, 258.825 ) - ( 460.085, 258.995 ) on Layer li1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[19\] net:soc/cpu/cpuregs/regs\[5\]\[19\] 
-    bbox = ( 486.98, 806.24 ) - ( 487.12, 806.38 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[19\] net:soc/cpu/cpuregs/regs\[5\]\[19\] 
-    bbox = ( 487.76, 806.24 ) - ( 487.9, 806.38 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[19\] net:soc/cpu/cpuregs/regs\[5\]\[19\] 
-    bbox = ( 486.98, 806.24 ) - ( 487.9, 806.38 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[19\] net:soc/cpu/cpuregs/regs\[5\]\[19\] 
-    bbox = ( 485.935, 809.3 ) - ( 486.225, 809.44 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[19\] net:soc/cpu/cpuregs/regs\[5\]\[19\] 
-    bbox = ( 485.11, 809.3 ) - ( 486.225, 809.44 ) on Layer met1
-  violation type: Short
-    srcs: net:soc/cpu/cpuregs/regs\[4\]\[19\] net:soc/cpu/cpuregs/regs\[5\]\[19\] 
-    bbox = ( 485.11, 809.3 ) - ( 485.25, 809.44 ) on Layer met1
+    srcs: net:_108_ net:net579 
+    bbox = ( 552.415, 344.165 ) - ( 552.545, 344.335 ) on Layer li1
   violation type: Metal Spacing
-    srcs: inst:soc/cpu/_06748_ net:net892 
-    bbox = ( 444.295, 331.245 ) - ( 444.445, 331.415 ) on Layer li1
+    srcs: net:_108_ net:net579 
+    bbox = ( 552.445, 344.395 ) - ( 552.525, 344.475 ) on Layer met1
+  violation type: Metal Spacing
+    srcs: net:net579 
+    bbox = ( 552.215, 343.98 ) - ( 552.4, 344.105 ) on Layer met1
   violation type: Short
-    srcs: net:wave_gen_inst/_1160_ net:VSS 
-    bbox = ( 607, 203.86 ) - ( 607.14, 204.14 ) on Layer met1
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[19\] net:soc/cpu/cpuregs/regs\[23\]\[19\] 
+    bbox = ( 365.94, 738.535 ) - ( 366.155, 738.55 ) on Layer met1
   violation type: Short
-    srcs: net:wave_gen_inst/_1160_ net:VSS 
-    bbox = ( 607, 203.76 ) - ( 607.14, 204.24 ) on Layer met1
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[19\] net:soc/cpu/cpuregs/regs\[23\]\[19\] 
+    bbox = ( 365.94, 738.58 ) - ( 366.08, 738.72 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[19\] net:soc/cpu/cpuregs/regs\[23\]\[19\] 
+    bbox = ( 365.94, 738.535 ) - ( 366.08, 738.72 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[19\] net:soc/cpu/cpuregs/regs\[23\]\[19\] 
+    bbox = ( 364.94, 738.58 ) - ( 365.08, 738.72 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[19\] net:soc/cpu/cpuregs/regs\[23\]\[19\] 
+    bbox = ( 364.94, 738.58 ) - ( 366.08, 738.72 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[19\] net:soc/cpu/cpuregs/regs\[23\]\[19\] 
+    bbox = ( 365.865, 738.58 ) - ( 366.08, 738.72 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[30\]\[18\] net:soc/cpu/cpuregs/regs\[31\]\[18\] 
+    bbox = ( 248.54, 773.6 ) - ( 248.655, 773.74 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[30\]\[18\] net:soc/cpu/cpuregs/regs\[31\]\[18\] 
+    bbox = ( 248.54, 773.6 ) - ( 248.655, 773.785 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[30\]\[18\] net:soc/cpu/cpuregs/regs\[31\]\[18\] 
+    bbox = ( 247.64, 773.6 ) - ( 248.655, 773.74 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[30\]\[18\] net:soc/cpu/cpuregs/regs\[31\]\[18\] 
+    bbox = ( 248.515, 773.6 ) - ( 248.655, 773.74 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[25\] net:soc/cpu/cpuregs/regs\[5\]\[25\] 
+    bbox = ( 369.06, 869.14 ) - ( 369.35, 869.28 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[25\] net:soc/cpu/cpuregs/regs\[5\]\[25\] 
+    bbox = ( 368.16, 869.14 ) - ( 369.35, 869.28 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[25\] net:soc/cpu/cpuregs/regs\[5\]\[25\] 
+    bbox = ( 368.16, 869.14 ) - ( 368.3, 869.28 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs_raddr2\[2\] net:soc/cpu/cpuregs/regs\[4\]\[7\] 
+    bbox = ( 490.11, 760.295 ) - ( 490.25, 760.48 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs_raddr2\[2\] net:soc/cpu/cpuregs/regs\[4\]\[7\] 
+    bbox = ( 490.11, 760.34 ) - ( 490.255, 760.48 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs_raddr2\[2\] net:soc/cpu/cpuregs/regs\[4\]\[7\] 
+    bbox = ( 490.11, 760.34 ) - ( 490.25, 760.48 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs_raddr2\[2\] net:soc/cpu/cpuregs/regs\[4\]\[7\] 
+    bbox = ( 490.11, 760.34 ) - ( 491.21, 760.48 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[28\] net:soc/cpu/cpuregs/regs\[23\]\[28\] 
+    bbox = ( 487.76, 776.66 ) - ( 487.9, 776.8 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[28\] net:soc/cpu/cpuregs/regs\[23\]\[28\] 
+    bbox = ( 487.76, 776.66 ) - ( 488.985, 776.8 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[28\] net:soc/cpu/cpuregs/regs\[23\]\[28\] 
+    bbox = ( 488.695, 776.66 ) - ( 488.985, 776.8 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[26\] net:soc/cpu/cpuregs/regs\[5\]\[26\] 
+    bbox = ( 486.98, 855.2 ) - ( 487.12, 855.34 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[26\] net:soc/cpu/cpuregs/regs\[5\]\[26\] 
+    bbox = ( 487.775, 855.2 ) - ( 488.065, 855.34 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[26\] net:soc/cpu/cpuregs/regs\[5\]\[26\] 
+    bbox = ( 486.98, 855.2 ) - ( 488.065, 855.34 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[26\] net:soc/cpu/cpuregs/regs\[5\]\[26\] 
+    bbox = ( 487.775, 858.26 ) - ( 488.065, 858.4 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[26\] net:soc/cpu/cpuregs/regs\[5\]\[26\] 
+    bbox = ( 486.98, 858.26 ) - ( 487.12, 858.4 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[4\]\[26\] net:soc/cpu/cpuregs/regs\[5\]\[26\] 
+    bbox = ( 486.98, 858.26 ) - ( 488.065, 858.4 ) on Layer met1
+  violation type: Short
+    srcs: net:net319 net:soc/cpu/cpuregs/regs\[4\]\[0\] 
+    bbox = ( 489.915, 934.42 ) - ( 490.205, 934.56 ) on Layer met1
+  violation type: Short
+    srcs: net:net319 net:soc/cpu/cpuregs/regs\[4\]\[0\] 
+    bbox = ( 489.915, 934.42 ) - ( 491.21, 934.56 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[14\]\[24\] net:net288 
+    bbox = ( 251.74, 890.9 ) - ( 252.06, 891.04 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[14\]\[24\] net:net288 
+    bbox = ( 250.835, 890.9 ) - ( 252.06, 891.04 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[14\]\[24\] net:net288 
+    bbox = ( 250.835, 890.9 ) - ( 251.125, 891.04 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[12\]\[1\] net:soc/cpu/cpuregs/regs\[13\]\[1\] 
+    bbox = ( 366.745, 972.5 ) - ( 366.885, 972.64 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[12\]\[1\] net:soc/cpu/cpuregs/regs\[13\]\[1\] 
+    bbox = ( 367.715, 972.5 ) - ( 368.005, 972.64 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[12\]\[1\] net:soc/cpu/cpuregs/regs\[13\]\[1\] 
+    bbox = ( 366.745, 972.5 ) - ( 368.005, 972.64 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[12\]\[1\] net:soc/cpu/cpuregs/regs\[13\]\[1\] 
+    bbox = ( 367.24, 974.88 ) - ( 367.38, 975.02 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[12\]\[1\] net:soc/cpu/cpuregs/regs\[13\]\[1\] 
+    bbox = ( 368.15, 974.88 ) - ( 368.29, 975.02 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[12\]\[1\] net:soc/cpu/cpuregs/regs\[13\]\[1\] 
+    bbox = ( 367.24, 974.88 ) - ( 368.29, 975.02 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[2\] net:soc/cpu/cpuregs/regs\[23\]\[2\] 
+    bbox = ( 488.68, 880.02 ) - ( 488.82, 880.16 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[2\] net:soc/cpu/cpuregs/regs\[23\]\[2\] 
+    bbox = ( 487.83, 880.02 ) - ( 487.97, 880.16 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[22\]\[2\] net:soc/cpu/cpuregs/regs\[23\]\[2\] 
+    bbox = ( 487.83, 880.02 ) - ( 488.82, 880.16 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[14\]\[16\] net:net286 
+    bbox = ( 132.09, 640.66 ) - ( 132.41, 640.8 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[14\]\[16\] net:net286 
+    bbox = ( 131.34, 640.66 ) - ( 132.41, 640.8 ) on Layer met1
+  violation type: Short
+    srcs: net:soc/cpu/cpuregs/regs\[14\]\[16\] net:net286 
+    bbox = ( 131.34, 640.66 ) - ( 131.48, 640.8 ) on Layer met1
+  violation type: Metal Spacing
+    srcs: net:soc/cpu/cpuregs/regs\[14\]\[20\] net:net287 
+    bbox = ( 132.155, 936.985 ) - ( 132.445, 937.08 ) on Layer met1
+  violation type: Short
+    srcs: net:net316 net:soc/cpu/cpuregs/regs\[15\]\[20\] 
+    bbox = ( 132.09, 934.42 ) - ( 132.41, 934.56 ) on Layer met1
+  violation type: Short
+    srcs: net:net316 net:soc/cpu/cpuregs/regs\[15\]\[20\] 
+    bbox = ( 131.235, 934.42 ) - ( 132.41, 934.56 ) on Layer met1
+  violation type: Short
+    srcs: net:net316 net:soc/cpu/cpuregs/regs\[15\]\[20\] 
+    bbox = ( 131.235, 934.42 ) - ( 131.525, 934.56 ) on Layer met1
+  violation type: Metal Spacing
+    srcs: inst:soc/spimemio/_0797_ net:net511 
+    bbox = ( 397.375, 258.825 ) - ( 397.525, 258.995 ) on Layer li1
+  violation type: Metal Spacing
+    srcs: net:soc/cpu/_02389_ net:net558 
+    bbox = ( 397.375, 346.545 ) - ( 397.525, 346.715 ) on Layer li1
+  violation type: Metal Spacing
+    srcs: inst:soc/spimemio/_0872_ net:net947 
+    bbox = ( 521.135, 276.215 ) - ( 521.265, 276.335 ) on Layer li1
+  violation type: Metal Spacing
+    srcs: net:net908 net:wave_gen_inst/_0061_ 
+    bbox = ( 607.155, 158.865 ) - ( 607.295, 158.985 ) on Layer li1
+  violation type: Metal Spacing
+    srcs: net:soc/cpu/cpuregs_raddr2\[2\] net:soc/cpu/cpuregs/regs\[22\]\[28\] 
+    bbox = ( 490.955, 779.225 ) - ( 491.21, 779.32 ) on Layer met1

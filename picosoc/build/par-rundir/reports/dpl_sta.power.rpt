@@ -2,23 +2,23 @@
 Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
-Sequential            1.676e-03  3.911e-04  3.365e-05  2.101e-03  43.7%
-Combinational         1.102e-03  1.416e-03  1.910e-04  2.710e-03  56.3%
+Sequential            1.544e-03  1.286e-04  3.378e-05  1.706e-03  61.5%
+Combinational         4.778e-04  4.005e-04  1.916e-04  1.070e-03  38.5%
 Macro                 0.000e+00  0.000e+00  0.000e+00  0.000e+00   0.0%
 Pad                   0.000e+00  0.000e+00  0.000e+00  0.000e+00   0.0%
 ----------------------------------------------------------------
-Total                 2.778e-03  1.808e-03  2.246e-04  4.811e-03 100.0%
-                          57.8%      37.6%       4.7%
+Total                 2.022e-03  5.291e-04  2.254e-04  2.776e-03 100.0%
+                          72.8%      19.1%       8.1%
 (hammer) report_power_metric -corner setup
 (hammer) report_power -corner hold -digits 3
 Group                  Internal  Switching    Leakage      Total
                           Power      Power      Power      Power (Watts)
 ----------------------------------------------------------------
-Sequential            2.402e-03  5.882e-04  3.598e-08  2.990e-03  44.8%
-Combinational         1.422e-03  2.129e-03  1.403e-04  3.691e-03  55.2%
+Sequential            2.215e-03  1.936e-04  1.880e-07  2.409e-03  64.5%
+Combinational         5.836e-04  6.005e-04  1.403e-04  1.324e-03  35.5%
 Macro                 0.000e+00  0.000e+00  0.000e+00  0.000e+00   0.0%
 Pad                   0.000e+00  0.000e+00  0.000e+00  0.000e+00   0.0%
 ----------------------------------------------------------------
-Total                 3.824e-03  2.717e-03  1.403e-04  6.681e-03 100.0%
-                          57.2%      40.7%       2.1%
+Total                 2.799e-03  7.941e-04  1.405e-04  3.733e-03 100.0%
+                          75.0%      21.3%       3.8%
 (hammer) report_power_metric -corner hold

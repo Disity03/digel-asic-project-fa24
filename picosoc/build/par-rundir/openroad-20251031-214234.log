@@ -1,0 +1,183 @@
+OpenROAD 0264023b6c2a8ae803b8d440478d657387277d93 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 4 thread(s).
+(hammer) read_lef /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+[WARNING ODB-0180] duplicate LAYER (licon) ignored
+[INFO ODB-0223]     Created 14 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+(hammer) read_lef /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0225]     Created 437 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+(hammer) read_lef /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_ef_io.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_ef_io.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_ef_io.lef at line 2.
+
+[INFO ODB-0225]     Created 38 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_ef_io.lef
+(hammer) read_lef /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef at line 2.
+
+[INFO ODB-0225]     Created 32 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32.lef at line 1.
+
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2.lef at line 1.
+
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8.lef
+(hammer) define_corners setup hold
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00.lib line 33, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ss_100C_1v60_3v00.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ss_100C_1v60_3v00.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00.lib line 33, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_ground_hvc_wpad pin PADISOR missing from LEF macro.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_ground_hvc_wpad pin PADISOL missing from LEF macro.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ss_100C_1v60_3v00.lib line 43, default_fanout_load is 0.0.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_ground_lvc_wpad pin PADISOR missing from LEF macro.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_ground_lvc_wpad pin PADISOL missing from LEF macro.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_power_lvc_wpad pin PADISOR missing from LEF macro.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_power_lvc_wpad pin PADISOL missing from LEF macro.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ss_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ss_ss_100C_1v60_3v00.lib line 33, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95_ccsnoise.lib
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50.lib line 33, default_fanout_load is 0.0.
+[WARNING STA-0003] cell sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00/sky130_ef_io__gpiov2_pad_wrapped OUT -> PAD timing group combinational not found in cell sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50/sky130_ef_io__gpiov2_pad_wrapped.
+[WARNING STA-0003] cell sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00/sky130_ef_io__gpiov2_pad_wrapped OUT -> PAD timing group combinational not found in cell sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50/sky130_ef_io__gpiov2_pad_wrapped.
+[WARNING STA-0003] cell sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00/sky130_ef_io__gpiov2_pad_wrapped OUT -> PAD timing group combinational not found in cell sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50/sky130_ef_io__gpiov2_pad_wrapped.
+[WARNING STA-0003] cell sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00/sky130_ef_io__gpiov2_pad_wrapped OUT -> PAD timing group combinational not found in cell sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50/sky130_ef_io__gpiov2_pad_wrapped.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ff_n40C_1v95_5v50.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ff_n40C_1v95_5v50.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50.lib line 33, default_fanout_load is 0.0.
+[WARNING STA-0003] cell sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00/sky130_fd_io__top_gpiov2 OUT -> PAD timing group combinational not found in cell sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50/sky130_fd_io__top_gpiov2.
+[WARNING STA-0003] cell sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00/sky130_fd_io__top_gpiov2 OUT -> PAD timing group combinational not found in cell sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50/sky130_fd_io__top_gpiov2.
+[WARNING STA-0003] cell sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00/sky130_fd_io__top_gpiov2 OUT -> PAD timing group combinational not found in cell sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50/sky130_fd_io__top_gpiov2.
+[WARNING STA-0003] cell sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00/sky130_fd_io__top_gpiov2 OUT -> PAD timing group combinational not found in cell sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50/sky130_fd_io__top_gpiov2.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ff_n40C_1v95_5v50.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ff_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ff_ff_n40C_1v95_5v50.lib line 33, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32_tt_025C_1v80.rc.lib line 1, library sram22_512x32m4w32 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32_tt_025C_1v80.rc.lib line 1, library sram22_64x32m4w32 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8_tt_025C_1v80.rc.lib line 1, library sram22_512x64m4w8 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8_tt_025C_1v80.rc.lib line 1, library sram22_512x32m4w8 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24_tt_025C_1v80.rc.lib line 1, library sram22_64x24m4w24 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8_tt_025C_1v80.rc.lib line 1, library sram22_256x32m4w8 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2_tt_025C_1v80.rc.lib line 1, library sram22_64x4m4w2 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8_tt_025C_1v80.rc.lib line 1, library sram22_2048x32m8w8 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32_tt_025C_1v80.rc.lib
+[WARNING STA-0053

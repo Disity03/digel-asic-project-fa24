@@ -1,0 +1,451 @@
+OpenROAD 0264023b6c2a8ae803b8d440478d657387277d93 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 4 thread(s).
+(hammer) read_lef /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+[WARNING ODB-0180] duplicate LAYER (licon) ignored
+[INFO ODB-0223]     Created 14 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+(hammer) read_lef /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0225]     Created 437 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+(hammer) read_lef /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_ef_io.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_ef_io.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_ef_io.lef at line 2.
+
+[INFO ODB-0225]     Created 38 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_ef_io.lef
+(hammer) read_lef /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef at line 2.
+
+[INFO ODB-0225]     Created 32 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32.lef at line 1.
+
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2.lef at line 1.
+
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8.lef
+(hammer) define_corners setup hold
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00.lib line 33, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ss_100C_1v60_3v00.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ss_100C_1v60_3v00.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00.lib line 33, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_ground_hvc_wpad pin PADISOR missing from LEF macro.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_ground_hvc_wpad pin PADISOL missing from LEF macro.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ss_100C_1v60_3v00.lib line 43, default_fanout_load is 0.0.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_ground_lvc_wpad pin PADISOR missing from LEF macro.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_ground_lvc_wpad pin PADISOL missing from LEF macro.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_power_lvc_wpad pin PADISOR missing from LEF macro.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_power_lvc_wpad pin PADISOL missing from LEF macro.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ss_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ss_ss_100C_1v60_3v00.lib line 33, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95_ccsnoise.lib
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50.lib line 33, default_fanout_load is 0.0.
+[WARNING STA-0003] cell sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00/sky130_ef_io__gpiov2_pad_wrapped OUT -> PAD timing group combinational not found in cell sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50/sky130_ef_io__gpiov2_pad_wrapped.
+[WARNING STA-0003] cell sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00/sky130_ef_io__gpiov2_pad_wrapped OUT -> PAD timing group combinational not found in cell sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50/sky130_ef_io__gpiov2_pad_wrapped.
+[WARNING STA-0003] cell sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00/sky130_ef_io__gpiov2_pad_wrapped OUT -> PAD timing group combinational not found in cell sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50/sky130_ef_io__gpiov2_pad_wrapped.
+[WARNING STA-0003] cell sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00/sky130_ef_io__gpiov2_pad_wrapped OUT -> PAD timing group combinational not found in cell sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50/sky130_ef_io__gpiov2_pad_wrapped.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ff_n40C_1v95_5v50.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ff_n40C_1v95_5v50.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50.lib line 33, default_fanout_load is 0.0.
+[WARNING STA-0003] cell sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00/sky130_fd_io__top_gpiov2 OUT -> PAD timing group combinational not found in cell sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50/sky130_fd_io__top_gpiov2.
+[WARNING STA-0003] cell sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00/sky130_fd_io__top_gpiov2 OUT -> PAD timing group combinational not found in cell sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50/sky130_fd_io__top_gpiov2.
+[WARNING STA-0003] cell sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00/sky130_fd_io__top_gpiov2 OUT -> PAD timing group combinational not found in cell sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50/sky130_fd_io__top_gpiov2.
+[WARNING STA-0003] cell sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00/sky130_fd_io__top_gpiov2 OUT -> PAD timing group combinational not found in cell sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50/sky130_fd_io__top_gpiov2.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ff_n40C_1v95_5v50.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ff_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ff_ff_n40C_1v95_5v50.lib line 33, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32_tt_025C_1v80.rc.lib line 1, library sram22_512x32m4w32 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32_tt_025C_1v80.rc.lib line 1, library sram22_64x32m4w32 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8_tt_025C_1v80.rc.lib line 1, library sram22_512x64m4w8 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8_tt_025C_1v80.rc.lib line 1, library sram22_512x32m4w8 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24_tt_025C_1v80.rc.lib line 1, library sram22_64x24m4w24 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8_tt_025C_1v80.rc.lib line 1, library sram22_256x32m4w8 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2_tt_025C_1v80.rc.lib line 1, library sram22_64x4m4w2 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8_tt_025C_1v80.rc.lib line 1, library sram22_2048x32m8w8 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32_tt_025C_1v80.rc.lib line 1, library sram22_1024x32m8w32 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8_tt_025C_1v80.rc.lib line 1, library sram22_1024x32m8w8 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8_tt_025C_1v80.rc.lib line 1, library sram22_64x32m4w8 already exists.
+(hammer) read_verilog /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/syn-rundir/digel_soc.mapped.v
+(hammer) link_design digel_soc
+[WARNING ORD-1001] LEF macro sky130_fd_io__top_ground_hvc_wpad pin PADISOR missing from liberty cell.
+[WARNING ORD-1001] LEF macro sky130_fd_io__top_ground_hvc_wpad pin PADISOL missing from liberty cell.
+[WARNING ORD-1001] LEF macro sky130_fd_io__top_ground_lvc_wpad pin PADISOR missing from liberty cell.
+[WARNING ORD-1001] LEF macro sky130_fd_io__top_ground_lvc_wpad pin PADISOL missing from liberty cell.
+[WARNING ORD-1001] LEF macro sky130_fd_io__top_power_lvc_wpad pin PADISOR missing from liberty cell.
+[WARNING ORD-1001] LEF macro sky130_fd_io__top_power_lvc_wpad pin PADISOL missing from liberty cell.
+(hammer) read_sdc -echo /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/clock_constraints_fragment.sdc
+create_clock clk -name clk -period 50.0
+set_clock_uncertainty 0.1 [get_clocks clk]
+(hammer) read_sdc -echo /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/pin_constraints_fragment.sdc
+set_load 1.0 [all_outputs]
+(hammer) source /home/urosdeljanin/DigEl/digel/lab/hammer/hammer/technology/sky130/extra/setRC.tcl
+(hammer) set_dont_use {*sdf* sky130_fd_sc_hd__probe_p_* sky130_fd_sc_hd__probec_p_*}
+(hammer) source /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/write_reports.tcl
+(hammer) write_db pre_floorplan_design
+(hammer) exec ln -sfn pre_floorplan_design latest
+soc/memory 
+	- master: sram22_256x32m4w8 
+	- width:  292370 
+	- height: 358290 
+	- origin: 76825, 224365 
+
+(hammer) source -verbose /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/floorplan.tcl
+(hammer) initialize_floorplan -site unithd -die_area { 0 0 1200 1200} -core_area {2 2 1196 1196}
+[WARNING IFP-0028] Core area lower left (2.000, 2.000) snapped to (2.300, 2.720).
+[INFO IFP-0001] Added 438 rows of 2595 sites.
+_1015bf4400000000_p_odb__dbInst
+(hammer) place_cell -inst_name soc/memory -orient R90 -origin 334.0 276.0 -status FIRM
+(hammer) make_tracks li1 -x_offset 0.17 -x_pitch 0.34 -y_offset 0.17 -y_pitch 0.34
+(hammer) make_tracks met1 -x_offset 0.17 -x_pitch 0.34 -y_offset 0.17 -y_pitch 0.34
+(hammer) make_tracks met2 -x_offset 0.23 -x_pitch 0.46 -y_offset 0.23 -y_pitch 0.46
+(hammer) make_tracks met3 -x_offset 0.34 -x_pitch 0.68 -y_offset 0.34 -y_pitch 0.68
+(hammer) make_tracks met4 -x_offset 0.46 -x_pitch 0.92 -y_offset 0.46 -y_pitch 0.92
+(hammer) make_tracks met5 -x_offset 1.7 -x_pitch 3.4 -y_offset 1.7 -y_pitch 3.4
+(hammer) remove_buffers
+[INFO RSZ-0026] Removed 1246 buffers.
+(hammer) place_pins -random -hor_layers {met3} -ver_layers {met2 met4}
+Found 1 macro blocks.
+Using 1u default distance from corners.
+Using 2 tracks default min distance between IO pins.
+[INFO PPL-0007] Random pin placement.
+(hammer) write_db pre_place_bumps
+(hammer) exec ln -sfn pre_place_bumps latest
+(hammer) write_db pre_macro_placement
+(hammer) exec ln -sfn pre_macro_placement latest
+(hammer) write_db pre_place_tapcells
+(hammer) exec ln -sfn pre_place_tapcells latest
+(hammer) tapcell -tapcell_master sky130_fd_sc_hd__tapvpwrvgnd_1 -endcap_master sky130_fd_sc_hd__tap_1 -distance 15.0 -halo_width_x 5.0 -halo_width_y 5.0
+[INFO ODB-0303] The initial 438 rows (1136610 sites) were cut with 1 shapes for a total of 550 rows (1046898 sites).
+[INFO TAP-0004] Inserted 1100 endcaps.
+[INFO TAP-0005] Inserted 16067 tapcells.
+(hammer) write_db pre_power_straps
+(hammer) exec ln -sfn pre_power_straps latest
+(hammer) source -echo -verbose /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/power_straps.tcl
+####################################
+# global connections
+####################################
+0
+30267
+14200
+1
+0
+30267
+14200
+1
+global_connect
+0
+####################################
+# voltage domains
+####################################
+# AO is hard-coded in cpf generation too
+#   but OpenROAD errors when using AO instead of CORE
+####################################
+# standard cell grid
+####################################
+####################################
+# grid for: CORE_macro_grid_1
+####################################
+####################################
+# grid for: CORE_macro_grid_2
+####################################
+(hammer) pdngen
+[INFO PDN-0001] Inserting grid: grid
+[INFO PDN-0001] Inserting grid: CORE_macro_grid_2 - soc/memory
+[WARNING PDN-0110] No via inserted between met3 and met4 at (339.8650, 322.7400) - (341.7800, 326.4000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 275.8400) - (337.5650, 276.1600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 277.2000) - (337.5650, 277.5200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 281.2800) - (337.5650, 281.6000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 282.6400) - (337.5650, 282.9600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 284.0000) - (337.5650, 284.3200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 286.7200) - (337.5650, 287.0400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 288.0800) - (337.5650, 288.4000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 289.4400) - (337.5650, 289.7600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 293.5200) - (337.5650, 293.8400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 294.8800) - (337.5650, 295.2000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 296.2400) - (337.5650, 296.5600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 298.9600) - (337.5650, 299.2800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 300.3200) - (337.5650, 300.6400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 301.6800) - (337.5650, 302.0000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 304.4000) - (337.5650, 304.7200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 305.7600) - (337.5650, 306.0800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 307.1200) - (337.5650, 307.4400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 308.4800) - (337.5650, 308.8000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 311.2000) - (337.5650, 311.5200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 312.5600) - (337.5650, 312.8800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 313.9200) - (337.5650, 314.2400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 316.6400) - (337.5650, 316.9600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 318.0000) - (337.5650, 318.3200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 319.3600) - (337.5650, 319.6800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 323.4400) - (337.5650, 323.7600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 324.8000) - (337.5650, 325.1200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 326.1600) - (337.5650, 326.4800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 328.8800) - (337.5650, 329.2000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 330.2400) - (337.5650, 330.5600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 331.6000) - (337.5650, 331.9200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 335.6800) - (337.5650, 336.0000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 337.0400) - (337.5650, 337.3600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 338.4000) - (337.5650, 338.7200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 341.1200) - (337.5650, 341.4400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 342.4800) - (337.5650, 342.8000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 343.8400) - (337.5650, 344.1600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 347.9200) - (337.5650, 348.2400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 349.2800) - (337.5650, 349.6000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 350.6400) - (337.5650, 350.9600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 353.3600) - (337.5650, 353.6800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 354.7200) - (337.5650, 355.0400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 356.0800) - (337.5650, 356.4000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 360.1600) - (337.5650, 360.4800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 361.5200) - (337.5650, 361.8400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 362.8800) - (337.5650, 363.2000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 365.6000) - (337.5650, 365.9200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 366.9600) - (337.5650, 367.2800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 368.3200) - (337.5650, 368.6400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 372.4000) - (337.5650, 372.7200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 373.7600) - (337.5650, 374.0800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 375.1200) - (337.5650, 375.4400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 377.8400) - (337.5650, 378.1600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 379.2000) - (337.5650, 379.5200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 380.5600) - (337.5650, 380.8800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 384.6400) - (337.5650, 384.9600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 386.0000) - (337.5650, 386.3200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 387.3600) - (337.5650, 387.6800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 390.0800) - (337.5650, 390.4000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 391.4400) - (337.5650, 391.7600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 392.8000) - (337.5650, 393.1200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 396.8800) - (337.5650, 397.2000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 398.2400) - (337.5650, 398.5600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 399.6000) - (337.5650, 399.9200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 402.3200) - (337.5650, 402.6400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 403.6800) - (337.5650, 404.0000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 405.0400) - (337.5650, 405.3600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 409.1200) - (337.5650, 409.4400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 410.4800) - (337.5650, 410.8000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 411.8400) - (337.5650, 412.1600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 414.5600) - (337.5650, 414.8800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 415.9200) - (337.5650, 416.2400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 417.2800) - (337.5650, 417.6000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 421.3600) - (337.5650, 421.6800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 422.7200) - (337.5650, 423.0400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 424.0800) - (337.5650, 424.4000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 426.8000) - (337.5650, 427.1200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 428.1600) - (337.5650, 428.4800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 429.5200) - (337.5650, 429.8400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 433.6000) - (337.5650, 433.9200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 434.9600) - (337.5650, 435.2800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 436.3200) - (337.5650, 436.6400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 439.0400) - (337.5650, 439.3600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 440.4000) - (337.5650, 440.7200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 441.7600) - (337.5650, 442.0800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 445.8400) - (337.5650, 446.1600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 447.2000) - (337.5650, 447.5200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 448.5600) - (337.5650, 448.8800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 451.2800) - (337.5650, 451.6000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 452.6400) - (337.5650, 452.9600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 454.0000) - (337.5650, 454.3200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 458.0800) - (337.5650, 458.4000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 459.4400) - (337.5650, 459.7600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 460.8000) - (337.5650, 461.1200) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 463.5200) - (337.5650, 463.8400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 464.8800) - (337.5650, 465.2000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 466.2400) - (337.5650, 466.5600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 470.3200) - (337.5650, 470.6400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 471.6800) - (337.5650, 472.0000) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 473.0400) - (337.5650, 473.3600) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 475.7600) - (337.5650, 476.0800) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (336.4400, 477.1200) - (337.5650, 477.4400) on VDD
+[WARNING PDN-0110] No via inserted between met3 and met4 at (339.8650, 322.7400) - (341.7800, 326.4000) on VDD
+(hammer) write_db pre_global_placement
+(hammer) exec ln -sfn pre_global_placement latest
+(hammer) set_global_routing_layer_adjustment met1-met5 0.5
+(hammer) set_routing_layers -signal met1-met5 -clock met1-met5
+(hammer) global_placement -density 0.6 -pad_left 3 -pad_right 3 -routability_driven
+[INFO GPL-0002] DBU: 1000
+[INFO GPL-0003] SiteSize: 460 2720
+[INFO GPL-0004] CoreAreaLxLy: 2300 2720
+[INFO GPL-0005] CoreAreaUxUy: 1196000 1194080
+[INFO GPL-0006] NumInstances: 30488
+[INFO GPL-0007] NumPlaceInstances: 13100
+[INFO GPL-0008] NumFixedInstances: 17168
+[INFO GPL-0009] NumDummyInstances: 220
+[INFO GPL-0010] NumNets: 13122
+[INFO GPL-0011] NumPins: 50004
+[INFO GPL-0012] DieAreaLxLy: 0 0
+[INFO GPL-0013] DieAreaUxUy: 1200000 1200000
+[INFO GPL-0014] CoreAreaLxLy: 2300 2720
+[INFO GPL-0015] CoreAreaUxUy: 1196000 1194080
+[INFO GPL-0016] CoreArea: 1422126432000
+[INFO GPL-0017] NonPlaceInstsArea: 133727004800
+[INFO GPL-0018] PlaceInstsArea: 222263168000
+[INFO GPL-0019] Util(%): 17.25
+[INFO GPL-0020] StdInstsArea: 222263168000
+[INFO GPL-0021] MacroInstsArea: 0
+[InitialPlace]  Iter: 1 CG residual: 0.01965194 HPWL: 238167685
+[InitialPlace]  Iter: 2 CG residual: 0.04437500 HPWL: 203666401
+[InitialPlace]  Iter: 3 CG residual: 0.02402565 HPWL: 205245314
+[InitialPlace]  Iter: 4 CG residual: 0.00801845 HPWL: 205930419
+[InitialPlace]  Iter: 5 CG residual: 0.02407106 HPWL: 207625878
+[InitialPlace]  Iter: 6 CG residual: 0.00701927 HPWL: 212315385
+[InitialPlace]  Iter: 7 CG residual: 0.02093241 HPWL: 215598920
+[InitialPlace]  Iter: 8 CG residual: 0.01793112 HPWL: 218904396
+[InitialPlace]  Iter: 9 CG residual: 0.01291386 HPWL: 222723164
+[InitialPlace]  Iter: 10 CG residual: 0.00585536 HPWL: 224973028
+[InitialPlace]  Iter: 11 CG residual: 0.00136459 HPWL: 226708502
+[InitialPlace]  Iter: 12 CG residual: 0.00085053 HPWL: 227627071
+[InitialPlace]  Iter: 13 CG residual: 0.00233273 HPWL: 227958106
+[InitialPlace]  Iter: 14 CG residual: 0.00126461 HPWL: 228424440
+[InitialPlace]  Iter: 15 CG residual: 0.00173205 HPWL: 228733189
+[InitialPlace]  Iter: 16 CG residual: 0.00056887 HPWL: 229249594
+[InitialPlace]  Iter: 17 CG residual: 0.00067644 HPWL: 229434101
+[InitialPlace]  Iter: 18 CG residual: 0.00036816 HPWL: 229824558
+[InitialPlace]  Iter: 19 CG residual: 0.00029744 HPWL: 229864571
+[InitialPlace]  Iter: 20 CG residual: 0.00011545 HPWL: 230129982
+[INFO GPL-0031] FillerInit: NumGCells: 46327
+[INFO GPL-0032] FillerInit: NumGNets: 13122
+[INFO GPL-0033] FillerInit: NumGPins: 50004
+[INFO GPL-0023] TargetDensity: 0.60
+[INFO GPL-0024] AveragePlaceInstArea: 16966654
+[INFO GPL-0025] IdealBinArea: 28277756
+[INFO GPL-0026] IdealBinCnt: 50291
+[INFO GPL-0027] TotalBinArea: 1422126432000
+[INFO GPL-0028] BinCnt: 128 128
+[INFO GPL-0029] BinSize: 9326 9308
+[INFO GPL-0030] NumBins: 16384
+[NesterovSolve] Iter: 1 overflow: 0.988536 HPWL: 91636530
+[NesterovSolve] Iter: 10 overflow: 0.957588 HPWL: 154393918
+[NesterovSolve] Iter: 20 overflow: 0.950293 HPWL: 165792147
+[NesterovSolve] Iter: 30 overflow: 0.94646 HPWL: 170198426
+[NesterovSolve] Iter: 40 overflow: 0.941773 HPWL: 172373715
+[NesterovSolve] Iter: 50 overflow: 0.941505 HPWL: 175583117
+[NesterovSolve] Iter: 60 overflow: 0.944225 HPWL: 179540506
+[NesterovSolve] Iter: 70 overflow: 0.94678 HPWL: 182734516
+[NesterovSolve] Iter: 80 overflow: 0.94784 HPWL: 184859422
+[NesterovSolve] Iter: 90 overflow: 0.949912 HPWL: 185807113
+[NesterovSolve] Iter: 100 overflow: 0.950494 HPWL: 185737967
+[NesterovSolve] Iter: 110 overflow: 0.951133 HPWL: 184707838
+[NesterovSolve] Iter: 120 overflow: 0.951946 HPWL: 183438158
+[NesterovSolve] Iter: 130 overflow: 0.95297 HPWL: 182957925
+[NesterovSolve] Iter: 140 overflow: 0.953697 HPWL: 182599193
+[NesterovSolve] Iter: 150 overflow: 0.954863 HPWL: 182378362
+[NesterovSolve] Iter: 160 overflow: 0.955738 HPWL: 182545159
+[NesterovSolve] Iter: 170 overflow: 0.956207 HPWL: 183706325
+[NesterovSolve] Iter: 180 overflow: 0.956884 HPWL: 186234668

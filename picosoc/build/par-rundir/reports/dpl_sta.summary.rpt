@@ -16,17 +16,17 @@ wns 0.000
 (hammer) report_worst_negative_slack_metric -setup
 (hammer) report_worst_negative_slack_metric -hold
 (hammer) report_worst_slack -max -digits 3
-worst slack 5.850
+worst slack 6.145
 (hammer) report_worst_slack -min -digits 3
-worst slack 0.108
+worst slack 0.106
 (hammer) report_worst_slack_metric -setup
 (hammer) report_worst_slack_metric -hold
 (hammer) report_clock_skew -digits 3
 Clock clk
 Latency      CRPR       Skew
-soc/spimemio/_1220_/CLK ^
+soc/spimemio/_1206_/CLK ^
   0.082
-soc/cpu/_09865_/CLK ^
+soc/cpu/_09927_/CLK ^
   0.000     0.000      0.082
 
 (hammer) report_clock_skew_metric

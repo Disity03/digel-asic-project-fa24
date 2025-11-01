@@ -318,7 +318,7 @@
     "vlsi.inputs.pin_mode": "generated",
     "vlsi.inputs.placement_constraints": [
         {
-            "height": 1200,
+            "height": 1300,
             "margins": {
                 "bottom": 2,
                 "left": 2,
@@ -327,7 +327,7 @@
             },
             "path": "digel_soc",
             "type": "toplevel",
-            "width": 1200,
+            "width": 1300,
             "x": 0,
             "y": 0
         },

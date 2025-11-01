@@ -1,6 +1,6 @@
 # Floorplan automatically generated from HAMMER
-puts "(hammer) initialize_floorplan -site unithd -die_area { 0 0 1200 1200} -core_area {2 2 1196 1196}"
-initialize_floorplan -site unithd -die_area { 0 0 1200 1200} -core_area {2 2 1196 1196}
+puts "(hammer) initialize_floorplan -site unithd -die_area { 0 0 1300 1300} -core_area {2 2 1296 1296}"
+initialize_floorplan -site unithd -die_area { 0 0 1300 1300} -core_area {2 2 1296 1296}
 set inst [[ord::get_db_block] findInst soc/memory]
 # only place macro if it is present in design
 if {$inst == "NULL"} {

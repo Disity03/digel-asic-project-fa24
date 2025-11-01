@@ -24,7 +24,8 @@
 
 module digel_soc (
 	input clk,
-
+	input rst,
+	
 	output ser_tx,
 	input ser_rx,
 
@@ -49,11 +50,14 @@ module digel_soc (
 );
 	parameter integer MEM_WORDS = 256;
 
-	reg [5:0] reset_cnt = 0;
+	
+	reg [5:0] reset_cnt;
 	wire resetn = &reset_cnt;
-
+	
+	
 	always @(posedge clk) begin
-		reset_cnt <= reset_cnt + !resetn;
+		if(rst) reset_cnt <= 0;
+		else reset_cnt <= reset_cnt + !resetn;
 	end
 
 	wire [7:0] leds;
@@ -105,6 +109,7 @@ module digel_soc (
 	// Wave Generator instanca
 	wave_gen wave_gen_inst (
 		.clk(clk),
+		.rst(~resetn),
 		.wstrb(iomem_wstrb),
 		.addr(iomem_addr),
 		.wdata(iomem_wdata),
@@ -115,9 +120,11 @@ module digel_soc (
 	assign wave = wave_gen_output;
 	
 	always @(posedge clk) begin
-		if (!resetn) begin
+		if (!resetn || rst) begin
 			gpio <= 0;
 			wave_gen_input <= 0;
+			iomem_ready <= 0;
+			iomem_rdata <= 0;
 		end else begin
 			iomem_ready <= 0;
 			

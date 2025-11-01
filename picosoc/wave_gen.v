@@ -1,5 +1,6 @@
 module wave_gen (
 	input         clk,
+	input         rst,
 	input   [3:0] wstrb,
 	input  [31:0] addr,
 	input  [31:0] wdata,
@@ -29,6 +30,7 @@ module wave_gen (
 	
 	// Registri signala
 	reg [11:0] param1, param2;
+	reg [11:0] prn;
 	reg [31:0] counter;
 	wire[31:0] sine_phase;
 	reg        feedback;
@@ -47,8 +49,15 @@ module wave_gen (
 	);
     
     // Konfiguracija registara
-    always @(posedge clk) begin
-    		if(|wstrb) begin
+    always @(posedge clk or posedge rst) begin
+    		if(rst) begin
+    			mode <= 0;
+    			changed <= 1;
+    			param1 <= 0;
+    			param2 <= 0;
+    			sign <= 0;
+    		end else
+    		if(|wstrb && addr[31:24] == 8'h04) begin
 				case (addr[3:2])
 					MODE: begin
 						mode <= wdata[2:0];
@@ -79,10 +88,12 @@ module wave_gen (
 
     // Osnovni generator
     always @(posedge clk) begin
-        if (changed) begin
+        if (changed || rst) begin
             wave <= 0;
             counter <= 0;
             pp <= 0;
+            feedback <= 0;
+            prn <= rst ? 0 : param1;
         end else begin
             case(mode)
                 OFF: wave <= 0; // Iskljucen
@@ -105,9 +116,9 @@ module wave_gen (
                 end
 
                 PRN: begin // Pseudo-nasumicni signal
-					feedback = ^(param2 & param1);
-					param1 <= {param1[10:0], feedback};
-					wave[0] <= param1[0];
+					feedback <= ^(param2 & prn);
+					prn <= {prn[10:0], feedback};
+					wave[0] <= prn[0];
                 end
 
                 RECT: begin // Pravougaoni signal

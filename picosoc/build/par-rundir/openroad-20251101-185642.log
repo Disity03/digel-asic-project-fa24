@@ -1,0 +1,1520 @@
+OpenROAD 0264023b6c2a8ae803b8d440478d657387277d93 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 4 thread(s).
+(hammer) read_lef /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+[WARNING ODB-0180] duplicate LAYER (licon) ignored
+[INFO ODB-0223]     Created 14 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_fd_sc_hd__nom.tlef
+(hammer) read_lef /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0225]     Created 437 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef
+(hammer) read_lef /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_ef_io.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_ef_io.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_ef_io.lef at line 2.
+
+[INFO ODB-0225]     Created 38 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/tech-sky130-cache/sky130_ef_io.lef
+(hammer) read_lef /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef at line 2.
+
+[INFO ODB-0225]     Created 32 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lef/sky130_fd_io.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32.lef at line 1.
+
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2001): No VERSION statement found, using the default value 5.8. See file /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2.lef at line 1.
+
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8.lef
+(hammer) read_lef /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8.lef
+[INFO ODB-0222] Reading LEF file: /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8.lef
+[INFO ODB-0225]     Created 1 library cells
+[INFO ODB-0226] Finished LEF file:  /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8.lef
+(hammer) define_corners setup hold
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00.lib line 33, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ss_100C_1v60_3v00.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ss_100C_1v60_3v00.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00.lib line 33, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_ground_hvc_wpad pin PADISOR missing from LEF macro.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_ground_hvc_wpad pin PADISOL missing from LEF macro.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ss_100C_1v60_3v00.lib line 43, default_fanout_load is 0.0.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_ground_lvc_wpad pin PADISOR missing from LEF macro.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_ground_lvc_wpad pin PADISOL missing from LEF macro.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ss_100C_1v60_3v00_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ss_100C_1v60_3v00_3v00.lib line 42, default_fanout_load is 0.0.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_power_lvc_wpad pin PADISOR missing from LEF macro.
+[WARNING ORD-1002] Liberty cell sky130_fd_io__top_power_lvc_wpad pin PADISOL missing from LEF macro.
+(hammer) read_liberty -corner setup /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ss_ss_100C_1v60_3v00.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ss_ss_100C_1v60_3v00.lib line 33, default_fanout_load is 0.0.
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner setup /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8_tt_025C_1v80.rc.lib
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95_ccsnoise.lib
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50.lib line 33, default_fanout_load is 0.0.
+[WARNING STA-0003] cell sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00/sky130_ef_io__gpiov2_pad_wrapped OUT -> PAD timing group combinational not found in cell sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50/sky130_ef_io__gpiov2_pad_wrapped.
+[WARNING STA-0003] cell sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00/sky130_ef_io__gpiov2_pad_wrapped OUT -> PAD timing group combinational not found in cell sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50/sky130_ef_io__gpiov2_pad_wrapped.
+[WARNING STA-0003] cell sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00/sky130_ef_io__gpiov2_pad_wrapped OUT -> PAD timing group combinational not found in cell sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50/sky130_ef_io__gpiov2_pad_wrapped.
+[WARNING STA-0003] cell sky130_ef_io__gpiov2_pad_wrapped_ss_ss_100C_1v60_3v00/sky130_ef_io__gpiov2_pad_wrapped OUT -> PAD timing group combinational not found in cell sky130_ef_io__gpiov2_pad_wrapped_ff_ff_n40C_1v95_5v50/sky130_ef_io__gpiov2_pad_wrapped.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped3_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vccd_lvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vdda_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vddio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssa_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped3_pad_ff_n40C_1v95_5v50.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssd_lvc_clamped_pad_ff_n40C_1v95_5v50.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_ef_io__vssio_hvc_clamped_pad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50.lib line 33, default_fanout_load is 0.0.
+[WARNING STA-0003] cell sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00/sky130_fd_io__top_gpiov2 OUT -> PAD timing group combinational not found in cell sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50/sky130_fd_io__top_gpiov2.
+[WARNING STA-0003] cell sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00/sky130_fd_io__top_gpiov2 OUT -> PAD timing group combinational not found in cell sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50/sky130_fd_io__top_gpiov2.
+[WARNING STA-0003] cell sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00/sky130_fd_io__top_gpiov2 OUT -> PAD timing group combinational not found in cell sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50/sky130_fd_io__top_gpiov2.
+[WARNING STA-0003] cell sky130_fd_io__top_gpiov2_ss_ss_100C_1v60_3v00/sky130_fd_io__top_gpiov2 OUT -> PAD timing group combinational not found in cell sky130_fd_io__top_gpiov2_ff_ff_n40C_1v95_5v50/sky130_fd_io__top_gpiov2.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_ground_lvc_wpad_ff_n40C_1v95_5v50.lib line 43, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_hvc_wpad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ff_n40C_1v95_5v50_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_power_lvc_wpad_ff_n40C_1v95_5v50_5v50.lib line 42, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ff_ff_n40C_1v95_5v50.lib
+[WARNING STA-0163] /home/urosdeljanin/open_pdks/sky130/sky130A/libs.ref/sky130_fd_io/lib/sky130_fd_io__top_xres4v2_ff_ff_n40C_1v95_5v50.lib line 33, default_fanout_load is 0.0.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w32/sram22_512x32m4w32_tt_025C_1v80.rc.lib line 1, library sram22_512x32m4w32 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w32/sram22_64x32m4w32_tt_025C_1v80.rc.lib line 1, library sram22_64x32m4w32 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_512x64m4w8/sram22_512x64m4w8_tt_025C_1v80.rc.lib line 1, library sram22_512x64m4w8 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_512x32m4w8/sram22_512x32m4w8_tt_025C_1v80.rc.lib line 1, library sram22_512x32m4w8 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_64x24m4w24/sram22_64x24m4w24_tt_025C_1v80.rc.lib line 1, library sram22_64x24m4w24 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_256x32m4w8/sram22_256x32m4w8_tt_025C_1v80.rc.lib line 1, library sram22_256x32m4w8 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_64x4m4w2/sram22_64x4m4w2_tt_025C_1v80.rc.lib line 1, library sram22_64x4m4w2 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_2048x32m8w8/sram22_2048x32m8w8_tt_025C_1v80.rc.lib line 1, library sram22_2048x32m8w8 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w32/sram22_1024x32m8w32_tt_025C_1v80.rc.lib line 1, library sram22_1024x32m8w32 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_1024x32m8w8/sram22_1024x32m8w8_tt_025C_1v80.rc.lib line 1, library sram22_1024x32m8w8 already exists.
+(hammer) read_liberty -corner hold /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8_tt_025C_1v80.rc.lib
+[WARNING STA-0053] /home/urosdeljanin/sram22_sky130_macros/sram22_64x32m4w8/sram22_64x32m4w8_tt_025C_1v80.rc.lib line 1, library sram22_64x32m4w8 already exists.
+(hammer) read_db pre_extraction
+[WARNING ORD-1001] LEF macro sky130_fd_io__top_ground_hvc_wpad pin PADISOR missing from liberty cell.
+[WARNING ORD-1001] LEF macro sky130_fd_io__top_ground_hvc_wpad pin PADISOL missing from liberty cell.
+[WARNING ORD-1001] LEF macro sky130_fd_io__top_ground_lvc_wpad pin PADISOR missing from liberty cell.
+[WARNING ORD-1001] LEF macro sky130_fd_io__top_ground_lvc_wpad pin PADISOL missing from liberty cell.
+[WARNING ORD-1001] LEF macro sky130_fd_io__top_power_lvc_wpad pin PADISOR missing from liberty cell.
+[WARNING ORD-1001] LEF macro sky130_fd_io__top_power_lvc_wpad pin PADISOL missing from liberty cell.
+(hammer) read_sdc -echo /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/clock_constraints_fragment.sdc
+create_clock clk -name clk -period 50.0
+set_clock_uncertainty 0.1 [get_clocks clk]
+(hammer) read_sdc -echo /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/pin_constraints_fragment.sdc
+set_load 1.0 [all_outputs]
+(hammer) source /home/urosdeljanin/DigEl/digel/lab/hammer/hammer/technology/sky130/extra/setRC.tcl
+(hammer) set_dont_use {*sdf* sky130_fd_sc_hd__probe_p_* sky130_fd_sc_hd__probec_p_*}
+(hammer) set_propagated_clock [all_clocks]
+(hammer) estimate_parasitics -global_routing
+[WARNING GRT-0026] Missing route to pin _288_/Y.
+[WARNING GRT-0026] Missing route to pin _288_/Y.
+[WARNING GRT-0026] Missing route to pin _297_/Y.
+[WARNING GRT-0026] Missing route to pin _297_/Y.
+[WARNING GRT-0026] Missing route to pin _551_/D.
+[WARNING GRT-0026] Missing route to pin _551_/D.
+[WARNING GRT-0026] Missing route to pin _552_/D.
+[WARNING GRT-0026] Missing route to pin _552_/D.
+[WARNING GRT-0026] Missing route to pin _325_/Y.
+[WARNING GRT-0026] Missing route to pin _325_/Y.
+[WARNING GRT-0026] Missing route to pin _371_/Y.
+[WARNING GRT-0026] Missing route to pin _371_/Y.
+[WARNING GRT-0026] Missing route to pin _375_/Y.
+[WARNING GRT-0026] Missing route to pin _375_/Y.
+[WARNING GRT-0026] Missing route to pin _436_/Y.
+[WARNING GRT-0026] Missing route to pin _436_/Y.
+[WARNING GRT-0026] Missing route to pin _446_/Y.
+[WARNING GRT-0026] Missing route to pin _446_/Y.
+[WARNING GRT-0026] Missing route to pin _465_/Y.
+[WARNING GRT-0026] Missing route to pin _465_/Y.
+[WARNING GRT-0026] Missing route to pin _591_/D.
+[WARNING GRT-0026] Missing route to pin _468_/Y.
+[WARNING GRT-0026] Missing route to pin _591_/D.
+[WARNING GRT-0026] Missing route to pin _468_/Y.
+[WARNING GRT-0026] Missing route to pin _479_/Y.
+[WARNING GRT-0026] Missing route to pin _479_/Y.
+[WARNING GRT-0026] Missing route to pin _532_/Y.
+[WARNING GRT-0026] Missing route to pin _532_/Y.
+[WARNING GRT-0026] Missing route to pin _540_/Y.
+[WARNING GRT-0026] Missing route to pin _540_/Y.
+[WARNING GRT-0026] Missing route to pin _318_/B1.
+[WARNING GRT-0026] Missing route to pin _318_/B1.
+[WARNING GRT-0026] Missing route to pin _288_/A1.
+[WARNING GRT-0026] Missing route to pin _288_/A1.
+[WARNING GRT-0026] Missing route to pin _289_/Y.
+[WARNING GRT-0026] Missing route to pin _289_/Y.
+[WARNING GRT-0026] Missing route to pin _292_/Y.
+[WARNING GRT-0026] Missing route to pin _292_/Y.
+[WARNING GRT-0026] Missing route to pin _310_/Y.
+[WARNING GRT-0026] Missing route to pin _310_/Y.
+[WARNING GRT-0026] Missing route to pin _316_/Y.
+[WARNING GRT-0026] Missing route to pin _316_/Y.
+[WARNING GRT-0026] Missing route to pin _321_/B1.
+[WARNING GRT-0026] Missing route to pin _321_/B1.
+[WARNING GRT-0026] Missing route to pin _322_/Y.
+[WARNING GRT-0026] Missing route to pin _322_/Y.
+[WARNING GRT-0026] Missing route to pin _327_/Y.
+[WARNING GRT-0026] Missing route to pin _327_/Y.
+[WARNING GRT-0026] Missing route to pin _331_/Y.
+[WARNING GRT-0026] Missing route to pin _331_/Y.
+[WARNING GRT-0026] Missing route to pin _347_/S.
+[WARNING GRT-0026] Missing route to pin _347_/S.
+[WARNING GRT-0026] Missing route to pin _345_/Y.
+[WARNING GRT-0026] Missing route to pin _345_/Y.
+[WARNING GRT-0026] Missing route to pin _347_/Y.
+[WARNING GRT-0026] Missing route to pin _347_/Y.
+[WARNING GRT-0026] Missing route to pin _351_/A1.
+[WARNING GRT-0026] Missing route to pin _351_/A1.
+[WARNING GRT-0026] Missing route to pin _359_/A1.
+[WARNING GRT-0026] Missing route to pin _359_/A1.
+[WARNING GRT-0026] Missing route to pin _367_/Y.
+[WARNING GRT-0026] Missing route to pin _367_/Y.
+[WARNING GRT-0026] Missing route to pin _370_/Y.
+[WARNING GRT-0026] Missing route to pin _370_/Y.
+[WARNING GRT-0026] Missing route to pin _376_/Y.
+[WARNING GRT-0026] Missing route to pin _376_/Y.
+[WARNING GRT-0026] Missing route to pin _378_/Y.
+[WARNING GRT-0026] Missing route to pin _378_/Y.
+[WARNING GRT-0026] Missing route to pin _414_/A1.
+[WARNING GRT-0026] Missing route to pin _414_/A1.
+[WARNING GRT-0026] Missing route to pin _390_/Y.
+[WARNING GRT-0026] Missing route to pin _390_/Y.
+[WARNING GRT-0026] Missing route to pin _396_/Y.
+[WARNING GRT-0026] Missing route to pin _396_/Y.
+[WARNING GRT-0026] Missing route to pin _406_/Y.
+[WARNING GRT-0026] Missing route to pin _406_/Y.
+[WARNING GRT-0026] Missing route to pin _413_/Y.
+[WARNING GRT-0026] Missing route to pin _413_/Y.
+[WARNING GRT-0026] Missing route to pin _424_/Y.
+[WARNING GRT-0026] Missing route to pin _424_/Y.
+[WARNING GRT-0026] Missing route to pin hold892/A.
+[WARNING GRT-0026] Missing route to pin hold892/A.
+[WARNING GRT-0026] Missing route to pin _444_/A1.
+[WARNING GRT-0026] Missing route to pin _444_/A1.
+[WARNING GRT-0026] Missing route to pin _443_/Y.
+[WARNING GRT-0026] Missing route to pin _443_/Y.
+[WARNING GRT-0026] Missing route to pin _445_/Y.
+[WARNING GRT-0026] Missing route to pin _445_/Y.
+[WARNING GRT-0026] Missing route to pin _470_/Y.
+[WARNING GRT-0026] Missing route to pin _470_/Y.
+[WARNING GRT-0026] Missing route to pin _476_/Y.
+[WARNING GRT-0026] Missing route to pin _476_/Y.
+[WARNING GRT-0026] Missing route to pin _488_/Y.
+[WARNING GRT-0026] Missing route to pin _488_/Y.
+[WARNING GRT-0026] Missing route to pin _490_/Y.
+[WARNING GRT-0026] Missing route to pin _490_/Y.
+[WARNING GRT-0026] Missing route to pin _492_/X.
+[WARNING GRT-0026] Missing route to pin _492_/X.
+[WARNING GRT-0026] Missing route to pin _493_/Y.
+[WARNING GRT-0026] Missing route to pin _493_/Y.
+[WARNING GRT-0026] Missing route to pin _495_/Y.
+[WARNING GRT-0026] Missing route to pin _495_/Y.
+[WARNING GRT-0026] Missing route to pin _501_/Y.
+[WARNING GRT-0026] Missing route to pin _501_/Y.
+[WARNING GRT-0026] Missing route to pin _504_/Y.
+[WARNING GRT-0026] Missing route to pin _504_/Y.
+[WARNING GRT-0026] Missing route to pin _514_/Y.
+[WARNING GRT-0026] Missing route to pin _514_/Y.
+[WARNING GRT-0026] Missing route to pin output4/X.
+[WARNING GRT-0026] Missing route to pin output4/X.
+[WARNING GRT-0026] Missing route to pin soc/_283_/B2.
+[WARNING GRT-0026] Missing route to pin soc/_283_/B2.
+[WARNING GRT-0026] Missing route to pin soc/_294_/B2.
+[WARNING GRT-0026] Missing route to pin soc/_294_/B2.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_0715_/Y.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_0715_/Y.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_0701_/X.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_0701_/X.
+[WARNING GRT-0026] Missing route to pin _548_/Q.
+[WARNING GRT-0026] Missing route to pin _449_/A1.
+[WARNING GRT-0026] Missing route to pin _548_/Q.
+[WARNING GRT-0026] Missing route to pin _449_/A1.
+[WARNING GRT-0026] Missing route to pin _360_/A.
+[WARNING GRT-0026] Missing route to pin _360_/A.
+[WARNING GRT-0026] Missing route to pin _496_/B1.
+[WARNING GRT-0026] Missing route to pin _496_/B1.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_0552_/B.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_0552_/B.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_0551_/B.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_0551_/B.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07211_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07211_/A1.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_0963_/A1.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_0963_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10440_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10440_/Q.
+[WARNING GRT-0026] Missing route to pin soc/_233_/A.
+[WARNING GRT-0026] Missing route to pin soc/_233_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10442_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10442_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10447_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10447_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10423_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10423_/Q.
+[WARNING GRT-0026] Missing route to pin hold1086/A.
+[WARNING GRT-0026] Missing route to pin hold1086/A.
+[WARNING GRT-0026] Missing route to pin _587_/Q.
+[WARNING GRT-0026] Missing route to pin _587_/Q.
+[WARNING GRT-0026] Missing route to pin _589_/Q.
+[WARNING GRT-0026] Missing route to pin _589_/Q.
+[WARNING GRT-0026] Missing route to pin _573_/Q.
+[WARNING GRT-0026] Missing route to pin _573_/Q.
+[WARNING GRT-0026] Missing route to pin _470_/A1.
+[WARNING GRT-0026] Missing route to pin _470_/A1.
+[WARNING GRT-0026] Missing route to pin soc/_461_/A1.
+[WARNING GRT-0026] Missing route to pin soc/_461_/A1.
+[WARNING GRT-0026] Missing route to pin _574_/Q.
+[WARNING GRT-0026] Missing route to pin _574_/Q.
+[WARNING GRT-0026] Missing route to pin _282_/SLEEP.
+[WARNING GRT-0026] Missing route to pin _282_/SLEEP.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10599_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10599_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10602_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10602_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10603_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10603_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10606_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10606_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10611_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10611_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10616_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10616_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10588_/Q.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10588_/Q.
+[WARNING GRT-0026] Missing route to pin output5/X.
+[WARNING GRT-0026] Missing route to pin output5/X.
+[WARNING GRT-0026] Missing route to pin output6/X.
+[WARNING GRT-0026] Missing route to pin output6/X.
+[WARNING GRT-0026] Missing route to pin output7/X.
+[WARNING GRT-0026] Missing route to pin output7/X.
+[WARNING GRT-0026] Missing route to pin output9/X.
+[WARNING GRT-0026] Missing route to pin output9/X.
+[WARNING GRT-0026] Missing route to pin output10/X.
+[WARNING GRT-0026] Missing route to pin output10/X.
+[WARNING GRT-0026] Missing route to pin output11/X.
+[WARNING GRT-0026] Missing route to pin output11/X.
+[WARNING GRT-0026] Missing route to pin output12/X.
+[WARNING GRT-0026] Missing route to pin output12/X.
+[WARNING GRT-0026] Missing route to pin output14/X.
+[WARNING GRT-0026] Missing route to pin output14/X.
+[WARNING GRT-0026] Missing route to pin _552_/Q.
+[WARNING GRT-0026] Missing route to pin _552_/Q.
+[WARNING GRT-0026] Missing route to pin _321_/A1.
+[WARNING GRT-0026] Missing route to pin _321_/A1.
+[WARNING GRT-0026] Missing route to pin output15/X.
+[WARNING GRT-0026] Missing route to pin output15/X.
+[WARNING GRT-0026] Missing route to pin output16/X.
+[WARNING GRT-0026] Missing route to pin output16/X.
+[WARNING GRT-0026] Missing route to pin output17/X.
+[WARNING GRT-0026] Missing route to pin output17/X.
+[WARNING GRT-0026] Missing route to pin output21/X.
+[WARNING GRT-0026] Missing route to pin output21/X.
+[WARNING GRT-0026] Missing route to pin output22/X.
+[WARNING GRT-0026] Missing route to pin output22/X.
+[WARNING GRT-0026] Missing route to pin output23/X.
+[WARNING GRT-0026] Missing route to pin output23/X.
+[WARNING GRT-0026] Missing route to pin output24/X.
+[WARNING GRT-0026] Missing route to pin output24/X.
+[WARNING GRT-0026] Missing route to pin output27/X.
+[WARNING GRT-0026] Missing route to pin output27/X.
+[WARNING GRT-0026] Missing route to pin output28/X.
+[WARNING GRT-0026] Missing route to pin output28/X.
+[WARNING GRT-0026] Missing route to pin output29/X.
+[WARNING GRT-0026] Missing route to pin output29/X.
+[WARNING GRT-0026] Missing route to pin output30/X.
+[WARNING GRT-0026] Missing route to pin output30/X.
+[WARNING GRT-0026] Missing route to pin output40/X.
+[WARNING GRT-0026] Missing route to pin output40/X.
+[WARNING GRT-0026] Missing route to pin output42/X.
+[WARNING GRT-0026] Missing route to pin output42/X.
+[WARNING GRT-0026] Missing route to pin output44/X.
+[WARNING GRT-0026] Missing route to pin output44/X.
+[WARNING GRT-0026] Missing route to pin load_slew50/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07220_/S.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07208_/S.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07206_/S.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07203_/S.
+[WARNING GRT-0026] Missing route to pin load_slew50/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07220_/S.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07208_/S.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07206_/S.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07203_/S.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06777_/S.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06777_/S.
+[WARNING GRT-0026] Missing route to pin output45/A.
+[WARNING GRT-0026] Missing route to pin output45/A.
+[WARNING GRT-0026] Missing route to pin wave_gen_inst/_4591_/Q.
+[WARNING GRT-0026] Missing route to pin wave_gen_inst/_4591_/Q.
+[WARNING GRT-0026] Missing route to pin output42/A.
+[WARNING GRT-0026] Missing route to pin output42/A.
+[WARNING GRT-0026] Missing route to pin hold941/A.
+[WARNING GRT-0026] Missing route to pin hold941/A.
+[WARNING GRT-0026] Missing route to pin wave_gen_inst/_4613_/Q.
+[WARNING GRT-0026] Missing route to pin wave_gen_inst/_4613_/Q.
+[WARNING GRT-0026] Missing route to pin hold890/A.
+[WARNING GRT-0026] Missing route to pin hold890/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/cpuregs/_4696_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/cpuregs/_5021_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/cpuregs/_4696_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/cpuregs/_5021_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/cpuregs/_4985_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/cpuregs/_4552_/A0.
+[WARNING GRT-0026] Missing route to pin soc/cpu/cpuregs/_5057_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/cpuregs/_4985_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/cpuregs/_4552_/A0.
+[WARNING GRT-0026] Missing route to pin soc/cpu/cpuregs/_5057_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/cpuregs/_3938_/A0.
+[WARNING GRT-0026] Missing route to pin soc/cpu/cpuregs/_4590_/A0.
+[WARNING GRT-0026] Missing route to pin soc/cpu/cpuregs/_3938_/A0.
+[WARNING GRT-0026] Missing route to pin soc/cpu/cpuregs/_4590_/A0.
+[WARNING GRT-0026] Missing route to pin wire52/X.
+[WARNING GRT-0026] Missing route to pin wire52/X.
+[WARNING GRT-0026] Missing route to pin soc/_276_/X.
+[WARNING GRT-0026] Missing route to pin soc/_276_/X.
+[WARNING GRT-0026] Missing route to pin soc/_271_/X.
+[WARNING GRT-0026] Missing route to pin soc/_271_/X.
+[WARNING GRT-0026] Missing route to pin soc/_274_/X.
+[WARNING GRT-0026] Missing route to pin soc/_274_/X.
+[WARNING GRT-0026] Missing route to pin soc/_233_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_233_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_237_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_237_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_244_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_244_/Y.
+[WARNING GRT-0026] Missing route to pin load_slew135/A.
+[WARNING GRT-0026] Missing route to pin soc/_245_/Y.
+[WARNING GRT-0026] Missing route to pin load_slew135/A.
+[WARNING GRT-0026] Missing route to pin soc/_245_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_250_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_250_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_254_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_254_/Y.
+[WARNING GRT-0026] Missing route to pin hold1119/A.
+[WARNING GRT-0026] Missing route to pin soc/_262_/X.
+[WARNING GRT-0026] Missing route to pin hold1119/A.
+[WARNING GRT-0026] Missing route to pin soc/_262_/X.
+[WARNING GRT-0026] Missing route to pin soc/_283_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_283_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_290_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_290_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_294_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_294_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_302_/B1.
+[WARNING GRT-0026] Missing route to pin soc/_302_/B1.
+[WARNING GRT-0026] Missing route to pin soc/_302_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_302_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_303_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_303_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_306_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_306_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_312_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_312_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_314_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_314_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_322_/A2.
+[WARNING GRT-0026] Missing route to pin soc/_322_/A2.
+[WARNING GRT-0026] Missing route to pin soc/_321_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_321_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_323_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_323_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_333_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_333_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_334_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_334_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_335_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_335_/Y.
+[WARNING GRT-0026] Missing route to pin wave_gen_inst/_4050_/B.
+[WARNING GRT-0026] Missing route to pin wave_gen_inst/_4050_/B.
+[WARNING GRT-0026] Missing route to pin soc/_343_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_343_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_344_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_344_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_346_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_346_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_350_/B1.
+[WARNING GRT-0026] Missing route to pin soc/_350_/B1.
+[WARNING GRT-0026] Missing route to pin soc/_360_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_360_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_361_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_361_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_369_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_369_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_377_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_377_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_379_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_379_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_381_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_381_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_383_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_383_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_392_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_392_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_395_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_395_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_396_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_396_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_406_/B2.
+[WARNING GRT-0026] Missing route to pin soc/_406_/B2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09049_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09049_/A2.
+[WARNING GRT-0026] Missing route to pin soc/_411_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_411_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_415_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_415_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_422_/B2.
+[WARNING GRT-0026] Missing route to pin soc/_422_/B2.
+[WARNING GRT-0026] Missing route to pin soc/_427_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_427_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_429_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_429_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_437_/B2.
+[WARNING GRT-0026] Missing route to pin soc/_436_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_437_/B2.
+[WARNING GRT-0026] Missing route to pin soc/_436_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_446_/A2.
+[WARNING GRT-0026] Missing route to pin soc/_446_/A2.
+[WARNING GRT-0026] Missing route to pin soc/_447_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_447_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_449_/B2.
+[WARNING GRT-0026] Missing route to pin soc/_449_/B2.
+[WARNING GRT-0026] Missing route to pin soc/_456_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_456_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_471_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_471_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_481_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_481_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_482_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_482_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_483_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_483_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_486_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_486_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_487_/Y.
+[WARNING GRT-0026] Missing route to pin soc/_487_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08158_/A0.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08158_/A0.
+[WARNING GRT-0026] Missing route to pin soc/_386_/X.
+[WARNING GRT-0026] Missing route to pin soc/_386_/X.
+[WARNING GRT-0026] Missing route to pin soc/_394_/X.
+[WARNING GRT-0026] Missing route to pin soc/_394_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08111_/B2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08111_/B2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08461_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08461_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05293_/A1.
+[WARNING GRT-0026] Missing route to pin soc/_431_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05293_/A1.
+[WARNING GRT-0026] Missing route to pin soc/_431_/X.
+[WARNING GRT-0026] Missing route to pin soc/_449_/X.
+[WARNING GRT-0026] Missing route to pin soc/_449_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08140_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08140_/A1.
+[WARNING GRT-0026] Missing route to pin soc/_411_/A2.
+[WARNING GRT-0026] Missing route to pin soc/_411_/A2.
+[WARNING GRT-0026] Missing route to pin soc/_418_/A2.
+[WARNING GRT-0026] Missing route to pin soc/_418_/A2.
+[WARNING GRT-0026] Missing route to pin soc/_295_/A1.
+[WARNING GRT-0026] Missing route to pin soc/_321_/A1.
+[WARNING GRT-0026] Missing route to pin soc/_494_/A1.
+[WARNING GRT-0026] Missing route to pin soc/_295_/A1.
+[WARNING GRT-0026] Missing route to pin soc/_321_/A1.
+[WARNING GRT-0026] Missing route to pin soc/_494_/A1.
+[WARNING GRT-0026] Missing route to pin wire332/X.
+[WARNING GRT-0026] Missing route to pin wave_gen_inst/_2703_/A3.
+[WARNING GRT-0026] Missing route to pin wire332/X.
+[WARNING GRT-0026] Missing route to pin wave_gen_inst/_2703_/A3.
+[WARNING GRT-0026] Missing route to pin wire327/X.
+[WARNING GRT-0026] Missing route to pin wire327/X.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_1078_/A2.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_1078_/A2.
+[WARNING GRT-0026] Missing route to pin wire315/X.
+[WARNING GRT-0026] Missing route to pin wire315/X.
+[WARNING GRT-0026] Missing route to pin soc/simpleuart/_1484_/Q.
+[WARNING GRT-0026] Missing route to pin soc/simpleuart/_1484_/Q.
+[WARNING GRT-0026] Missing route to pin soc/simpleuart/_1380_/Q.
+[WARNING GRT-0026] Missing route to pin soc/simpleuart/_1380_/Q.
+[WARNING GRT-0026] Missing route to pin soc/simpleuart/_1384_/Q.
+[WARNING GRT-0026] Missing route to pin soc/simpleuart/_1384_/Q.
+[WARNING GRT-0026] Missing route to pin soc/simpleuart/_1128_/A.
+[WARNING GRT-0026] Missing route to pin soc/simpleuart/_1128_/A.
+[WARNING GRT-0026] Missing route to pin soc/_401_/A1.
+[WARNING GRT-0026] Missing route to pin soc/_401_/A1.
+[WARNING GRT-0026] Missing route to pin soc/simpleuart/_1118_/B.
+[WARNING GRT-0026] Missing route to pin soc/simpleuart/_1118_/B.
+[WARNING GRT-0026] Missing route to pin soc/simpleuart/_0759_/A1.
+[WARNING GRT-0026] Missing route to pin soc/simpleuart/_0759_/A1.
+[WARNING GRT-0026] Missing route to pin soc/simpleuart/_1490_/Q.
+[WARNING GRT-0026] Missing route to pin soc/simpleuart/_1490_/Q.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_1152_/Q.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_1152_/Q.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_1181_/Q.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_1181_/Q.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_1159_/Q.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_1159_/Q.
+[WARNING GRT-0026] Missing route to pin wire272/X.
+[WARNING GRT-0026] Missing route to pin wire272/X.
+[WARNING GRT-0026] Missing route to pin hold717/A.
+[WARNING GRT-0026] Missing route to pin hold717/A.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_1216_/Q.
+[WARNING GRT-0026] Missing route to pin soc/spimemio/_1216_/Q.
+[WARNING GRT-0026] Missing route to pin wire281/X.
+[WARNING GRT-0026] Missing route to pin wire281/X.
+[WARNING GRT-0026] Missing route to pin wire266/X.
+[WARNING GRT-0026] Missing route to pin wire266/X.
+[WARNING GRT-0026] Missing route to pin wire264/X.
+[WARNING GRT-0026] Missing route to pin wire264/X.
+[WARNING GRT-0026] Missing route to pin wire256/X.
+[WARNING GRT-0026] Missing route to pin wire256/X.
+[WARNING GRT-0026] Missing route to pin wire273/X.
+[WARNING GRT-0026] Missing route to pin wire273/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05243_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05243_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10519_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10519_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10521_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10521_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10509_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10509_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05030_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05030_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05166_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05166_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10032_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05547_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10032_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05547_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05553_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05553_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05592_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05592_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05632_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05632_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10621_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10621_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05181_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05181_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05044_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05044_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04988_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04988_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07934_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07934_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06801_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06801_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07995_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07995_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06809_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06809_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06811_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06811_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09964_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09964_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06854_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06854_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06875_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06875_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09977_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09977_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06905_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06905_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06911_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06911_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06913_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06913_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06931_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06931_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08002_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08002_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08035_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08035_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08037_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08037_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06974_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06974_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07003_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07003_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08079_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08079_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08080_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08080_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08090_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08090_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08194_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08194_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08312_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08312_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08346_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08346_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08420_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08420_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08669_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08669_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08675_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08675_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08682_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08682_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08700_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08700_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10156_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10156_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10159_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10159_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08729_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08729_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07021_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07021_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10180_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10180_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10186_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10186_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07075_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07075_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07077_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07077_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10196_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10196_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07083_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07083_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08779_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08779_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08797_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08797_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10221_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10221_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08820_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08820_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08860_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08860_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08868_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08868_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10244_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10244_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10246_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10246_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10258_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10258_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10260_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10260_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10265_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08981_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10265_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08981_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09046_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09046_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10287_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10287_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09364_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09364_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09396_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09396_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09449_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09449_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09452_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09452_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10298_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10298_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09460_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09460_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09462_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09462_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09465_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09465_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09469_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09469_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09480_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09480_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09482_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09482_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10321_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10321_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09489_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09489_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09491_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09491_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09499_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09499_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09522_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09522_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09532_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09532_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09567_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09567_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09581_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09581_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09601_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09601_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09618_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09618_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10359_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10359_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10360_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10360_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09655_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09655_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09658_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09658_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10370_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10370_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10374_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10374_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10375_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10375_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10382_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10382_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10388_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10388_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09730_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09730_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10396_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10396_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09747_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09747_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09757_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09757_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09761_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09761_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10405_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10405_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10410_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10410_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09778_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09778_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09790_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09790_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09797_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09797_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10424_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10424_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07211_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07211_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07220_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07220_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10447_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10447_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10449_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10449_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07226_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07226_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10457_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10457_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07299_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07299_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07340_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07340_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07352_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07352_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07364_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07364_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07377_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07377_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07383_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07383_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10500_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10500_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09815_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09815_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10541_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10541_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10542_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10542_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09858_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09858_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10552_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09861_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10552_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09861_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09883_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09883_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09899_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09899_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10564_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10564_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09906_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09906_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09912_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09912_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07407_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07407_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07441_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07441_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10588_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10588_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07460_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07460_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10593_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10593_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07463_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07463_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07473_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07473_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10605_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10605_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10624_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10624_/D.
+[WARNING GRT-0026] Missing route to pin hold940/A.
+[WARNING GRT-0026] Missing route to pin hold940/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07518_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07518_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07606_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07606_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07621_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07621_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10648_/D.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_10648_/D.
+[WARNING GRT-0026] Missing route to pin hold1126/X.
+[WARNING GRT-0026] Missing route to pin hold1126/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04914_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04914_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05902_/S.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05920_/S.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04908_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05902_/S.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05920_/S.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04908_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04910_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04910_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04951_/B2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04915_/B.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04951_/B2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04915_/B.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05326_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05282_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05326_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05282_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04919_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04919_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04931_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04931_/B1.
+[WARNING GRT-0026] Missing route to pin wave_gen_inst/_2641_/A.
+[WARNING GRT-0026] Missing route to pin wave_gen_inst/_2641_/A.
+[WARNING GRT-0026] Missing route to pin hold1119/X.
+[WARNING GRT-0026] Missing route to pin hold1119/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04928_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04928_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04929_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04929_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04939_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04939_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04938_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04938_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04951_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04951_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04951_/A3.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04951_/A3.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05858_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05858_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07487_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07487_/A.
+[WARNING GRT-0026] Missing route to pin hold1112/X.
+[WARNING GRT-0026] Missing route to pin hold1112/X.
+[WARNING GRT-0026] Missing route to pin hold756/A.
+[WARNING GRT-0026] Missing route to pin hold756/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04966_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04966_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04967_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04967_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04972_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04972_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09462_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09460_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09462_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09460_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04975_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_04975_/Y.
+[WARNING GRT-0026] Missing route to pin load_slew123/A.
+[WARNING GRT-0026] Missing route to pin load_slew123/A.
+[WARNING GRT-0026] Missing route to pin hold1099/X.
+[WARNING GRT-0026] Missing route to pin hold1099/X.
+[WARNING GRT-0026] Missing route to pin hold1098/X.
+[WARNING GRT-0026] Missing route to pin hold1098/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05012_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05012_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05013_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05013_/X.
+[WARNING GRT-0026] Missing route to pin hold1095/X.
+[WARNING GRT-0026] Missing route to pin hold1095/X.
+[WARNING GRT-0026] Missing route to pin hold1094/X.
+[WARNING GRT-0026] Missing route to pin hold1094/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05134_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05023_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05134_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05023_/Y.
+[WARNING GRT-0026] Missing route to pin hold1091/X.
+[WARNING GRT-0026] Missing route to pin hold1091/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05035_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05035_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05037_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05037_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05042_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05042_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05050_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05050_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05059_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05059_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07520_/B.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07520_/B.
+[WARNING GRT-0026] Missing route to pin load_slew168/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07959_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05072_/Y.
+[WARNING GRT-0026] Missing route to pin load_slew168/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07959_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05072_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08973_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08737_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06859_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05074_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08973_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_08737_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06859_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05074_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05075_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05075_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05084_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05084_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05084_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05084_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05091_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05091_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05098_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05098_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05102_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05102_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05117_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05117_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05129_/B.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05129_/B.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05127_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05127_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09029_/D1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_09029_/D1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05135_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05135_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07086_/B.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07086_/B.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05154_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05154_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05160_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05160_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05162_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05162_/Y.
+[WARNING GRT-0026] Missing route to pin hold1071/X.
+[WARNING GRT-0026] Missing route to pin hold1071/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05172_/C.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05172_/C.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05172_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05172_/X.
+[WARNING GRT-0026] Missing route to pin hold551/A.
+[WARNING GRT-0026] Missing route to pin hold551/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06428_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06428_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05192_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05191_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05192_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05191_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07849_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05194_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07849_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05194_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05195_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05195_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05207_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05207_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05210_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05210_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05211_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05211_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05226_/B.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05226_/B.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05233_/B.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05233_/B.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05241_/C.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05241_/C.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05232_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05232_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05241_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05241_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05357_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05357_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05417_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05247_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05417_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05247_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05593_/B2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05593_/B2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05256_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05256_/B1.
+[WARNING GRT-0026] Missing route to pin hold1056/X.
+[WARNING GRT-0026] Missing route to pin hold1056/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05258_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05258_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05261_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05261_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05471_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05471_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05378_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05378_/A.
+[WARNING GRT-0026] Missing route to pin hold1053/X.
+[WARNING GRT-0026] Missing route to pin hold1053/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05280_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05280_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05291_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05291_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05306_/B2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05306_/B2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05588_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05588_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05312_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05312_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06560_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06560_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05455_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05455_/A2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05320_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05320_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05323_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05323_/X.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05326_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05326_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05525_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05490_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05525_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05490_/A.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05420_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05420_/A1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07432_/B2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06906_/C2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_07432_/B2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_06906_/C2.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05358_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05358_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05357_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05357_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05359_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05359_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05364_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05364_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05365_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05365_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05369_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05369_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05367_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05367_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05585_/B.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05369_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05585_/B.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05369_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05375_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05375_/Y.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05386_/B1.
+[WARNING GRT-0026] Missing route to pin soc/cpu/_05386_/B1.
+[WARNING GRT-0026] message limit reached, this message will no longer print
+(hammer) source /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/write_reports.tcl
+(hammer) define_process_corner -ext_model_index 0 X
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+(hammer) extract_parasitics -ext_model_file /home/urosdeljanin/open_pdks/sky130/sky130A//libs.tech/openlane/rules.openrcx.sky130A.max.spef_extractor -corner_cnt 2
+[INFO RCX-0008] extracting parasitics of digel_soc ...
+[INFO RCX-0435] Reading extraction model file /home/urosdeljanin/open_pdks/sky130/sky130A//libs.tech/openlane/rules.openrcx.sky130A.max.spef_extractor ...
+[INFO RCX-0436] RC segment generation digel_soc (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 67850 rc segments
+[INFO RCX-0439] Coupling Cap extraction digel_soc ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 150180 wires to be extracted
+[INFO RCX-0442] 40% completion -- 61323 wires have been extracted
+[INFO RCX-0442] 56% completion -- 85132 wires have been extracted
+[INFO RCX-0442] 66% completion -- 100033 wires have been extracted
+[INFO RCX-0442] 100% completion -- 150180 wires have been extracted
+[INFO RCX-0045] Extract 14532 nets, 82372 rsegs, 82372 caps, 115677 ccs
+[INFO RCX-0015] Finished extracting digel_soc.
+(hammer) extract_parasitics -ext_model_file /home/urosdeljanin/open_pdks/sky130/sky130A//libs.tech/openlane/rules.openrcx.sky130A.min.spef_extractor -corner_cnt 2
+[INFO RCX-0008] extracting parasitics of digel_soc ...
+[INFO RCX-0435] Reading extraction model file /home/urosdeljanin/open_pdks/sky130/sky130A//libs.tech/openlane/rules.openrcx.sky130A.min.spef_extractor ...
+[INFO RCX-0436] RC segment generation digel_soc (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 65648 rc segments
+[INFO RCX-0439] Coupling Cap extraction digel_soc ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 150180 wires to be extracted
+[INFO RCX-0045] Extract 14532 nets, 80170 rsegs, 80170 caps, 114921 ccs
+[INFO RCX-0015] Finished extracting digel_soc.
+(hammer) extract_parasitics -ext_model_file /home/urosdeljanin/open_pdks/sky130/sky130A//libs.tech/openlane/rules.openrcx.sky130A.nom.spef_extractor -corner_cnt 2
+[INFO RCX-0008] extracting parasitics of digel_soc ...
+[INFO RCX-0435] Reading extraction model file /home/urosdeljanin/open_pdks/sky130/sky130A//libs.tech/openlane/rules.openrcx.sky130A.nom.spef_extractor ...
+[INFO RCX-0436] RC segment generation digel_soc (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 66689 rc segments
+[INFO RCX-0439] Coupling Cap extraction digel_soc ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0043] 150180 wires to be extracted
+[INFO RCX-0045] Extract 14532 nets, 81211 rsegs, 81211 caps, 115303 ccs
+[INFO RCX-0015] Finished extracting digel_soc.
+(hammer) write_spef /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.spef
+[INFO RCX-0016] Writing SPEF ...
+[INFO RCX-0443] 14532 nets finished
+[INFO RCX-0017] Finished writing SPEF ...
+(hammer) read_spef -corner setup /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.spef
+(hammer) read_spef -corner hold /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/digel_soc.par.spef
+(hammer) write_db pre_write_design
+(hammer) exec ln -sfn pre_write_design latest
+(hammer) write_reports rcx
+(hammer: begin_report > /home/urosdeljanin/digel-asic-project-fa24/picosoc/build/par-rundir/reports/rcx_sta.check_types.slew_cap_fanout.rpt)
+(hammer) report_check_types -max_slew -max_capacitance -max_fanout -violators -digits 3
+max slew
+
+Pin                                     Limit     Slew    Slack
+---------------------------------------------------------------
+soc/_283_/B2                            1.500   11.132   -9.632 (VIOLATED)
+soc/spimemio/_0707_/Y                   1.494   11.125   -9.632 (VIOLATED)
+soc/spimemio/xfer/_247_/A               1.500   11.126   -9.626 (VIOLATED)
+soc/spimemio/_0719_/Y                   1.494   10.965   -9.471 (VIOLATED)
+soc/spimemio/_0711_/Y                   1.494   10.961   -9.468 (VIOLATED)
+soc/_294_/B2                            1.500   10.965   -9.465 (VIOLATED)
+soc/_306_/B2                            1.500   10.965   -9.465 (VIOLATED)
+soc/spimemio/xfer/_263_/A2              1.500   10.965   -9.465 (VIOLATED)
+soc/spimemio/_0715_/Y                   1.494   10.957   -9.464 (VIOLATED)
+soc/spimemio/xfer/_249_/A               1.500   10.962   -9.462 (VIOLATED)
+soc/spimemio/xfer/_252_/A               1.500   10.962   -9.462 (VIOLATED)
+soc/_300_/B2                            1.500   10.958   -9.458 (VIOLATED)
+soc/spimemio/xfer/_259_/A2              1.500   10.957   -9.457 (VIOLATED)
+soc/memory/clk                          0.040    2.308   -2.268 (VIOLATED)
+clkbuf_leaf_74_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_49_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_73_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_50_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_72_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_48_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_51_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_52_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_71_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_53_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_67_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_70_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_75_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_68_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_69_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_47_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_54_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_leaf_56_clk/A                    1.500    2.211   -0.711 (VIOLATED)
+clkbuf_3_5_0_clk/X                      1.512    2.211   -0.699 (VIOLATED)
+soc/memory/dout[31]                     0.040    0.373   -0.333 (VIOLATED)
+soc/memory/dout[23]                     0.040    0.363   -0.323 (VIOLATED)
+soc/memory/dout[24]                     0.040    0.359   -0.319 (VIOLATED)
+soc/memory/dout[25]                     0.040    0.351   -0.311 (VIOLATED)
+soc/memory/dout[26]                     0.040    0.344   -0.304 (VIOLATED)
+soc/memory/dout[21]                     0.040    0.342   -0.302 (VIOLATED)
+soc/memory/dout[22]                     0.040    0.341   -0.301 (VIOLATED)
+soc/memory/dout[27]                     0.040    0.340   -0.300 (VIOLATED)
+soc/memory/dout[20]                     0.040    0.338   -0.298 (VIOLATED)
+soc/memory/dout[29]                     0.040    0.337   -0.297 (VIOLATED)
+soc/memory/dout[16]                     0.040    0.335   -0.295 (VIOLATED)
+soc/memory/dout[18]                     0.040    0.323   -0.283 (VIOLATED)
+soc/memory/dout[30]                     0.040    0.317   -0.277 (VIOLATED)
+soc/memory/din[24]                      0.040    0.317   -0.277 (VIOLATED)
+soc/memory/din[22]                      0.040    0.315   -0.275 (VIOLATED)
+soc/memory/din[21]                      0.040    0.315   -0.275 (VIOLATED)
+soc/memory/din[30]                      0.040    0.315   -0.275 (VIOLATED)
+soc/memory/din[14]                      0.040    0.315   -0.275 (VIOLATED)
+soc/memory/din[10]                      0.040    0.315   -0.275 (VIOLATED)
+soc/memory/din[23]                      0.040    0.315   -0.275 (VIOLATED)
+soc/memory/din[26]                      0.040    0.315   -0.275 (VIOLATED)
+soc/memory/din[27]                      0.040    0.315   -0.275 (VIOLATED)
+soc/memory/din[25]                      0.040    0.315   -0.275 (VIOLATED)
+soc/memory/din[15]                      0.040    0.315   -0.275 (VIOLATED)
+soc/memory/din[11]                      0.040    0.314   -0.274 (VIOLATED)
+soc/memory/din[9]                       0.040    0.314   -0.274 (VIOLATED)
+soc/memory/din[13]                      0.040    0.314   -0.274 (VIOLATED)
+soc/memory/din[28]                      0.040    0.314   -0.274 (VIOLATED)
+soc/memory/din[20]                      0.040    0.314   -0.274 (VIOLATED)
+soc/memory/din[16]                      0.040    0.314   -0.274 (VIOLATED)
+soc/memory/din[29]                      0.040    0.314   -0.274 (VIOLATED)
+soc/memory/din[8]                       0.040    0.314   -0.274 (VIOLATED)
+soc/memory/din[12]                      0.040    0.314   -0.274 (VIOLATED)
+soc/memory/dout[28]                     0.040    0.314   -0.274 (VIOLATED)
+soc/memory/dout[17]                     0.040    0.313   -0.273 (VIOLATED)
+soc/memory/dout[14]                     0.040    0.312   -0.272 (VIOLATED)
+soc/memory/dout[15]                     0.040    0.309   -0.269 (VIOLATED)
+soc/memory/dout[10]                     0.040    0.304   -0.264 (VIOLATED)
+soc/memory/dout[11]                     0.040    0.296   -0.256 (VIOLATED)
+soc/memory/dout[19]                     0.040    0.296   -0.256 (VIOLATED)
+soc/memory/dout[13]                     0.040    0.295   -0.255 (VIOLATED)
+soc/memory/wmask[2]                     0.040    0.293   -0.253 (VIOLATED)
+soc/memory/wmask[1]                     0.040    0.291   -0.251 (VIOLATED)
+soc/memory/dout[8]                      0.040    0.289   -0.249 (VIOLATED)
+soc/memory/dout[12]                     0.040    0.286   -0.246 (VIOLATED)
+soc/memory/dout[9]                      0.040    0.284   -0.244 (VIOLATED)
+clkbuf_leaf_23_clk/A                    1.500    1.742   -0.242 (VIOLATED)
+clkbuf_leaf_19_clk/A                    1.500    1.742   -0.242 (VIOLATED)
+clkbuf_leaf_18_clk/A                    1.500    1.742   -0.242 (VIOLATED)
+clkbuf_leaf_26_clk/A                    1.500    1.742   -0.242 (VIOLATED)
+clkbuf_leaf_32_clk/A                    1.500    1.742   -0.242 (VIOLATED)
+clkbuf_leaf_27_clk/A                    1.500    1.742   -0.242 (VIOLATED)
+clkbuf_leaf_28_clk/A                    1.500    1.742   -0.242 (VIOLATED)
+clkbuf_leaf_30_clk/A                    1.500    1.742   -0.242 (VIOLATED)
+clkbuf_leaf_31_clk/A                    1.500    1.742   -0.242 (VIOLATED)
+clkbuf_leaf_17_clk/A                    1.500    1.742   -0.242 (VIOLATED)
+clkbuf_leaf_34_clk/A                    1.500    1.742   -0.242 (VIOLATED)
+clkbuf_leaf_33_clk/A                    1.500    1.742   -0.242 (VIOLATED)
+clkbuf_leaf_36_clk/A                    1.500    1.742   -0.242 (VIOLATED)
+clkbuf_leaf_35_clk/A                    1.500    1.742   -0.242 (VIOLATED)
+soc/simpleuart/_1404_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1405_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1453_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1452_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1454_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1455_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1400_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1443_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1451_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1441_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1449_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1446_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1436_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1437_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1438_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1444_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1445_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1448_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1439_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1440_/CLK               1.500    1.731   -0.231 (VIOLATED)
+soc/simpleuart/_1447_/CLK               1.500    1.731   -0.231 (VIOLATED)
+clkbuf_3_6_0_clk/X                      1.512    1.742   -0.230 (VIOLATED)
+soc/memory/din[6]                       0.040    0.269   -0.229 (VIOLATED)
+soc/memory/dout[6]                      0.040    0.266   -0.226 (VIOLATED)
+soc/memory/din[17]                      0.040    0.265   -0.225 (VIOLATED)
+soc/memory/din[1]                       0.040    0.264   -0.224 (VIOLATED)
+soc/memory/din[31]                      0.040    0.264   -0.224 (VIOLATED)
+soc/memory/din[19]                      0.040    0.263   -0.223 (VIOLATED)
+soc/memory/din[7]                       0.040    0.263   -0.223 (VIOLATED)
+soc/memory/din[18]                      0.040    0.263   -0.223 (VIOLATED)
+clkbuf_leaf_94_clk/X                    1.512    1.731   -0.219 (VIOLATED)
+soc/memory/dout[4]                      0.040    0.258   -0.218 (VIOLATED)
+soc/memory/dout[7]                      0.040    0.254   -0.214 (VIOLATED)
+soc/memory/dout[0]                      0.040    0.251   -0.211 (VIOLATED)
+soc/memory/dout[2]                      0.040    0.240   -0.200 (VIOLATED)
+soc/memory/dout[5]                      0.040    0.240   -0.200 (VIOLATED)
+soc/memory/dout[3]                      0.040    0.234   -0.194 (VIOLATED)
+soc/memory/dout[1]                      0.040    0.232   -0.192 (VIOLATED)
+soc/memory/din[0]                       0.040    0.212   -0.172 (VIOLATED)
+soc/memory/wmask[0]                     0.040    0.198   -0.158 (VIOLATED)
+soc/memory/din[2]                       0.040    0.183   -0.143 (VIOLATED)
+soc/memory/din[4]                       0.040    0.182   -0.142 (VIOLATED)
+soc/memory/din[3]                       0.040    0.182   -0.142 (VIOLATED)
+soc/memory/addr[2]                      0.040    0.181   -0.141 (VIOLATED)
+soc/memory/wmask[3]                     0.040    0.181   -0.141 (VIOLATED)
+soc/memory/addr[4]                      0.040    0.179   -0.139 (VIOLATED)
+soc/memory/addr[6]                      0.040    0.178   -0.138 (VIOLATED)
+soc/memory/addr[5]                      0.040    0.177   -0.137 (VIOLATED)
+soc/memory/addr[1]                      0.040    0.177   -0.137 (VIOLATED)
+soc/memory/addr[7]                      0.040    0.177   -0.137 (VIOLATED)
+soc/memory/addr[0]                      0.040    0.177   -0.137 (VIOLATED)
+soc/memory/addr[3]                      0.040    0.177   -0.137 (VIOLATED)
+soc/memory/we                           0.040    0.176   -0.136 (VIOLATED)
+clkbuf_leaf_25_clk/A                    1.500    1.628   -0.128 (VIOLATED)
+clkbuf_leaf_62_clk/A                    1.500    1.628   -0.128 (VIOLATED)
+clkbuf_leaf_61_clk/A                    1.500    1.628   -0.128 (VIOLATED)
+clkbuf_leaf_78_clk/A                    1.500    1.628   -0.128 (VIOLATED)
+clkbuf_leaf_66_clk/A                    1.500    1.628   -0.128 (VIOLATED)
+clkbuf_leaf_65_clk/A                    1.500    1.628   -0.128 (VIOLATED)
+clkbuf_leaf_57_clk/A                    1.500    1.628   -0.128 (VIOLATED)
+clkbuf_leaf_55_clk/A                    1.500    1.628   -0.128 (VIOLATED)
+clkbuf_leaf_60_clk/A                    1.500    1.628   -0.128 (VIOLATED)
+clkbuf_leaf_59_clk/A                    1.500    1.628   -0.128 (VIOLATED)
+clkbuf_leaf_64_clk/A                    1.500    1.628   -0.128 (VIOLATED)
+clkbuf_leaf_63_clk/A                    1.500    1.628   -0.128 (VIOLATED)
+clkbuf_3_4_0_clk/X                      1.512    1.628   -0.116 (VIOLATED)
+soc/memory/din[5]                       0.040    0.127   -0.087 (VIOLATED)
+soc/_302_/A2                            1.500    1.578   -0.078 (VIOLATED)
+clkbuf_leaf_43_clk/A                    1.500    1.560   -0.060 (VIOLATED)
+clkbuf_leaf_42_clk/A                    1.500    1.560   -0.060 (VIOLATED)
+clkbuf_leaf_41_clk/A                    1.500    1.560   -0.060 (VIOLATED)
+clkbuf_leaf_44_clk/A                    1.500    1.560   -0.060 (VIOLATED)
+clkbuf_leaf_45_clk/A                    1.500    1.560   -0.060 (VIOLATED)
+clkbuf_leaf_46_clk/A                    1.500    1.560   -0.060 (VIOLATED)
+clkbuf_leaf_40_clk/A                    1.500    1.560   -0.060 (VIOLATED)
+clkbuf_leaf_58_clk/A                    1.500    1.560   -0.060 (VIOLATED)
+clkbuf_leaf_29_clk/A                    1.500    1.560   -0.060 (VIOLATED)
+clkbuf_leaf_39_clk/A                    1.500    1.560   -0.060 (VIOLATED)
+clkbuf_leaf_37_clk/A                    1.500    1.560   -0.060 (VIOLATED)
+clkbuf_leaf_38_clk/A                    1.500    1.560   -0.060 (VIOLATED)
+clkbuf_3_7_0_clk/X                      1.512    1.560   -0.047 (VIOLATED)
+wave_gen_inst/_4587_/CLK                1.500    1.532   -0.032 (VIOLATED)
+clkbuf_leaf_0_clk/A                     1.500    1.532   -0.032 (VIOLATED)
+clkbuf_leaf_14_clk/A                    1.500    1.532   -0.032 (VIOLATED)
+clkbuf_leaf_13_clk/A                    1.500    1.532   -0.032 (VIOLATED)
+clkbuf_leaf_12_clk/A                    1.500    1.532   -0.032 (VIOLATED)
+clkbuf_leaf_15_clk/A                    1.500    1.532   -0.032 (VIOLATED)
+clkbuf_leaf_96_clk/A                    1.500    1.532   -0.032 (VIOLATED)
+clkbuf_leaf_11_clk/A                    1.500    1.532   -0.032 (VIOLATED)
+clkbuf_leaf_10_clk/A                    1.500    1.532   -0.032 (VIOLATED)
+clkbuf_leaf_7_clk/A                     1.500    1.532   -0.032 (VIOLATED)
+clkbuf_3_2_0_clk/X                      1.512    1.532   -0.020 (VIOLATED)
+soc/simpleuart/_1398_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1397_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1363_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1396_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1399_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1395_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1365_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1478_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1479_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1364_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1476_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1385_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1380_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1378_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1490_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1489_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1488_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1487_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1485_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1484_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1386_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1486_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1387_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1388_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1389_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1394_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1390_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1392_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1391_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/simpleuart/_1393_/CLK               1.500    1.518   -0.018 (VIOLATED)
+soc/_288_/A2                            1.500    1.517   -0.017 (VIOLATED)
+soc/_296_/A2                            1.500    1.513   -0.013 (VIOLATED)
+soc/spimemio/_1218_/CLK                 1.500    1.513   -0.013 (VIOLATED)
+soc/spimemio/_1221_/CLK                 1.500    1.513   -0.013 (VIOLATED)
+soc/spimemio/_1220_/CLK                 1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1377_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1375_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1362_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1477_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1475_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1474_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1370_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1472_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1473_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1371_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1468_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1471_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1470_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1373_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1372_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1421_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1423_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1422_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/spimemio/xfer/_388_/CLK             1.500    1.513   -0.013 (VIOLATED)
+soc/spimemio/xfer/_423_/CLK             1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1427_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/spimemio/xfer/_385_/CLK             1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1426_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1425_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1424_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1374_/CLK               1.500    1.513   -0.013 (VIOLATED)
+soc/simpleuart/_1376_/CLK               1.500    1.513   -0.013 (VIOLATED)
+clkbuf_leaf_93_clk/X                    1.512    1.518   -0.005 (VIOLATED)
+clkbuf_leaf_91_clk/X                    1.512    1.513   -0.000 (VIOLATED)
+
+max capacitance
+
+Pin                                     Limit      Cap    Slack
+---------------------------------------------------------------
+soc/spimemio/_0711_/Y                   0.132    1.007   -0.875 (VIOLATED)
+soc/spimemio/_0715_/Y                   0.132    1.005   -0.873 (VIOLATED)
+soc/spimemio/_0719_/Y                   0.132    1.005   -0.873 (VIOLATED)
+soc/spimemio/_0707_/Y                   0.132    1.005   -0.873 (VIOLATED)
+clkbuf_leaf_94_clk/X                    0.081    0.430   -0.349 (VIOLATED)
+clkbuf_3_5_0_clk/X                      0.081    0.121   -0.040 (VIOLATED)
+clkbuf_3_6_0_clk/X                      0.081    0.095   -0.014 (VIOLATED)
+clkbuf_3_4_0_clk/X                      0.081    0.089   -0.007 (VIOLATED)
+clkbuf_3_7_0_clk/X                 
