@@ -24,8 +24,8 @@ vlsi.inputs.placement_constraints:
     type: "toplevel"
     x: 0
     y: 0
-    width: 1300
-    height: 1300
+    width: 1000
+    height: 1000
     margins:
       left: 2
       right: 2
@@ -50,7 +50,7 @@ vlsi.inputs.pin.assignments: [
 ]
 
 # Number of routing iterations
-vlsi.route.iter: 16
+vlsi.route.iter: 64
 
 # Do not use FILLER cells which cause li1 Metal Spacing errors
 vlsi.inputs.use_fillers: 0

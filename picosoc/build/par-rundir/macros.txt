@@ -1,6 +1,0 @@
-soc/memory 
-	- master: sram22_256x32m4w8 
-	- width:  292370 
-	- height: 358290 
-	- origin: 76825, 224365 
-

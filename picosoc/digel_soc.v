@@ -77,7 +77,7 @@ module digel_soc (
 	wire flash_io3_oe, flash_io3_do, flash_io3_di;
 
 	
-	// Poludvosmerni trostaticki bafer
+/*	// Poludvosmerni trostaticki bafer
 	assign flash_io0 = flash_io0_oe ? flash_io0_do : 1'bz;
 	assign flash_io0_di = flash_io0;
 
@@ -88,7 +88,35 @@ module digel_soc (
 	assign flash_io2_di = flash_io2;
 
 	assign flash_io3 = flash_io3_oe ? flash_io3_do : 1'bz;
-	assign flash_io3_di = flash_io3;
+	assign flash_io3_di = flash_io3;*/
+
+	sky130_fd_sc_hd__ebufn_1 io0_ebuf (
+        .Z     (flash_io0),
+        .A     (flash_io0_do),
+        .TE_B  (~flash_io0_oe)
+    );
+    assign flash_io0_di = flash_io0;
+
+    sky130_fd_sc_hd__ebufn_1 io1_ebuf (
+        .Z     (flash_io1),
+        .A     (flash_io1_do),
+        .TE_B  (~flash_io1_oe)
+    );
+    assign flash_io1_di = flash_io1;
+
+    sky130_fd_sc_hd__ebufn_1 io2_ebuf (
+        .Z     (flash_io2),
+        .A     (flash_io2_do),
+        .TE_B  (~flash_io2_oe)
+    );
+    assign flash_io2_di = flash_io2;
+
+    sky130_fd_sc_hd__ebufn_1 io3_ebuf (
+        .Z     (flash_io3),
+        .A     (flash_io3_do),
+        .TE_B  (~flash_io3_oe)
+    );
+    assign flash_io3_di = flash_io3;
 
 	wire        iomem_valid;
 	reg         iomem_ready;

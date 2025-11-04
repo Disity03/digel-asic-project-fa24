@@ -33,7 +33,7 @@ module testbench;
 		
 		rst = 1;
 		// Hold reset signal for some time
-		repeat (1) @(posedge clk);
+		repeat (10) @(posedge clk);
 		// Note: we should reset on the negedge clk to prevent race behavior
 		@(negedge clk);
 		rst = 0;
